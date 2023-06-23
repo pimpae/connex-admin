@@ -313,7 +313,68 @@ body.expand .nav-top{
   position: relative;
   top: 10px;
 }
-
+.menu-top-mb .avatar-user{
+  position: absolute;
+  right: 10px;
+  top: 13px; 
+  width: 66px;
+  height: 37px; 
+  display: flex; 
+}
+.menu-top-mb .avatar-user .u-img{
+  border-radius: 100%;
+  width: 37px;
+  height: 37px;
+  object-fit: cover;
+  position: relative;
+  top: -5px;
+  border: 2px solid #4BAB56;
+}
+.menu-top-mb .avatar-user .more-vert{
+  color: #979797;
+  cursor: pointer;
+} 
+.menu-top-mb .icon-menu{
+  position: absolute;
+  left: 10px;
+  top: 10px;  
+  height: 43px; 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+.menu-top-mb .icon-menu .menux{
+  cursor: pointer;
+  font-size: 24px;
+  color: #566A7F;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+.menu-top-mb .icon-menu .logo{
+  cursor: pointer;
+  width: 46px;
+  height: 43px;
+}
+.menu-mb{ 
+  z-index: 2222 !important;
+  position: fixed;
+  left: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 360px;
+  height: 100vh;
+  background-color: #fff;;
+  padding: 25px;
+}
+.menu-mb.active{
+  display: block; 
+  left: 0;
+} 
+ 
+ 
+ 
  
 
 /* 

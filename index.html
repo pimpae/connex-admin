@@ -22,7 +22,9 @@
 
 </head>
 <body> 
- 
+	<div class="menu-mb">
+
+	</div>
 	<div class="menu">
 		<div class="logo">
 			<a href="index.html">
@@ -199,8 +201,25 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid pc-x">
-			 
+		<div class="container-fluid pc-x menu-top-mb">
+			<div class="icon-menu">
+				<div class="menux">
+					<span class="material-symbols-outlined">
+						menu
+					</span>
+				</div>
+				<div class="logo">
+					<img src="images/Logo2.png" alt="">
+				</div>
+			</div>
+			<div class="avatar-user">
+				<img src="images/avatar.png" class="u-img">
+				<div class="more-vert">
+					<span class="material-symbols-outlined">
+					more_vert
+					</span>
+				</div>
+			</div>
 		</div>
 	</div>
 	 
@@ -230,6 +249,13 @@
 		$('.menu-expand').click(function(){     
 			$("body").toggleClass("expand");  
 		}); 
+
+		$('.menux').click(function(){    
+			$(".menu-mb").addClass("active" , 300);  
+		});
+		$('.navbar-close').click(function(){    
+			$(".menu-mb").removeClass("active" , 300);  
+		});
 	</script>
 
 </body>
