@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Connex Admin </title>
-	<link rel="icon" type="image/x-icon" href="images/logo.png">  
+	<link rel="icon" type="image/x-icon" href="public/images/logo.png">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />     
+    <link href="public/css/style.css" rel="stylesheet" type="text/css" />      
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>  
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">  
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
@@ -23,140 +23,278 @@
 </head>
 <body> 
 	<div class="menu-mb">
-
+		<div class="top">
+			<img src="public/images/Arrow-left-alt.svg" alt="" class="menux-close">
+			<img src="public/images/logo.png" alt="" class="menux-logo">
+		</div>
+		<div class="user">
+			<div class="avatarx">
+				<img src="public/images/avatar.png" alt="" class="menux-close">
+				<h6>User Name</h6>
+			</div>
+			<span class="material-symbols-outlined more-vert">
+			more_vert
+			</span>
+		</div>
+		<div class="menu"> 
+			<ul>
+				<li class="active">
+					<a href="index.html"> 
+						<i>Dashboard</i>
+						<span class="material-symbols-rounded">
+						dashboard
+						</span>
+					</a>
+				</li> 
+				<li class="sub">
+					<div> 
+						<i>จัดการลูกค้า</i>
+						<span class="material-symbols-rounded">
+						group
+						</span>
+					</div>
+					<ul>
+						<li class="active"><a href="#">Sub menu 1</a></li>
+						<li><a href="#">Sub menu 2</a></li>
+						<li><a href="#">Sub menu 3</a></li>
+						<li><a href="#">Sub menu 4</a></li> 
+					</ul>
+				</li>
+				<li>
+					<a href="manage-listing.html"> 
+						<i>จัดการ listing</i>
+						<span class="material-symbols-rounded">
+						ballot
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="user.html"> 
+						<i>ผู้ใช้งาน</i>
+						<span class="material-symbols-outlined">
+						manage_accounts
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="download.html"> 
+						<i>Download</i>
+						<span class="material-symbols-outlined">
+						download
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="upload.html"> 
+						<i>Upload</i>
+						<span class="material-symbols-outlined">
+						upload
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="project.html"> 
+						<i>จัดการโครงการ/หมู่บ้าน</i>
+						<span class="material-symbols-outlined">
+						add_home_work
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="report-listing.html"> 
+						<i>รายงาน Listing</i>
+						<span class="material-symbols-outlined">
+						summarize
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="report1.html"> 
+						<i>รายงาน</i>
+						<span class="material-symbols-outlined">
+						lab_profile
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="website.html"> 
+						<i>เว็บไซต์</i>
+						<span class="material-symbols-outlined">
+						computer
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="sales.html"> 
+						<i>ข้อมูลเซล์</i>
+						<span class="material-symbols-outlined">
+						bar_chart_4_bars
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="stock.html"> 
+						<i>Stock</i>
+						<span class="material-symbols-outlined">
+						inventory
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="report2.html"> 
+						<i>รายงาน</i>
+						<span class="material-symbols-outlined">
+						chart_data
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="other.html"> 
+						<i>อื่นๆ</i>
+						<span class="material-symbols-outlined">
+						more
+						</span>
+					</a>
+				</li>
+			</ul> 
+		</div>
 	</div>
+	<div class="backdp"></div>
+
 	<div class="menu">
 		<div class="logo">
 			<a href="index.html">
-				<img src="images/logo.png" alt="logo">
+				<img src="public/images/logo.png" alt="logo">
 			</a>
 		</div>
 		<div class="logo-expand">
 			<a href="index.html">
-				<img src="images/logo1.png" alt="logo">
+				<img src="public/images/logo1.png" alt="logo">
 			</a>
 		</div>
 		<h3>Menu</h3>
-		<ul>
-			<li class="active">
-				<a href="index.html"> 
-					<i>Dashboard</i>
-					<span class="material-symbols-rounded">
-					dashboard
-					</span>
-				</a>
-			</li> 
-			<li class="sub">
-				<div> 
-					<i>จัดการลูกค้า</i>
-					<span class="material-symbols-rounded">
-					group
-					</span>
-				</div>
-				<ul>
-					<li class="active"><a href="#">Sub menu 1</a></li>
-					<li><a href="#">Sub menu 2</a></li>
-					<li><a href="#">Sub menu 3</a></li>
-					<li><a href="#">Sub menu 4</a></li> 
-				</ul>
-			</li>
-			<li>
-				<a href="manage-listing.html"> 
-					<i>จัดการ listing</i>
-					<span class="material-symbols-rounded">
-					ballot
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="user.html"> 
-					<i>ผู้ใช้งาน</i>
-					<span class="material-symbols-outlined">
-					manage_accounts
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="download.html"> 
-					<i>Download</i>
-					<span class="material-symbols-outlined">
-					download
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="upload.html"> 
-					<i>Upload</i>
-					<span class="material-symbols-outlined">
-					upload
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="project.html"> 
-					<i>จัดการโครงการ/หมู่บ้าน</i>
-					<span class="material-symbols-outlined">
-					add_home_work
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="report-listing.html"> 
-					<i>รายงาน Listing</i>
-					<span class="material-symbols-outlined">
-					summarize
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="report1.html"> 
-					<i>รายงาน</i>
-					<span class="material-symbols-outlined">
-					lab_profile
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="website.html"> 
-					<i>เว็บไซต์</i>
-					<span class="material-symbols-outlined">
-					computer
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="sales.html"> 
-					<i>ข้อมูลเซล์</i>
-					<span class="material-symbols-outlined">
-					bar_chart_4_bars
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="stock.html"> 
-					<i>Stock</i>
-					<span class="material-symbols-outlined">
-					inventory
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="report2.html"> 
-					<i>รายงาน</i>
-					<span class="material-symbols-outlined">
-					chart_data
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="other.html"> 
-					<i>อื่นๆ</i>
-					<span class="material-symbols-outlined">
-					more
-					</span>
-				</a>
-			</li>
-		</ul> 
+		<div class="menu-dib">
+			<ul>
+				<li class="active">
+					<a href="index.html"> 
+						<i>Dashboard</i>
+						<span class="material-symbols-rounded">
+						dashboard
+						</span>
+					</a>
+				</li> 
+				<li class="sub">
+					<div> 
+						<i>จัดการลูกค้า</i>
+						<span class="material-symbols-rounded">
+						group
+						</span>
+					</div>
+					<ul>
+						<li class="active"><a href="#">Sub menu 1</a></li>
+						<li><a href="#">Sub menu 2</a></li>
+						<li><a href="#">Sub menu 3</a></li>
+						<li><a href="#">Sub menu 4</a></li> 
+					</ul>
+				</li>
+				<li>
+					<a href="manage-listing.html"> 
+						<i>จัดการ listing</i>
+						<span class="material-symbols-rounded">
+						ballot
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="user.html"> 
+						<i>ผู้ใช้งาน</i>
+						<span class="material-symbols-outlined">
+						manage_accounts
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="download.html"> 
+						<i>Download</i>
+						<span class="material-symbols-outlined">
+						download
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="upload.html"> 
+						<i>Upload</i>
+						<span class="material-symbols-outlined">
+						upload
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="project.html"> 
+						<i>จัดการโครงการ/หมู่บ้าน</i>
+						<span class="material-symbols-outlined">
+						add_home_work
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="report-listing.html"> 
+						<i>รายงาน Listing</i>
+						<span class="material-symbols-outlined">
+						summarize
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="report1.html"> 
+						<i>รายงาน</i>
+						<span class="material-symbols-outlined">
+						lab_profile
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="website.html"> 
+						<i>เว็บไซต์</i>
+						<span class="material-symbols-outlined">
+						computer
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="sales.html"> 
+						<i>ข้อมูลเซล์</i>
+						<span class="material-symbols-outlined">
+						bar_chart_4_bars
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="stock.html"> 
+						<i>Stock</i>
+						<span class="material-symbols-outlined">
+						inventory
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="report2.html"> 
+						<i>รายงาน</i>
+						<span class="material-symbols-outlined">
+						chart_data
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="other.html"> 
+						<i>อื่นๆ</i>
+						<span class="material-symbols-outlined">
+						more
+						</span>
+					</a>
+				</li>
+			</ul> 
+		</div>
 	</div>
 	<div class="nav-top">
 		<div class="container-fluid mb-x">
@@ -164,7 +302,7 @@
 				<div class="col-6">
 					<ul class="mt">
 						<li class="meli menu-expand">
-							<img src="images/menu-left.png" alt="">
+							<img src="public/images/menu-left.png" alt="">
 						</li>
 						<li>
 							<a href="#">Home</a>
@@ -191,7 +329,7 @@
 						</li>
 						<li>
 							<a href="#">
-								<img src="images/avatar.png" alt="img-name" class="img-name">
+								<img src="public/images/avatar.png" alt="img-name" class="img-name">
 							</a>
 						</li>
 						<li>
@@ -209,11 +347,11 @@
 					</span>
 				</div>
 				<div class="logo">
-					<img src="images/Logo2.png" alt="">
+					<img src="public/images/Logo2.png" alt="">
 				</div>
 			</div>
 			<div class="avatar-user">
-				<img src="images/avatar.png" class="u-img">
+				<img src="public/images/avatar.png" class="u-img">
 				<div class="more-vert">
 					<span class="material-symbols-outlined">
 					more_vert
@@ -222,10 +360,755 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="menu-bot pc-x">
+		<ul>
+			<li class="active">
+				<a href="#">
+					<img src="public/images/vuesax-linear-home-2.svg" alt=""> 
+					<span>Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="public/images/vuesax-linear-task-square.svg" alt="">
+					<span>Listing</span>
+				</a> 
+			</li>
+			<li>
+				<a href="#">
+					<img src="public/images/vuesax-linear-calendar.svg" alt="">
+					<span>Calendar</span>
+				</a> 
+			</li>
+			<li>
+				<a href="#">
+					<img src="public/images/vuesax-linear-notification.svg" alt="">
+					<span>Notification</span>
+				</a> 
+			</li>
+			<li>
+				<a href="#">
+					<img src="public/images/vuesax-linear-setting-2.svg" alt="">
+					<span>Setting</span>
+				</a> 
+			</li>
+		</ul>
+	</div>
 	 
 	<main>
 		<div class="container-fluid p-0"> 
-			sssss
+			<div class="navi-map">
+				<span>Home</span>
+				<span>/</span>
+				<a href="#">Dashboard</a>
+			</div>
+			<h3>Dashboard</h3>
+			<div class="col dashboardx">
+				<div class="row">
+					<div class="col-lg-4 col-6">
+						<div class="inner inner-red">
+							<div class="icon">
+								<span class="material-symbols-outlined">
+								domain
+								</span>
+							</div>
+							<div>
+								<h4>72663</h4>
+								<h6>Deal assigned</h6>
+							</div>
+						</div>
+					</div> 
+					<div class="col-lg-4 col-6">
+						<div class="inner inner-green">
+							<div class="icon">
+								<span class="material-symbols-outlined">
+								home_work
+								</span>
+							</div>
+							<div>
+								<h4>1534</h4>
+								<h6>Close Won</h6>
+							</div>  
+						</div>
+					</div> 
+					<div class="col-lg-4 col-6">
+						<div class="inner inner-blue">
+							<div class="icon">
+								<span class="material-symbols-outlined">
+								edit_document
+								</span>
+							</div>
+							<div>
+								<h4>3557</h4>
+								<h6>Conversion rate</h6>
+							</div> 
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div class="col tb-box">
+				<div class="row header">
+					<div class="col-7">
+						<h3>Recent Listing</h3>
+					</div>
+					<div class="col-5 text-right">
+						<h6>รายละเอียด</h6>
+					</div>
+				</div>
+				<div class="table-responsive">
+					<table class="table table1">
+						<thead>
+							<tr>
+								<th>
+									No
+								</th>
+								<th>
+									Image
+								</th>
+								<th>
+									คุณภาพ<br>(img)
+								</th>
+								<th>
+									Status
+								</th>
+								<th>
+									Type
+								</th>
+								<th>
+									Deal
+								</th>
+								<th>
+									Project
+								</th>
+								<th>
+									House No.
+								</th>
+								<th>
+									Floor
+								</th>
+								<th>
+									Room
+								</th>
+								<th>
+									พื้นที่ (ตรม.)
+								</th>
+								<th>
+									Price
+								</th>
+								<th>
+									Owner
+								</th>
+								<th>
+									BTS
+								</th>
+								<th>
+									Approved
+								</th>
+								<th>
+									Update
+								</th>
+								<th>
+									จัดการ
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-main">
+									CX-74371
+								</td>
+								<td class="text-success">
+									<span class="material-symbols-outlined">
+									check_circle
+									</span>
+								</td>
+								<td class="text-success">
+									(ดี)
+								</td>
+								<td>
+									Available
+								</td>
+								<td>
+									คอนโด
+								</td>
+								<td>
+									เช่า
+								</td>
+								<td>
+									Metro Sky<br>Wutthakat
+								</td>
+								<td>
+									101/136
+								</td>
+								<td>
+									24
+								</td>
+								<td>
+									1 นอน | 1 น้ำ
+								</td>
+								<td>
+									25
+								</td>
+								<td>
+									4,635,000
+								</td>
+								<td>
+									สะดวกติดต่อ<br>ทางไลน์
+								</td>
+								<td>
+									BTS-ห้าแยก<br>ลาดพร้าว
+								</td>
+								<td>
+									Draft
+								</td>
+								<td>
+									02/03/2023, 13:00
+								</td>
+								<td>
+									<div class="dropdown">
+										<div data-toggle="dropdown">
+											<span class="material-symbols-outlined">
+											expand_more
+											</span>
+										</div>
+										<div class="dropdown-menu"> 
+											<a class="dropdown-item active" href="#"> 
+												<span class="material-symbols-outlined">
+												search
+												</span>
+												ดูรายละเอียด
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												edit_square
+												</span>
+												แก้ไข
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												attachment
+												</span>
+												ไฟล์แนบ
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												block
+												</span>
+												ยกเลิก
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												check_circle
+												</span>
+												ปิดเคสสัญญา
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												delete
+												</span>
+												ลบ
+											</a>
+										</div>
+									</div> 
+								</td>
+							</tr> 
+							<tr>
+								<td class="text-main">
+									CX-74371
+								</td>
+								<td class="text-success">
+									<span class="material-symbols-outlined">
+									check_circle
+									</span>
+								</td>
+								<td class="text-warning">
+									(ปานกลาง)
+								</td>
+								<td>
+									Available
+								</td>
+								<td>
+									คอนโด
+								</td>
+								<td>
+									เช่า
+								</td>
+								<td>
+									Metro Sky<br>Wutthakat
+								</td>
+								<td>
+									101/136
+								</td>
+								<td>
+									24
+								</td>
+								<td>
+									1 นอน | 1 น้ำ
+								</td>
+								<td>
+									25
+								</td>
+								<td>
+									4,635,000
+								</td>
+								<td>
+									สะดวกติดต่อ<br>ทางไลน์
+								</td>
+								<td>
+									BTS-ห้าแยก<br>ลาดพร้าว
+								</td>
+								<td>
+									Draft
+								</td>
+								<td>
+									02/03/2023, 13:00
+								</td>
+								<td>
+									<div class="dropdown">
+										<div data-toggle="dropdown">
+											<span class="material-symbols-outlined">
+											expand_more
+											</span>
+										</div>
+										<div class="dropdown-menu"> 
+											<a class="dropdown-item active" href="#"> 
+												<span class="material-symbols-outlined">
+												search
+												</span>
+												ดูรายละเอียด
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												edit_square
+												</span>
+												แก้ไข
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												attachment
+												</span>
+												ไฟล์แนบ
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												block
+												</span>
+												ยกเลิก
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												check_circle
+												</span>
+												ปิดเคสสัญญา
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												delete
+												</span>
+												ลบ
+											</a>
+										</div>
+									</div> 
+								</td>
+							</tr> 
+							<tr>
+								<td class="text-main">
+									CX-74371
+								</td>
+								<td class="text-success">
+									<span class="material-symbols-outlined">
+									check_circle
+									</span>
+								</td>
+								<td class="text-warning">
+									(ปานกลาง)
+								</td>
+								<td>
+									Available
+								</td>
+								<td>
+									คอนโด
+								</td>
+								<td>
+									เช่า
+								</td>
+								<td>
+									Metro Sky<br>Wutthakat
+								</td>
+								<td>
+									101/136
+								</td>
+								<td>
+									24
+								</td>
+								<td>
+									1 นอน | 1 น้ำ
+								</td>
+								<td>
+									25
+								</td>
+								<td>
+									4,635,000
+								</td>
+								<td>
+									สะดวกติดต่อ<br>ทางไลน์
+								</td>
+								<td>
+									BTS-ห้าแยก<br>ลาดพร้าว
+								</td>
+								<td>
+									Draft
+								</td>
+								<td>
+									02/03/2023, 13:00
+								</td>
+								<td>
+									<div class="dropdown">
+										<div data-toggle="dropdown">
+											<span class="material-symbols-outlined">
+											expand_more
+											</span>
+										</div>
+										<div class="dropdown-menu"> 
+											<a class="dropdown-item active" href="#"> 
+												<span class="material-symbols-outlined">
+												search
+												</span>
+												ดูรายละเอียด
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												edit_square
+												</span>
+												แก้ไข
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												attachment
+												</span>
+												ไฟล์แนบ
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												block
+												</span>
+												ยกเลิก
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												check_circle
+												</span>
+												ปิดเคสสัญญา
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												delete
+												</span>
+												ลบ
+											</a>
+										</div>
+									</div> 
+								</td>
+							</tr> 
+							<tr>
+								<td class="text-main">
+									CX-74371
+								</td>
+								<td class="text-success">
+									<span class="material-symbols-outlined">
+									check_circle
+									</span>
+								</td>
+								<td class="text-warning">
+									(ปานกลาง)
+								</td>
+								<td>
+									Available
+								</td>
+								<td>
+									คอนโด
+								</td>
+								<td>
+									เช่า
+								</td>
+								<td>
+									Metro Sky<br>Wutthakat
+								</td>
+								<td>
+									101/136
+								</td>
+								<td>
+									24
+								</td>
+								<td>
+									1 นอน | 1 น้ำ
+								</td>
+								<td>
+									25
+								</td>
+								<td>
+									4,635,000
+								</td>
+								<td>
+									สะดวกติดต่อ<br>ทางไลน์
+								</td>
+								<td>
+									BTS-ห้าแยก<br>ลาดพร้าว
+								</td>
+								<td>
+									Draft
+								</td>
+								<td>
+									02/03/2023, 13:00
+								</td>
+								<td>
+									<div class="dropdown">
+										<div data-toggle="dropdown">
+											<span class="material-symbols-outlined">
+											expand_more
+											</span>
+										</div>
+										<div class="dropdown-menu"> 
+											<a class="dropdown-item active" href="#"> 
+												<span class="material-symbols-outlined">
+												search
+												</span>
+												ดูรายละเอียด
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												edit_square
+												</span>
+												แก้ไข
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												attachment
+												</span>
+												ไฟล์แนบ
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												block
+												</span>
+												ยกเลิก
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												check_circle
+												</span>
+												ปิดเคสสัญญา
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												delete
+												</span>
+												ลบ
+											</a>
+										</div>
+									</div> 
+								</td>
+							</tr> 
+							<tr>
+								<td class="text-main">
+									CX-74371
+								</td>
+								<td class="text-success">
+									<span class="material-symbols-outlined">
+									check_circle
+									</span>
+								</td>
+								<td class="text-warning">
+									(ปานกลาง)
+								</td>
+								<td>
+									Available
+								</td>
+								<td>
+									คอนโด
+								</td>
+								<td>
+									เช่า
+								</td>
+								<td>
+									Metro Sky<br>Wutthakat
+								</td>
+								<td>
+									101/136
+								</td>
+								<td>
+									24
+								</td>
+								<td>
+									1 นอน | 1 น้ำ
+								</td>
+								<td>
+									25
+								</td>
+								<td>
+									4,635,000
+								</td>
+								<td>
+									สะดวกติดต่อ<br>ทางไลน์
+								</td>
+								<td>
+									BTS-ห้าแยก<br>ลาดพร้าว
+								</td>
+								<td>
+									Draft
+								</td>
+								<td>
+									02/03/2023, 13:00
+								</td>
+								<td>
+									<div class="dropdown">
+										<div data-toggle="dropdown">
+											<span class="material-symbols-outlined">
+											expand_more
+											</span>
+										</div>
+										<div class="dropdown-menu"> 
+											<a class="dropdown-item active" href="#"> 
+												<span class="material-symbols-outlined">
+												search
+												</span>
+												ดูรายละเอียด
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												edit_square
+												</span>
+												แก้ไข
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												attachment
+												</span>
+												ไฟล์แนบ
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												block
+												</span>
+												ยกเลิก
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												check_circle
+												</span>
+												ปิดเคสสัญญา
+											</a>
+											<a class="dropdown-item" href="#"> 
+												<span class="material-symbols-outlined">
+												delete
+												</span>
+												ลบ
+											</a>
+										</div>
+									</div> 
+								</td>
+							</tr> 
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col tb-box">
+				<div class="row header">
+					<div class="col-7">
+						<h3>Recent Deal</h3>
+					</div>
+					<div class="col-5 text-right">
+						<h6>รายละเอียด</h6>
+					</div>
+				</div>
+				<div class="table-responsive">
+					<table class="table table1">
+						<thead>
+							<tr>
+								<th>Code</th> 
+								<th>ชื่อลูกค้า</th> 
+								<th>ความต้องการ</th> 
+								<th>Budget</th> 
+								<th>เซลล์ผู้ดูแล</th> 
+								<th>เสนอห้อง</th> 
+								<th>สต็อกเสนอ</th> 
+								<th>มีห้องใหม่</th> 
+								<th>Work load</th> 
+								<th>วันที่สร้าง</th> 
+								<th>วันที่อัพเดต</th> 
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>ABCD</td> 
+								<td class="text-left">คอนโด</td> 
+								<td>ซื้อ</td> 
+								<td>0 - 5,900,000</td> 
+								<td>Metro Sky Wutthakat</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td></td> 
+								<td><b>ไม่ระบุ</b></td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+							</tr>  
+							<tr>
+								<td>ABCD</td> 
+								<td class="text-left">คอนโด</td> 
+								<td>ซื้อ</td> 
+								<td>0 - 5,900,000</td> 
+								<td>Metro Sky Wutthakat</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td></td> 
+								<td class="text-success"><b>Active</b></td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+							</tr>  
+							<tr>
+								<td>ABCD</td> 
+								<td class="text-left">คอนโด</td> 
+								<td>ซื้อ</td> 
+								<td>0 - 5,900,000</td> 
+								<td>Metro Sky Wutthakat</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td></td> 
+								<td class="text-success"><b>Active</b></td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+							</tr>  
+							<tr>
+								<td>ABCD</td> 
+								<td class="text-left">คอนโด</td> 
+								<td>ซื้อ</td> 
+								<td>0 - 5,900,000</td> 
+								<td>Metro Sky Wutthakat</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td></td> 
+								<td class="text-success"><b>Active</b></td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+							</tr>  
+							<tr>
+								<td>ABCD</td> 
+								<td class="text-left">คอนโด</td> 
+								<td>ซื้อ</td> 
+								<td>0 - 5,900,000</td> 
+								<td>Metro Sky Wutthakat</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td></td> 
+								<td class="text-success"><b>Active</b></td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+								<td>2023/03/03 <br> 09:00:05</td> 
+							</tr>  
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div>
 	</main>
 
@@ -252,9 +1135,15 @@
 
 		$('.menux').click(function(){    
 			$(".menu-mb").addClass("active" , 300);  
-		});
-		$('.navbar-close').click(function(){    
+			$("body").addClass("active" , 300);    
+		}); 
+		$('.backdp').click(function(){     
 			$(".menu-mb").removeClass("active" , 300);  
+			$("body").removeClass("active" , 300);    
+		}); 
+		$('.menux-close').click(function(){    
+			$(".menu-mb").removeClass("active" , 300);  
+			$("body").removeClass("active" , 300);    
 		});
 	</script>
 
