@@ -544,7 +544,7 @@ body.expand .nav-top{
   padding-right: 10px;
   color: var(--bg-main);
 }
-.navi-map + h3{
+h3.h3{
   margin-bottom: 10px;
   padding: 10px 20px;
   font-size: 24px;
@@ -724,13 +724,171 @@ body.expand .nav-top{
   background-color: var(--bg-sky);
   color: #FFF !important;
 }
+.btn.btn-primary{ 
+  background-color: var(--bg-main);
+  padding: 10px 40px;
+  color: #FFF;
+  font-size: 20px;
+  border: 0px;
+}
+.btn .material-symbols-outlined{
+  position: relative;
+  margin-right: 10px;
+  font-size: 24px;
+  top: 5px;
+}
+.list-tabs ul{
+  margin-top: 10px; 
+  margin-bottom: 30px;
+  padding-left: 0px;
+  list-style: none;
+  display: flex;
+}
+.list-tabs ul li{
+  margin-right: 5px;
+} 
+.list-tabs ul li a{
+  padding-left: 0px;
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px;   
+  color: var(--bg-grey);
+  font-size: 14px; 
+  line-height: 24px; 
+}
+.list-tabs ul li.active a{
+  background-color: var(--bg-main);
+  color: #fff;
+}
+.list-tabs ul li:hover a{
+  background-color: var(--bg-main);
+  color: #fff;
+}
+.search-box{
+  border-radius: 6px;
+  background: #FFF; 
+  padding: 30px 20px; 
+}  
+.search-box .btn-primary{
+  padding: 7px 0px !important;
+} 
+.search-box .form-control{
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  height: 44px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+} 
+.search-box .form-control + .btn{
+  border-radius: 0px 4px 4px 0px;
+  background: #E2E2E2;
+  padding: 0px 20px; 
+  border: 1px solid #D9D9D9;
+  border-left: 0px;
+} 
+.tb-data{
+  display: none;
+}
+.tb-data.active{
+  display: block;
+}
+.page-of{ 
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  background: #FFF;
+}
+.page-of h4{ 
+  text-align: center;
+  color: #000;
+  font-size: 14px; 
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.page-of ul{ 
+  padding: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.page-of ul li{ 
+  margin-right: 0.5px; 
+  margin-left: 0.5px;
+} 
+.page-of ul li div{ 
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 2px;
+  background: #F3F3F3;
+  border: 1px solid #F3F3F3;
+  color: var(--bg-text2);
+  text-align: center;
+  font-size: 14px; 
+  line-height: 24px;
+}
+.page-of ul li.active div{ 
+  color: #fff;
+  background-color: var(--bg-main);
+}
+.page-of ul li:hover div{ 
+  color: #fff;
+  background-color: var(--bg-main);
+}
+.page-of ul li.focus div{  
+  background-color: #fff;
+}
+.page-of ul li.focus:hover div{   
+  background-color: var(--bg-main);
+}
+.selectpicker{
+  display: block;
+  width: 100%;
+}
+.btn-light{ 
+  border: 1px solid #D9D9D9; 
+  height: 38px;  
+  border-radius: 4px; 
+  background-color: #fff;
+}
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+  outline: none !important;
+  outline-offset: none !important;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100% !important;
+}
+.filter-option-inner-inner{
+  font-size: 12px;
+  color: #979797;
+  line-height: 24px;
+}
+.dropdown-menu.inner .dropdown-item .text{
+  font-size: 12px;
+  color: #979797;
+  line-height: 24px;
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle { 
+  background-color: #fff;
+  border-color: #D9D9D9;
+  color: #979797;
+}
+.btn-light:hover {
+  color: #979797;
+  background-color: #fff;
+  border-color: #D9D9D9;
+}
+.tb-box p{
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: #000;
+  font-size: 14px; 
+  line-height: 24px; 
+}
 
-
-  
- 
- 
- 
-  
 /*
 #418EFD 
 transition: .33s all ease-out; 
