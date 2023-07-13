@@ -367,10 +367,10 @@
 			</div>
 			<h3 class="h3 mb-x">ข้อมูลลูกค้าเบื้องต้น</h3>
 			
-			<ul class="step-process">
+			<ul class="step-process"> 
 				<li class="success"><div>1</div> <span>ข้อมูลลูกค้า</span></li>
-				<li class="active"><div>2</div> <span>ข้อมูลการตลาด</span></li>
-				<li><div>3</div> <span>ข้อมูลเพิ่มเติม</span></li>
+				<li class="success"><div>2</div> <span>ข้อมูลการตลาด</span></li>
+				<li class="active"><div>3</div> <span>ข้อมูลเพิ่มเติม</span></li>
 			</ul>
 			
 			<div class="box1"> 
@@ -381,46 +381,73 @@
 					<hr class="mt-4 mb-0">  
 					<div class="form-group row">
 						<div class="col-lg-4 col-12">
-							<label for="">ประเภททรัพย์</label>
-							<select class="selectpicker" title="ประเภททรัพย์">
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-							</select> 
-						</div>
-						<div class="col-lg-4 col-12">
-							<label for="">ประเภททรัพย์</label>
-							<select class="selectpicker" title="ประเภททรัพย์">
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-							</select> 
-						</div>  
-						<div class="col-lg-4 col-12">
-							<label for="">ประเภททรัพย์</label>
-							<select class="selectpicker" title="ประเภททรัพย์">
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-							</select> 
-						</div>  
-						<div class="col-lg-4 col-12">
-							<label for="">CX ที่ลูกค้าเลือกมา</label>
+							<label for="">ประเภททรัพย์</label> 
 							<input type="text" class="form-control" placeholder="โปรดกรอก">
 						</div>  
+						<div class="col-lg-4 col-12">
+							<label for="">นามสกุล</label> 
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+						<div class="col-lg-4 col-12">
+							<label for="">ชื่อเล่น</label> 
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+					</div> 
+
+					<div class="form-group row">
+						<div class="col-lg-4 col-12">
+							<label for="">เพศ</label>
+							<select class="selectpicker" title="เพศ">
+								<option value="">ไม่เลือก</option> 
+								<option value="">ไม่เลือก</option> 
+								<option value="">ไม่เลือก</option> 
+							</select> 
+						</div> 
+						<div class="col-lg-4 col-12">
+							<label for="">สัญชาติ</label> 
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+						<div class="col-lg-4 col-12">
+							<label for="">ว/ด/ป เกิด</label> 
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+					</div> 
+
+					<div class="form-group row">
+						<div class="col-lg-4 col-12">
+							<label for="">รายได้ต่อเดือน</label> 
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+						<div class="col-lg-4 col-12">
+							<label for="">วัตถุประสงค์ในการซื้อ</label>
+							<select class="selectpicker" title="ไม่เลือก">
+								<option value="">ไม่เลือก</option> 
+								<option value="">ไม่เลือก</option> 
+								<option value="">ไม่เลือก</option> 
+							</select> 
+						</div> 
 					</div> 
 					<div class="form-group row">
-						<div class="col-lg-4">
-							<div class="custom-control custom-checkbox ">
-								<input type="checkbox" class="custom-control-input" id="customControlInline33">
-								<label class="custom-control-label" for="customControlInline33">เลือกเพื่อให้ข้อมูล CX ไปแสดงที่ดีล (กรณีมากรอก cx ในภายหลัง)</label>
-							</div>
-						</div>
-					</div>
+						<div class="col-lg-4 col-12">
+							<label for="">ละติจูด</label> 
+							<input type="text" class="form-control" placeholder="โปรดกรอก"> 
+						</div> 
+						<div class="col-lg-4 col-12">
+							<label for="">ลองติดจูด</label> 
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+						<div class="col-lg-4 col-12">
+							<label for="">Google Map Link</label> 
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+					</div> 
+
+					
+
 					<div class="form-group row">
 						<div class="col-lg-12">
-							<label for="">Requirement</label>
-							<textarea name="" class="form-control"></textarea>
+							<label for="">จุดหมายปลายทางหลัก</label>
+							<textarea name="" class="form-control" placeholder="โปรดกรอกสถานที่ทำงาน"></textarea>
 						</div>
 					</div>
 				</div>
@@ -430,7 +457,7 @@
 				<div class="form-group row">
 					<div class="col-12 text-right-center">
 						<button class="btn btn-white btn-b">ยกเลิก</button>
-						<a href="manage-deal-add3.html" class="btn btn-primary btn-b">ต่อไป</a>
+						<button type="button" class="btn btn-primary btn-b">ต่อไป</button>
 					</div>
 				</div>  
 			</div>
