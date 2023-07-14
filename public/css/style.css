@@ -1447,6 +1447,72 @@ h3.h3{
   background-color: var(--bg-main);
   color: #fff;
 }
+.download-box{ 
+  padding: 10px;  
+  border-radius: 6px;
+  background: #FFF;
+}
+.download-box h5{ 
+  padding: 10px;   
+  color: #435971; 
+  font-size: 16px; 
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: normal;
+} 
+.download-box ul{ 
+  padding-left: 0px;
+  list-style: none;
+}
+.download-box ul li{ 
+  display: block;
+  padding: 10px;
+  background: #F3F3F3;
+  color: #000; 
+  font-size: 12px; 
+  font-weight: 400;
+  line-height: 24px;  
+  position: relative;
+  margin-bottom: 5px;
+}
+.download-box ul li i{ 
+  font-style: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #0054FE; 
+  font-size: 12px; 
+  font-weight: 400;
+  line-height: 24px;  
+}
+.download-box ul li span{ 
+  position: relative;
+  top: 5px;
+} 
+.download-box ul li a.btn{ 
+  position: absolute;
+  right: 10px;
+  padding: 5px 10px !important;
+  color: #FFF; 
+  font-size: 12px; 
+  font-weight: 400; 
+  line-height: 16px;  
+}
+.download-box ul li a.btn span{ 
+  font-size: 16px;
+  top: 3px;
+}
+
+.btn-mini{
+  padding: 6px 10px !important; 
+  color: #FFF !important; 
+  font-size: 16px !important; 
+  font-weight: 400 !important;
+  line-height: 24px !important;  
+  border-radius: 4px !important; 
+}
+
+
 
 
 
