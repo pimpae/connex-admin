@@ -1153,6 +1153,9 @@ h3.h3{
   font-weight: 400;
   line-height: 16px;
 }
+.box1 textarea.form-control.half{  
+  height: 76px; 
+}
 .box1 .text-danger{  
   color: var(--bg-danger); 
   font-size: 14px; 
@@ -1540,7 +1543,36 @@ h3.h3{
   margin-left: 1px;
   margin-right: 1px;
 }
-
+.form-control + .icon-span{
+  position: absolute;
+  right: 23px;
+  top: 60px;
+  color: var(--bg-grey);
+} 
+.box1 h6{
+  margin-top: 10px;
+  color: #566A7F; 
+  font-size: 12px; 
+  font-weight: 700;
+  line-height: 24px; /* 200% */
+}
+.box1 ol{
+  padding-left: 10px;
+}
+.box1 ol li{
+  margin-top: 10px;
+  color: #566A7F; 
+  font-size: 12px; 
+  font-weight: 400;
+  line-height: 24px; 
+}
+.bootstrap-select + .spanx{
+  padding-top: 10px;
+  color: #566A7F !important; 
+  font-size: 12px; 
+  font-weight: 400;
+  line-height: 24px; 
+}
 
 
 /*
@@ -1959,6 +1991,9 @@ body.expand
   .table-receipt tbody td:nth-child(7){
     display: none !important;
   } 
+  .form-control + .icon-span { 
+    top: 51px; 
+  }
 }
 @media only screen and (min-width: 1025px) { /* PC */
   .pc-x{
