@@ -1604,7 +1604,9 @@ h3.h3{
   padding-top: 0px;
   padding-bottom: 8px;
 }
-
+.search-box-sell .icon-span{
+  right: 15px;
+} 
 
 /*
 #418EFD 
