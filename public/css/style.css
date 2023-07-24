@@ -1537,6 +1537,9 @@ h3.h3{
 .badge-warning{ 
   background-color: var(--bg-warning);
 } 
+.badge-success{
+  background-color: var(--bg-success);
+} 
 .icon-clk{
   cursor: pointer !important;
   font-size: 18px !important;
@@ -2077,7 +2080,52 @@ body.expand
   }
   .table-report1 tbody td:last-child{
     display: table-cell !important;
+  }  
+  .table-purchase-sell thead th:nth-child(2){
+    display: table-cell !important;
+    text-align: center !important;
+  }
+  .table-purchase-sell tbody td:nth-child(2){
+    display: table-cell !important;
+    text-align: center !important;
+  }  
+  .table-purchase-sell thead th:nth-child(4){
+    display: none !important;
+  }
+  .table-purchase-sell tbody td:nth-child(4){
+    display: none !important;
   } 
+  .table-purchase-sell thead th:nth-child(7){
+    display: none !important;
+  }
+  .table-purchase-sell tbody td:nth-child(7){
+    display: none !important;
+  } 
+  .table-purchase-sell thead th:nth-child(5){
+    display: table-cell !important;
+  }
+  .table-purchase-sell tbody td:nth-child(5){
+    display: table-cell !important;
+  } 
+  .table-purchase-sell thead th:nth-child(3){
+    display: table-cell !important;
+  }
+  .table-purchase-sell tbody td:nth-child(3){
+    display: table-cell !important;
+  } 
+  .table-purchase-sell thead th:nth-child(6){
+    display: table-cell !important;
+  }
+  .table-purchase-sell tbody td:nth-child(6){
+    display: table-cell !important;
+  }
+  .search-box .btn-primary {
+    font-size: 14px;
+  } 
+  .search-box .form-control + .icon-span {
+    top: 7px;
+    right: 8px;
+  }
 }
 @media only screen and (min-width: 1025px) { /* PC */
   .pc-x{
