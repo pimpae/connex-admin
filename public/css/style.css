@@ -1884,8 +1884,78 @@ h3.h3{
   width: 2px;
   z-index: 2;
 }
-
-
+.fc-toolbar.fc-header-toolbar .fc-left{ 
+  width: 200px;
+}
+.fc-toolbar.fc-header-toolbar .fc-left h2{ 
+  color: #353F47; 
+  font-size: 16px; 
+  font-weight: 400; 
+  letter-spacing: 1px;
+}
+.fc-prev-button.btn.btn-primary{
+  background-color: transparent !important;
+  background: url(../images/keyboard_arrow_left_FILL0_wght400_GRAD0_opsz48.png);
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+}
+.fc-next-button.btn.btn-primary{
+  background-color: transparent !important; 
+  background: url(../images/keyboard_arrow_right_FILL0_wght400_GRAD0_opsz48.png);
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+} 
+.fc-prev-button.btn.btn-primary:focus{
+  box-shadow: none !important;
+} 
+.fc-next-button.btn.btn-primary:focus{
+  box-shadow: none !important;
+} 
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+  float: left !important;
+  padding-left: 10px;
+  padding-top: 10px;
+}  
+.fc-right .btn.btn-primary{
+  background-color: transparent !important;  
+  color: #637280;
+  text-align: center; 
+  font-size: 13px; 
+  font-weight: 400; 
+  letter-spacing: 0.089px; 
+} 
+.fc-right .btn.btn-primary{
+  background-color: transparent !important;  
+  color: #637280;
+  text-align: center; 
+  font-size: 13px; 
+  font-weight: 400; 
+  letter-spacing: 0.089px; 
+  text-transform: capitalize;
+  padding: 10px 20px !important;
+} 
+.fc-right .btn.btn-primary.active{
+  color: #0029FF; 
+} 
+.fc-right .btn.btn-primary:focus{
+  box-shadow: none !important;
+} 
+.fc-right .btn-group{
+  left: -150px !important;
+  position: relative;
+}
+.btn-activity{
+  position: absolute;
+  right: 20px;
+  padding: 10px 20px !important;
+  color: #FFF; 
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 /*
 #418EFD 
