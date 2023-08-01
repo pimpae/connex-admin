@@ -1808,6 +1808,15 @@ h3.h3{
 .header-box.bg-brown{
   background: var(--bg-brown);
 }   
+.active-box.bg-emerald{
+  background: #D2F8EA;
+}
+.active-box.bg-primary{
+  background: #F5F9FF !important;
+} 
+.active-box.bg-brown{
+  background: #F4F0E6;
+}
 .modal-pop .modal-body{
   padding: 10px;
 }
