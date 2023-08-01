@@ -1834,6 +1834,48 @@ h3.h3{
   top: 40px;
   color: var(--bg-grey);
 }
+.time-line{
+  padding-left: 100px;
+  position: relative;
+}
+.time-line .icon{ 
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  background-color: #418EFD;
+  border-radius: 100%;
+  position: absolute;
+  left: 10px;
+  top: 24px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time-line .icon span{ 
+  color: #fff;
+  font-size: 24px;
+}
+.time-line label{ 
+  margin-top: 0px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.time-line input{ 
+  height: 44px  !important;
+  margin-bottom: 10px;
+}
+.time-line::after{ 
+  content: "";
+  left: 32px;
+  top: 0;
+  position: absolute;
+  height: 96px;
+  background-color: #418EFD;
+  width: 2px;
+  z-index: 2;
+}
+
 
 
 /*
@@ -2424,6 +2466,20 @@ body.expand
   }
   .row-active-mb{
     display: block !important;
+  }
+  .time-line{
+    padding-left: 48px;
+    position: relative;
+  }
+  .time-line .icon{
+    height: 18px;
+    width: 18px;
+  }
+  .time-line .icon span{
+    display: none !important;
+  }
+  .time-line::after { 
+    left: 18px; 
   }
 }
 @media only screen and (min-width: 1025px) { /* PC */
