@@ -1820,6 +1820,12 @@ h3.h3{
 .modal-pop .modal-body{
   padding: 10px;
 }
+.modal-pop.pop2 .modal-body{
+  padding: 20px !important;
+}
+.modal-pop.pop2 .form-control + .icon-span { 
+  top: 7px; 
+}
 .modal-pop .closex {
   position: absolute;
   right: 10px;
