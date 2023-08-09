@@ -26,6 +26,9 @@
   --bg-body: #EBEBEB; 
   --bg-white: #ffffff; 
 }
+a{
+  text-decoration: none !important; 
+}
 a:hover{
   text-decoration: none;
 }
@@ -1962,6 +1965,16 @@ h3.h3{
   font-weight: 400;
   line-height: normal;
 }
+.bootstrap-select .dropdown-menu li a { 
+  text-align: left;
+} 
+.text-end {
+  text-align: right !important;
+} 
+ol, ul {
+  padding-right: 0px !important;
+}
+
 
 /*
 #418EFD 
