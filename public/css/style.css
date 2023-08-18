@@ -1026,7 +1026,7 @@ h3.h3{
   color: #418EFD;
   font-size: 12px;   
   margin-top: 5px;
-  z-index: 222;
+  z-index: 2;
   position: relative; 
   width: 100%;  
   height: 20px; 
@@ -1974,6 +1974,16 @@ h3.h3{
 ol, ul {
   padding-right: 0px !important;
 }
+.btn-web{
+  padding: 10px !important;
+  background-color: var(--bg-main);
+  border-radius: 4px;
+  width: 100%;
+  color: #fff;
+}
+.js-example-basic-multiple + .select2{
+  width: 100% !important;
+}
 
 
 /*
@@ -2422,34 +2432,34 @@ body.expand
     width: 49%;
     margin-top: 10px;
   }
-  .table-report1 thead th{
+  .table-report thead th{
     display: none !important;
   }
-  .table-report1 tbody td{
+  .table-report tbody td{
     display: none !important;
   } 
-  .table-report1 thead th:nth-child(1){
+  .table-report thead th:nth-child(1){
     display: table-cell !important;
   }
-  .table-report1 tbody td:nth-child(1){
+  .table-report tbody td:nth-child(1){
     display: table-cell !important;
   } 
-  .table-report1 thead th:nth-child(2){
+  .table-report thead th:nth-child(2){
     display: table-cell !important;
   }
-  .table-report1 tbody td:nth-child(2){
+  .table-report tbody td:nth-child(2){
     display: table-cell !important;
   } 
-  .table-report1 thead th:nth-child(3){
+  .table-report thead th:nth-child(3){
     display: table-cell !important;
   }
-  .table-report1 tbody td:nth-child(3){
+  .table-report tbody td:nth-child(3){
     display: table-cell !important;
   } 
-  .table-report1 thead th:last-child{
+  .table-report thead th:last-child{
     display: table-cell !important;
   }
-  .table-report1 tbody td:last-child{
+  .table-report tbody td:last-child{
     display: table-cell !important;
   }  
   .table-purchase-sell thead th:nth-child(2){
