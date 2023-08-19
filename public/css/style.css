@@ -840,9 +840,12 @@ h3.h3{
   border-radius: 4px;
   border: 1px solid #D9D9D9;
   background: #FFF;
-  height: 44px;
+  height: 38px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+} 
+.form-control.h44{
+  height: 44px;
 } 
 .search-box .form-control + .btn{
   border-radius: 0px 4px 4px 0px;
@@ -1975,10 +1978,13 @@ ol, ul {
   padding-right: 0px !important;
 }
 .btn-web{
-  padding: 10px !important;
+  padding: 7px !important;
   background-color: var(--bg-main);
   border-radius: 4px;
   width: 100%;
+  color: #fff;
+}
+.btn-web:hover{ 
   color: #fff;
 }
 .js-example-basic-multiple + .select2{
@@ -2010,7 +2016,10 @@ ol, ul {
 .select2-selection__arrow {
   height: 38px !important; 
   border-radius: 4px;
-} 
+}
+.table>:not(:first-child) {
+  border-top: none;
+}
 
 /*
 #418EFD 
