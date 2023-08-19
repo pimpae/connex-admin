@@ -1986,25 +1986,31 @@ ol, ul {
 }
 .select2-container--default .select2-selection--single { 
   border-radius: 4px;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #D9D9D9 !important;
   background-color: #FFF;
-}
+} 
+.select2-container--default .select2-selection--single:focus{ 
+  border: 1px solid var(--bg-main);
+} 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-  color: #979797; 
+  color: #000; 
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;  
 }
 .select2-selection__rendered {
-  line-height: 38px !important;
+  line-height: 38px !important; 
+  border-radius: 4px; 
 }
 .select2-container .select2-selection--single {
-  height: 38px !important;
+  height: 38px !important; 
+  border-radius: 4px;
 }
 .select2-selection__arrow {
-  height: 38px !important;
-}
+  height: 38px !important; 
+  border-radius: 4px;
+} 
 
 /*
 #418EFD 
