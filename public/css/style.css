@@ -1073,16 +1073,16 @@ h3.h3{
   position: relative;
   top: 5px;
 } 
-.custom-control-input:checked~.custom-control-label::before {
+.form-check-input:checked~.form-check-label::before {
   color: #fff;
   border-color: var(--bg-main);
   background-color: var(--bg-main);
 }
-.custom-control-label::before { 
+.form-check-label::before { 
   background-color: #D9D9D9;
   border: #D9D9D9 solid 0px;
 }
-.custom-switch .custom-control-label::after { 
+.custom-switch .form-check-label::after { 
   background-color: var(--bg-text2); 
 }
 .box1{ 
@@ -1139,7 +1139,7 @@ h3.h3{
   font-size: 14px; 
   font-weight: 400;
   line-height: 24px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 10px;
 }
 .box1 .btn.btn-sm{  
@@ -1151,11 +1151,11 @@ h3.h3{
   line-height: 24px;
   border-radius: 4px; 
 }
-.custom-radio .custom-control-label::before {
+.custom-radio .form-check-label::before {
   background-color: #fff;
   border: var(--bg-black3) solid 1px;
 }
-.custom-radio .custom-control-input:checked~.custom-control-label::before {
+.custom-radio .form-check-input:checked~.form-check-label::before {
   color: #fff;
   border-color: var(--bg-success);
   background-color: var(--bg-success);
@@ -1181,12 +1181,12 @@ h3.h3{
   margin-top: 5px;
   margin-bottom: 5px;
 } 
-.custom-checkbox .custom-control-label::before {
+.custom-checkbox .form-check-label::before {
   background-color: #fff;
   border: var(--bg-black3) solid 1px;
   border-radius: 2px;
 }
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+.custom-checkbox .form-check-input:checked~.form-check-label::before {
   color: var(--bg-black);
   border-color: var(--bg-black);
   background-color: var(--bg-black);
@@ -2259,7 +2259,7 @@ body.expand
   .box1{
     padding: 10px 10px 5px;
   }
-  .box1 .custom-control-label{
+  .box1 .form-check-label{
     white-space: nowrap; 
   }
   .box1 h5{ 
