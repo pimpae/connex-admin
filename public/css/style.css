@@ -913,7 +913,7 @@ h3.h3{
 .page-of ul li.focus:hover div{   
   background-color: var(--bg-main);
 }
-.selectpicker{
+.js-example-basic-multiple{
   display: block;
   width: 100%;
 }
