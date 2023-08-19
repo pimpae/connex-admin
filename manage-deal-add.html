@@ -546,9 +546,10 @@
 
 	<script>
 
-		$(document).ready(function(){
+		$(document).ready(function() {
+			$('.js-example-basic-multiple').select2();
 			$('.header-text').addClass("active" , 300);   
-		});
+		}); 
 
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   

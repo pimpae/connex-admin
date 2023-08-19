@@ -2778,6 +2778,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.5/dist/fullcalendar.min.js"  ></script>  
 
 	<script>
+		$(document).ready(function() {
+			$('.js-example-basic-multiple').select2();
+		});
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   
 			$("body").removeClass("expand");  

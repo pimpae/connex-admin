@@ -488,6 +488,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
 
 	<script>
+		$(document).ready(function() {
+			$('.js-example-basic-multiple').select2();
+		});
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   
 			$("body").removeClass("expand");  
