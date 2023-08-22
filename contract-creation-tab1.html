@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Connex Admin </title>
-	<link rel="icon" type="image/x-icon" href="public/images/logo.png">   
+	<link rel="icon" type="image/x-icon" href="public/images/logo.png">  
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/css/style.css" rel="stylesheet" type="text/css" />      
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.rtl.min.css">
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>   
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>  
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />  
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -60,7 +60,7 @@
 						<li><a href="#">Sub menu 4</a></li> 
 					</ul>
 				</li>
-				<li >
+				<li>
 					<a href="manage-listing.html"> 
 						<i>จัดการ listing</i>
 						<span class="material-symbols-rounded">
@@ -92,7 +92,7 @@
 						</span>
 					</a>
 				</li>
-				<li class="active">
+				<li>
 					<a href="project.html"> 
 						<i>จัดการโครงการ/หมู่บ้าน</i>
 						<span class="material-symbols-outlined">
@@ -197,7 +197,7 @@
 						<li><a href="#">Sub menu 4</a></li> 
 					</ul>
 				</li>
-				<li >
+				<li>
 					<a href="manage-listing.html"> 
 						<i>จัดการ listing</i>
 						<span class="material-symbols-rounded">
@@ -229,7 +229,7 @@
 						</span>
 					</a>
 				</li>
-				<li class="active">
+				<li>
 					<a href="project.html"> 
 						<i>จัดการโครงการ/หมู่บ้าน</i>
 						<span class="material-symbols-outlined">
@@ -342,7 +342,7 @@
 		<div class="container-fluid pc-x menu-top-mb">
 			<div class="icon-menu">
 				<div class="menux">
-					<a href="project.html">
+					<a href="manage-listing.html">
 						<span class="material-symbols-outlined">
 						keyboard_backspace
 						</span>
@@ -350,7 +350,7 @@
 				</div> 
 			</div>
 			<div class="text-header">
-				Create Project
+				สร้างสัญญาเช่า รหัส DEAL : 0-00001
 			</div>
 		</div>
 	</div>
@@ -359,140 +359,102 @@
 	<main class="mv1">
 		<div class="container-fluid p-0"> 
 			<div class="navi-map">
-				<span>Home</span>
+				<span>Home</span> 
 				<span>/</span>
-				<span>Project</span>
-				<span>/</span>
-				<a href="#">Create Project</a>
-			</div>
-			<h3 class="h3 mb-x">Create Project</h3>
+				<a href="#">ขั้นตอนการสร้างสัญญา (Tab1)</a>
+			</div> 
 			
 			<div class="box1">
-				<h4 class="h4x">หัวข้อประกาศ</h4>
-				<h3>ไทย</h3>
-				<input type="text" class="form-control" value="รีสอร์ต ไลน์ แจมเอ๋อ สหรัฐตู้เซฟ ฮาโลวีน โปรดิวเซอร์บัตเตอร์ ดั๊มพ์ ครูเสดสตริงสต๊อคพาเหรด">
-				<h3>Eng</h3>
-				<input type="text" class="form-control" value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.">
-			 
-	 
-				<div class="div-h5"> 
-					 
-					<div class="form-group row">
-						<div class="col-lg-3 col-12">
-							<label for="">ประเภททรัพย์ </label>
-							<select class="js-example-basic-multiple" title="ประเภททรัพย์">
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-							</select> 
-						</div> 
-					</div>
-	 
-					<div class="form-group row"> 
-						<div class="col-lg-3 col-12">
-							<label for="">ซอย Th</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ซอย En</label>
-							<input type="text" class="form-control">
-						</div> 
-						<div class="col-lg-3 col-12">
-							<label for="">ถนน Th</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ถนน En</label>
-							<input type="text" class="form-control">
-						</div>
-					</div>  
+				<ul class="step-process">
+					<li class="active"><div>1</div> <span>ผู้ให้เช่า/ผู้เช่า</span></li>
+					<li><div>2</div> <span>สถานที่เช่า</span></li>
+					<li><div>3</div> <span>เงื่อนไข/ข้อตกลง</span></li>
+					<li><div>4</div> <span>รูปภาพ</span></li>
+				</ul>
+				<div class="row">
+					<div class="col-lg-6 position-relative">
+						<div class="form-group row">  
+							<div class="col-lg-2 col-12"> 
 
-					 
-				</div>
-			</div>
-
-	  
-		 
-			
-
-			<div class="box1">
-				
-				<div class="div-h5"> 
-					<div class="form-group row">
-						<div class="col-lg-9 col-6"><h5 class="h5">ภาพส่วนกลาง</h5>   </div>
-						<div class="col-lg-3 col-6  ">
-							<button type="button" class="btn btn-block btn-outline-primary btn-fig" data-bs-toggle="modal" data-bs-target="#add_photoModal">
-								<span class="material-symbols-outlined">
-								add_to_photos
+								<label for="date1" class="mt-2">วันที่สร้างสัญญา
+									<span class="material-symbols-outlined icon-span2 t31">
+									calendar_month
+									</span>
+								</label>  
+							</div>  
+							<div class="col-lg-10 col-12 position-relative"> 
+								<input type="text" class="form-control date" id="date1" > 
+								<span class="material-symbols-outlined icon-span">
+								calendar_month
 								</span>
-								อัพโหลดไฟล์ภาพ
-							</button> 
-						</div> 
+							</div>  
+						</div>    
 					</div>
-					<br>
+					<div class="col-lg-6">
 
-					<hr>
-					<div class="dorp-img">
-						<div>
-							<span class="material-symbols-outlined">
-							photo
-							</span>
-							<h4>Drag & Drop ไฟล์ที่นี่</h4>
-						</div>
 					</div>
-					<h5>ไม่อนุญาตให้ Upload ภาพนามสกุลอื่น นอกจาก jpg หากเป็นนามสกุลอื่นโปรคคิดต่อเจ้าหน้าที่ไอที</h5>
-					<div class="form-group row">
-						<div class="col-lg-3 col-12 photo-div">
-							<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-							<span class="material-symbols-outlined">
-							close
-							</span>
-						</div>
-						<div class="col-lg-3 col-12 photo-div">
-							<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-							<span class="material-symbols-outlined">
-							close
-							</span>
-						</div>
-						<div class="col-lg-3 col-12 photo-div">
-							<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-							<span class="material-symbols-outlined">
-							close
-							</span>
-						</div>
-						<div class="col-lg-3 col-12 photo-div">
-							<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-							<span class="material-symbols-outlined">
-							close
-							</span>
-						</div>
-					</div> 
-					  
 				</div>
+			</div>
+			
+			<div class="box1"> 
+				<h5 class="h5">
+					ผู้ให้เช่า
+				</h5> 
+				<div class="div-h5"> 
+					<hr class="mt-4 mb-0">
+					 
+					<div class="form-group row">  
+						<div class="col-lg-4 col-12">
+							<label for="">คำนำหน้า</label>
+							<select class="js-example-basic-multiple"  >
+								<option selected disabled value="">TH</option> 
+								<option value="">คำนำหน้า</option>  
+								<option value="">คำนำหน้า</option>  
+								<option value="">คำนำหน้า</option>   
+							</select> 
+						</div>  
+						<div class="col-lg-4 col-12">
+							<label for="">เจ้าของโครงการ</label>
+							<select class="js-example-basic-multiple" title="เจ้าของโครงการ">
+								<option value="">ไม่เลือก</option> 
+								<option value="">ไม่เลือก</option>  
+							</select> 
+						</div>  
+					</div>    
 
-				<br>
- 
+
+
+
+
+				</div>
+			</div>
+
+			<div class="box1 pb-3">  
 				<div class="form-group row">
-					<div class="col-12 text-center">
-						<button class="btn btn-primary btn-sm">บันทึก / อัพเดตข้อมูล</button>
+					<div class="col-12 text-right-center">
+						<button class="btn btn-web2 xs">ปิด</button>
+						<a href="#" class="btn btn-web xs">บันทึก</a>
+						<a href="contract-creation-tab2.html" class="btn btn-web2 xs">
+							ต่อไป
+							<span class="material-symbols-outlined">
+							keyboard_tab
+							</span>
+						</a>
 					</div>
 				</div>  
-				<br>
 			</div>
-
- 
-
+			
 		</div>
 	</main>
 
 	
-	<!-- <div class="modal fade modal1 search-m" id="add_photoModal">
+	<div class="modal fade modal1 search-m" id="add_photoModal">
 		<div class="modal-dialog modal-dialog-centered modal-xl">
 			<div class="modal-content"> 
 				<div class="modal-body"> 
 					<form>
 						<h6>ภาพประกอบ</h6>
-						<span class="material-symbols-outlined closex" data-bs-dismiss="modal">
+						<span class="material-symbols-outlined closex" >
 						close
 						</span>
 						<hr>
@@ -545,7 +507,7 @@
 				</div> 
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -557,10 +519,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
 
 	<script>
+
 		$(document).ready(function() {
 			$('.js-example-basic-multiple').select2();
-		});
-		$('.menu ul li.sub').click(function(){       
+			$('.header-text').addClass("active" , 300); 
+		}); 
+
+
+
+		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   
 			$("body").removeClass("expand");  
 		}); 
@@ -579,13 +546,17 @@
 		$('.menux-close').click(function(){    
 			$(".menu-mb").removeClass("active" , 300);  
 			$("body").removeClass("active" , 300);    
+		}); 
+
+		$('.date').datepicker({
+			format: 'dd MM yyyy',
+			clearBtn: true, 
+			calendarWeeks: false,
+			autoclose: true,
+			todayHighlight: true,
+			toggleActive: true
 		});
-		// $('.h5').click(function(){    
-		// 	$(this).toggleClass("active" , 300);   
-		// });
-		$('.optionx').click(function(){    
-			$(this).toggleClass("active" , 300);   
-		});
+		
 	</script>
 
 </body>
