@@ -1200,7 +1200,8 @@
 
 		$('.menux').click(function(){     
 			$(".menu-mb").addClass("active");
-			$("body").addClass("active");    
+			$("body").addClass("active");      
+			$('.menu-mb').animate({'left': '0'}, 600);
 		}); 
 		$('.backdp').click(function(){     
 			$(".menu-mb").removeClass("active");  
@@ -1209,6 +1210,7 @@
 		$('.menux-close').click(function(){    
 			$(".menu-mb").removeClass("active");  
 			$("body").removeClass("active");    
+			$('.menu-mb').animate({'left': '-100%'}, 300); 
 		});
  
 
