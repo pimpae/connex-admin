@@ -334,9 +334,86 @@ body.expand .nav-top{
   position: relative;
   top: 10px;
 }
+.alarm .dropdown-menu{
+  width: 260px;
+}
+.alarm .dropdown-menu .alarm-box{
+  position: relative; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.alarm .dropdown-menu .alarm-box img{
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  position: absolute;
+}
+.alarm .dropdown-menu .alarm-box h4{
+  color: #000; 
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400; 
+  padding-left: 40px;
+  margin-bottom: 4px;
+}
+.alarm .dropdown-menu .alarm-box h5{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000; 
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;  
+  padding-left: 40px;
+  margin-bottom: 4px;
+}
+.alarm .dropdown-menu .alarm-box h6{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #74798C; 
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;  
+  padding-left: 40px;
+  position: relative;
+}
+.alarm .dropdown-menu .alarm-box h6 .material-symbols-outlined{ 
+  font-size: 13px; 
+  position: relative;
+  top: 2px;
+} 
+.alarm .dropdown-item:hover h4{
+  color: #fff;
+}
+.alarm .dropdown-item:hover h5{
+  color: #fff;
+} 
+.alarm .dropdown-item:hover h6{
+  color: #fff;
+}  
+.alarm .dropdown-menu hr{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border-top: 1px solid var(--bg-brown2);
+} 
+.nav-top .user-il li .alarm p{ 
+  position: absolute;
+  background-color: var(--bg-main);
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 10px;
+  top: 4px;
+  right: -3px;
+}
 .menu-top-mb .avatar-user{
   position: absolute;
-  right: 10px;
+  right: 11px;
   top: 13px; 
   width: 66px;
   height: 37px; 
