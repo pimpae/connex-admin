@@ -2409,9 +2409,38 @@ ol, ul {
   right: 14px;     
   cursor: pointer;
 }
-
-
-
+.fc-toolbar-chunk .btn-group{
+  right: 100px;
+}
+.fc-toolbar-chunk .btn-group .btn {
+  background-color: transparent !important;
+  color: #637280;
+  text-align: center; 
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.089px;
+  font-family: 'Prompt', sans-serif; 
+  width: 150px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.fc-toolbar-chunk .btn-group .btn.active{
+  color: #0029FF;
+  font-weight: 700;
+}
+.fc-header-toolbar .fc-toolbar-chunk:nth-child(1){
+  width: 400px;
+}
+.fc-toolbar-title{
+  color: #353F47; 
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
 
 /*
 #418EFD 
