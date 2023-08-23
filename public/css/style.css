@@ -470,19 +470,19 @@ body.expand .nav-top{
 .menu-mb{ 
   z-index: 222 !important;
   position: fixed;
-  left: -100%;
+  left: 100%;
   right: 0;
   top: 0;
   bottom: 0;
   width: 360px; 
   background-color: #fff;
   padding: 25px;
-  max-width: 100%;  
+  max-width: 100%;
 }
 .menu-mb.active{
   display: block; 
-  /* left: 0; */
-  overflow-y: scroll;  
+  left: 0;
+  overflow-y: scroll;
 } 
  
 .menu-mb + .backdp{ 
