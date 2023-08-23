@@ -318,7 +318,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-6 text-right">
+				<div class="col-6 text-end">
 					<ul class="user-il">
 						<li>
 							<a href="#" class="alarm">
@@ -332,8 +332,15 @@
 								<img src="public/images/avatar.png" alt="img-name" class="img-name">
 							</a>
 						</li>
-						<li>
-							<a href="#" class="user-name">Marlene Sasoeur</a>
+						<li> 
+							<div class="dropdown user-dropdown">
+								<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Marlene Sasoeur</a>
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item">My profile</a>
+									<a href="#" class="dropdown-item">Settings</a>
+									<a href="#" class="dropdown-item">Logout</a> 
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -352,10 +359,19 @@
 			</div>
 			<div class="avatar-user">
 				<img src="public/images/avatar.png" class="u-img">
-				<div class="more-vert">
-					<span class="material-symbols-outlined">
-					more_vert
-					</span>
+				<div class="more-vert"> 
+					<div class="dropdown user-dropdown">
+						<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+							<span class="material-symbols-outlined">
+							more_vert
+							</span>
+						</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">My profile</a>
+							<a href="#" class="dropdown-item">Settings</a>
+							<a href="#" class="dropdown-item">Logout</a> 
+						</div>
+					</div> 
 				</div>
 			</div>
 		</div>
@@ -452,7 +468,7 @@
 					<div class="col-7">
 						<h3>Recent Listing</h3>
 					</div>
-					<div class="col-5 text-right">
+					<div class="col-5 text-end">
 						<h6>รายละเอียด</h6>
 					</div>
 				</div>
@@ -1018,7 +1034,7 @@
 					<div class="col-7">
 						<h3>Recent Deal</h3>
 					</div>
-					<div class="col-5 text-right">
+					<div class="col-5 text-end">
 						<h6>รายละเอียด</h6>
 					</div>
 				</div>
