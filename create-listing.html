@@ -431,7 +431,7 @@
 			</div>
 			
 			<div class="box1"> 
-				<h5 class="header-text">
+				<h5 class="header-text active">
 					สิ่งอำนายความสะดวก
 					<span class="material-symbols-outlined chk active">
 						check_circle
@@ -1201,7 +1201,7 @@
 	<script>
 		$(document).ready(function() {
 			$('.js-example-basic-multiple').select2();
-			$('.header-text').addClass("active" , 300);   
+			// $('.header-text').addClass("active" , 300);   
 		}); 
 
 		$('.menu ul li.sub').click(function(){      
@@ -1225,7 +1225,8 @@
 			$("body").removeClass("active" , 300);    
 		});
 		$('.header-text').click(function(){    
-			$(this).toggleClass("active" , 300);   
+			$('.header-text').removeClass("active" , 300);   
+			$(this).addClass("active" , 300);   
 		});
 		
 	</script>

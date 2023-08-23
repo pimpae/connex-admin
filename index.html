@@ -1198,18 +1198,25 @@
 			$("body").toggleClass("expand");  
 		}); 
 
-		$('.menux').click(function(){    
-			$(".menu-mb").addClass("active" , 300);  
-			$("body").addClass("active" , 300);    
+		$('.menux').click(function(){      
+			$("body").addClass("active");    
+			$(".menu-mb").fadeIn(2000).css("left", "0");
+			$(".menu-mb").fadeIn(2000).css("display", "block");
 		}); 
 		$('.backdp').click(function(){     
-			$(".menu-mb").removeClass("active" , 300);  
-			$("body").removeClass("active" , 300);    
+			$(".menu-mb").removeClass("active");  
+			$("body").removeClass("active");    
 		}); 
 		$('.menux-close').click(function(){    
-			$(".menu-mb").removeClass("active" , 300);  
-			$("body").removeClass("active" , 300);    
+			$(".menu-mb").removeClass("active");  
+			$("body").removeClass("active");    
+
+			
+			$(".menu-mb").fadeIn(2000).css("left", "-100%"); 
 		});
+ 
+
+
 	</script>
 
 </body>
