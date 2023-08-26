@@ -1142,46 +1142,22 @@
 								<label for="">รหัสทรัพย์</label>
 								<input type="text" class="form-control" placeholder="Enter....">
 							</div> 
-						</div>
-						<div class="dorp-img">
+						</div> 
+						<div class="input-div">
 							<div>
 								<span class="material-symbols-outlined">
-								photo
-								</span>
+									photo
+									</span>
 								<h4>Drag & Drop ไฟล์ที่นี่</h4>
 							</div>
+							<input type="file" class="file" multiple="multiple" accept="image/jpeg, image/png, image/jpg">
 						</div>
-						<h5>ไม่อนุญาตให้ Upload ภาพนามสกุลอื่น นอกจาก jpg หากเป็นนามสกุลอื่นโปรคคิดต่อเจ้าหน้าที่ไอที</h5>
-						<div class="row">
-							<div class="col-lg-3 col-12 photo-div">
-								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-								<span class="material-symbols-outlined">
-								close
-								</span>
-							</div>
-							<div class="col-lg-3 col-12 photo-div">
-								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-								<span class="material-symbols-outlined">
-								close
-								</span>
-							</div>
-							<div class="col-lg-3 col-12 photo-div">
-								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-								<span class="material-symbols-outlined">
-								close
-								</span>
-							</div>
-							<div class="col-lg-3 col-12 photo-div">
-								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-								<span class="material-symbols-outlined">
-								close
-								</span>
-							</div>
-							<div class="col-12 text-center">
-								<br>
-								<button type="button" class="btn btn-primary btn-sm">บันทึก / และเพิ่มภาพ</button>
-							</div>
-						</div>
+
+						<h5 class="dp">ไม่อนุญาตให้ Upload ภาพนามสกุลอื่น นอกจาก jpg หากเป็นนามสกุลอื่นโปรคคิดต่อเจ้าหน้าที่ไอที</h5> 
+						  
+						<output></output>
+
+
 					</form>
 				</div> 
 			</div>
@@ -1229,7 +1205,63 @@
 			$(this).addClass("active" , 300);   
 		});
 		
+		 
+		
+
 	</script>
+
+	<script>
+		const inputDiv = document.querySelector(".input-div");
+		const input = document.querySelector("input");
+		const output = document.querySelector("output");
+		let imagesArray = [];
+
+	 
+
+		input.addEventListener("change", () => {
+			const files = input.files
+			for (let i = 0; i < files.length; i++) {
+				imagesArray.push(files[i])
+			}
+			displayImages()
+		})
+
+		
+		inputDiv.addEventListener("drop", (e) => {
+			e.preventDefault();
+			const files = e.dataTransfer.files;
+			for (let i = 0; i < files.length; i++) {
+				if (!files[i].type.match("image")) continue;
+
+			if (imagesArray.every(image => image.name !== files[i].name));
+				imagesArray.push(files[i]);
+			}
+			displayImages();
+		});
+
+
+		function displayImages() {
+			let images = "";
+			imagesArray.forEach((image, index) => {
+				images += `<div class="image">
+							<img src="${URL.createObjectURL(image)}" alt="image">
+							<span onclick="deleteImage(${index})">&times;</span>
+						</div>`;
+			});
+			output.innerHTML = images;
+		}
+
+		function deleteImage(index) {
+			imagesArray.splice(index, 1);
+			displayImages();
+		}
+
+
+	</script>
+
+ 
+
+
 
 </body>
 </html>
