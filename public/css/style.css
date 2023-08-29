@@ -991,7 +991,7 @@ h3.h3{
 .page-of ul li.focus:hover div{   
   background-color: var(--bg-main);
 }
-.js-example-basic-multiple{
+.form-select{
   display: block;
   width: 100%;
 }
@@ -2158,7 +2158,7 @@ ol, ul {
   background: #FFF;
 } 
 
-.js-example-basic-multiple + .select2{
+.form-select + .select2{
   width: 100% !important;
 }
 .select2-container--default .select2-selection--single { 
