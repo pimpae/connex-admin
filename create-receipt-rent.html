@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Connex Admin </title>
 	<link rel="icon" type="image/x-icon" href="public/images/logo.png">  
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.rtl.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/css/style.css" rel="stylesheet" type="text/css" />      
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>  
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" /> 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -443,174 +444,174 @@
 				</div> 
 			</div>
 			
+			<form action="" class="was-validated">
 
-
-			<div class="box1">  
-				<div class="div-h5">  
-					<div class="form-group row">
-						<div class="col-lg-5 col-12">
-							<div class="row">
-								<div class="col-6">
-									<label for="">รหัสทรัพย์</label> 
-									<select class="form-select" title="เลือกประเภท">
-										<option value="">ไม่เลือก</option> 
-										<option value="">ไม่เลือก</option> 
-										<option value="">ไม่เลือก</option> 
-									</select> 
-								</div>
-								<div class="col-6">
-									<label for="">ประเภททรัพย์</label> 
-									<select class="form-select" title="เลือกประเภท">
-										<option value="">ไม่เลือก</option> 
-										<option value="">ไม่เลือก</option> 
-										<option value="">ไม่เลือก</option> 
-									</select> 
-								</div>
-							</div> 
-						</div>  
-						<div class="col-lg-7 col-12">
-							<div class="row">
-								<div class="col-lg-8">
-									<label for="">โครงการ</label>  
-									<input type="text" class="form-control" placeholder="TH"> 
-								</div>
-								<div class="col-lg-4">
-									<label for="">เลขที่สัญญา</label>  
-									<select class="form-select" title="เลือกประเภท">
-										<option value="">ไม่เลือก</option> 
-										<option value="">ไม่เลือก</option> 
-										<option value="">ไม่เลือก</option> 
-									</select> 
-								</div>
-							</div>
-						</div>  
-					</div>  
-
-					<div class="form-group row">
-						<div class="col-lg-5 col-12"> 
-							<label for="">ลูกค้า</label>  
-							<input type="text" class="form-control" placeholder="TH"> 
-						</div>  
-						<div class="col-lg-7 col-12">
-							<div class="row">
-								<div class="col-lg-4 position-relative"> 
-									<label for="date1">วันรับเงิน
-										<span class="material-symbols-outlined icon-span2">
-										calendar_month
-										</span>
-									</label>  
-									<input type="text" class="form-control date" name="date1" id="date1" placeholder="TH">  
-								</div>
-								<div class="col-lg-4 position-relative">
-									<label for="date2">วันย้ายเข้า
-										<span class="material-symbols-outlined icon-span2">
-										calendar_month
-										</span>
-									</label>  
-									<input type="text" class="form-control date" name="date2" id="date2" placeholder="TH"> 
-									
-								</div>
-								<div class="col-lg-4">
-									<label for="">ระยะเวลาสัญญา (เตือน)</label>  
-									<select class="form-select" title="เลือกประเภท">
-										<option value="" selected>12</option> 
-										<option value="">ไม่เลือก</option> 
-										<option value="">ไม่เลือก</option> 
-									</select> 
-								</div>
-							</div>
-						</div>  
-					</div>  
-
-					
-					<div class="form-group row">
-						<div class="col-lg-7 col-12"> 
-							<div class="row">
-								<div class="col-lg-4 col-12"> 
-									<label for="">ราคาเช่า</label>  
-									<input type="text" class="form-control" placeholder="โปรดกรอก"> 
-								</div>
-								<div class="col-lg-4 col-12"> 
-									<label for="">เงินมัดจำ</label>  
-									<input type="text" class="form-control" placeholder="โปรดกรอก"> 
-								</div>
-								<div class="col-lg-4 col-12"> 
-									<label for="">บ้านเลขที่</label>  
-									<input type="text" class="form-control" placeholder="โปรดกรอก"> 
-								</div>
-							</div>
-						</div>   
-					</div>  
-
-					<div class="form-group row">
-						<div class="col-lg-7 col-12">  
-							<label for="">หมายเหตุ</label>  
-							<textarea class="form-control half" placeholder="โปรดกรอก"></textarea>
-						</div>   
-					</div>  
-					
-					<div class="form-group row">
-						<div class="col-lg-7 col-12"> 
-							<div class="row">
-								<div class="col-lg-4 col-12"> 
-									<label for="">ผู้รับเงิน</label>  
-									<select class="form-select" title="ผู้รับเงิน">
-										<option value="" selected>บจก. คอนเนกซ์ พร๊อพเพอร์ตี้</option> 
-										<option value="">ไม่เลือก</option> 
-										<option value="">ไม่เลือก</option> 
-									</select> 
-								</div> 
-							</div>
-						</div>   
-					</div>  
-					<div class="form-group row">
-						<div class="col-lg-7 col-12"> 
-							<h6>
-								โปรดแนบเอกสารตั้งต่อไปนี้ 
-							</h6>
-							<ol>
-								<li>สลิปโอนเงินเข้าบริษัท</li>
-								<li>บัตรประชาชนของลูกค้า</li>
-								<li>สลิปโอนเงินออกจากบริพัทให้เจ้าของ(ถ้ามี)</li>
-							</ol>
-						</div>
-					</div>
-
-					<div class="form-group row">
-						<div class="col-lg-7 col-12">
-							<div class="row">
-								<div class="col-lg-4 col-12"> 
-									<div class="dorp-img">
-										<div>
-											<span class="material-symbols-outlined">
-											photo
-											</span>
-											<h4>Drag &amp; Drop ไฟล์ที่นี่</h4>
-										</div>
+				<div class="box1">  
+					<div class="div-h5">  
+						<div class="form-group row">
+							<div class="col-lg-5 col-12">
+								<div class="row">
+									<div class="col-6">
+										<label for="">รหัสทรัพย์</label> 
+										<select class="form-select" title="เลือกประเภท" required>
+											<option value="">ไม่เลือก</option> 
+											<option value="">ไม่เลือก</option> 
+											<option value="">ไม่เลือก</option> 
+										</select> 
 									</div>
-									<div class="input-group mb-3">
-										<input type="text" class="form-control" placeholder="เลือกไฟล์" aria-label="เลือกไฟล์" aria-describedby="button-addon2">
-										<div class="input-group-append">
-										  <button class="btn btn-primary btn-sm" type="button" id="button-addon2">เลือกไฟล์</button>
-										</div>
-								  </div>
+									<div class="col-6">
+										<label for="">ประเภททรัพย์</label> 
+										<select class="form-select" title="เลือกประเภท" required>
+											<option value="">ไม่เลือก</option> 
+											<option value="">ไม่เลือก</option> 
+											<option value="">ไม่เลือก</option> 
+										</select> 
+									</div>
 								</div> 
+							</div>  
+							<div class="col-lg-7 col-12">
+								<div class="row">
+									<div class="col-lg-8">
+										<label for="">โครงการ</label>  
+										<input type="text" class="form-control" placeholder="TH" required> 
+									</div>
+									<div class="col-lg-4">
+										<label for="">เลขที่สัญญา</label>  
+										<select class="form-select" title="เลือกประเภท" required>
+											<option value="">ไม่เลือก</option> 
+											<option value="">ไม่เลือก</option> 
+											<option value="">ไม่เลือก</option> 
+										</select> 
+									</div>
+								</div>
+							</div>  
+						</div>  
+
+						<div class="form-group row">
+							<div class="col-lg-5 col-12"> 
+								<label for="">ลูกค้า</label>  
+								<input type="text" class="form-control" placeholder="TH" required> 
+							</div>  
+							<div class="col-lg-7 col-12">
+								<div class="row">
+									<div class="col-lg-4 position-relative"> 
+										<label for="date1">วันรับเงิน
+											<span class="material-symbols-outlined icon-span2">
+											calendar_month
+											</span>
+										</label>  
+										<input type="text" class="form-control date" name="date1" id="date1" placeholder="TH" required>  
+									</div>
+									<div class="col-lg-4 position-relative">
+										<label for="date2">วันย้ายเข้า
+											<span class="material-symbols-outlined icon-span2">
+											calendar_month
+											</span>
+										</label>  
+										<input type="text" class="form-control date" name="date2" id="date2" placeholder="TH" required> 
+										
+									</div>
+									<div class="col-lg-4">
+										<label for="">ระยะเวลาสัญญา (เตือน)</label>  
+										<select class="form-select" title="เลือกประเภท" required>
+											<option value="" selected>12</option> 
+											<option value="">ไม่เลือก</option> 
+											<option value="">ไม่เลือก</option> 
+										</select> 
+									</div>
+								</div>
+							</div>  
+						</div>  
+
+						
+						<div class="form-group row">
+							<div class="col-lg-7 col-12"> 
+								<div class="row">
+									<div class="col-lg-4 col-12"> 
+										<label for="">ราคาเช่า</label>  
+										<input type="text" class="form-control" placeholder="โปรดกรอก" required> 
+									</div>
+									<div class="col-lg-4 col-12"> 
+										<label for="">เงินมัดจำ</label>  
+										<input type="text" class="form-control" placeholder="โปรดกรอก" required> 
+									</div>
+									<div class="col-lg-4 col-12"> 
+										<label for="">บ้านเลขที่</label>  
+										<input type="text" class="form-control" placeholder="โปรดกรอก" required> 
+									</div>
+								</div>
+							</div>   
+						</div>  
+
+						<div class="form-group row">
+							<div class="col-lg-7 col-12">  
+								<label for="">หมายเหตุ</label>  
+								<textarea class="form-control half" placeholder="โปรดกรอก" required></textarea>
+							</div>   
+						</div>  
+						
+						<div class="form-group row">
+							<div class="col-lg-7 col-12"> 
+								<div class="row">
+									<div class="col-lg-4 col-12"> 
+										<label for="">ผู้รับเงิน</label>  
+										<select class="form-select" title="ผู้รับเงิน" required>
+											<option value="" selected>บจก. คอนเนกซ์ พร๊อพเพอร์ตี้</option> 
+											<option value="">ไม่เลือก</option> 
+											<option value="">ไม่เลือก</option> 
+										</select> 
+									</div> 
+								</div>
+							</div>   
+						</div>  
+						<div class="form-group row">
+							<div class="col-lg-7 col-12"> 
+								<h6>
+									โปรดแนบเอกสารตั้งต่อไปนี้ 
+								</h6>
+								<ol>
+									<li>สลิปโอนเงินเข้าบริษัท</li>
+									<li>บัตรประชาชนของลูกค้า</li>
+									<li>สลิปโอนเงินออกจากบริพัทให้เจ้าของ(ถ้ามี)</li>
+								</ol>
 							</div>
 						</div>
-					</div>
-					<hr>
-					<div class="form-group row">
-						<div class="col-12 text-right-center">
-							<button class="btn btn-white btn-b">ปิด</button>
-							<a href="#" class="btn btn-primary btn-b">บันทึกข้อมูล</a>
+
+						<div class="form-group row">
+							<div class="col-lg-7 col-12">
+								<div class="row">
+									<div class="col-lg-4 col-12"> 
+										<div class="dorp-img">
+											<div>
+												<span class="material-symbols-outlined">
+												photo
+												</span>
+												<h4>Drag &amp; Drop ไฟล์ที่นี่</h4>
+											</div>
+										</div>
+										<div class="input-group mb-3">
+											<input type="text" class="form-control" placeholder="เลือกไฟล์" aria-label="เลือกไฟล์" aria-describedby="button-addon2">
+											<div class="input-group-append">
+											<button class="btn btn-primary btn-sm" type="button" id="button-addon2">เลือกไฟล์</button>
+											</div>
+									</div>
+									</div> 
+								</div>
+							</div>
 						</div>
-					</div>  
-				 
-					 
+						<hr>
+						<div class="form-group row">
+							<div class="col-12 text-right-center">
+								<button class="btn btn-white btn-b">ปิด</button>
+								<a href="#" class="btn btn-primary btn-b">บันทึกข้อมูล</a>
+							</div>
+						</div>  
+					
+						
 
+					</div>
 				</div>
-			</div>
-
+			</form>
 		 
 		</div>
 	</main>
@@ -625,6 +626,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
+
 
 	<script>
 		$(document).ready(function() {

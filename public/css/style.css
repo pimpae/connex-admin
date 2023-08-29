@@ -1437,7 +1437,7 @@ h5.dp{
 }
 .optionx p{
   color: #000; 
-  font-size: 12px; 
+  font-size: 12px !important; 
   font-weight: 400;
   line-height: 16px; 
   text-align: center;
