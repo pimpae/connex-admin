@@ -1177,9 +1177,9 @@
 		</div>
 	</main>
  
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -1210,6 +1210,7 @@
 		$('.backdp').click(function(){     
 			$(".menu-mb").removeClass("active");  
 			$("body").removeClass("active");    
+			$('.menu-mb').animate({'left': '-100%'}, 300); 
 		}); 
 		$('.menux-close').click(function(){    
 			$(".menu-mb").removeClass("active");  
