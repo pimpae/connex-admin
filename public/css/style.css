@@ -2404,6 +2404,7 @@ ol, ul {
   font-style: normal;
   font-weight: 400;
   line-height: 35px;  
+  text-align: left !important;
 }
 .user-dropdown .dropdown-menu .dropdown-item:hover{  
   color: #fff; 

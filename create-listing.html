@@ -11,6 +11,7 @@
     <link href="public/css/style.css" rel="stylesheet" type="text/css" />      
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>  
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" /> 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -421,705 +422,707 @@
 				<a href="#">Create Listing</a>
 			</div>
 			<h3 class="h3 mb-x">Create Listing</h3>
-			
-			<div class="box1">
-				<h4 class="h4x">หัวข้อประกาศ</h4>
-				<h3>ไทย</h3>
-				<input type="text" class="form-control" value="รีสอร์ต ไลน์ แจมเอ๋อ สหรัฐตู้เซฟ ฮาโลวีน โปรดิวเซอร์บัตเตอร์ ดั๊มพ์ ครูเสดสตริงสต๊อคพาเหรด">
-				<h3>Eng</h3>
-				<input type="text" class="form-control" value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.">
-			</div>
-			
-			<div class="box1"> 
-				<h5 class="header-text active">
-					สิ่งอำนายความสะดวก
-					<span class="material-symbols-outlined chk active">
-						check_circle
+
+			<form class="was-validated">
+				
+				<div class="box1">
+					<h4 class="h4x">หัวข้อประกาศ</h4>
+					<h3>ไทย</h3>
+					<input type="text" class="form-control" value="รีสอร์ต ไลน์ แจมเอ๋อ สหรัฐตู้เซฟ ฮาโลวีน โปรดิวเซอร์บัตเตอร์ ดั๊มพ์ ครูเสดสตริงสต๊อคพาเหรด" required>
+					<h3>Eng</h3>
+					<input type="text" class="form-control" value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." required>
+				</div>
+				
+				<div class="box1"> 
+					<h5 class="header-text active">
+						สิ่งอำนายความสะดวก
+						<span class="material-symbols-outlined chk active">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
 						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5> 
-				<div class="body-text"> 
-					<hr class="mt-4 mb-0"> 
-					<div class="form-group row">
-						<div class="col-lg-3 col-12">
-							<label for="">รหัสทรัพย์</label>
-							<input type="text" class="form-control" placeholder="xxxxxxxxx">
-						</div>
-						<div class="col-lg-6 col-12">
-							<label for="">โครงการ</label>
-							<div class="row row-lr">
-								<div class="col-lg-9 col-10">  
-									<select class="form-select" title="โครงการ">
-										<option value="">สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
-										<option value="">สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
-										<option value="">สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
-									</select> 
-								</div>
-								<div class="col-lg-3 col-2">
-									<button class="btn btn-primary btn-sm btn-block">
-										<span class="material-symbols-outlined pc-x">
-										add
-										</span>
-										<span class="mb-x">
-											เพิ่มโครงการ
-										</span>
-									</button>
+					</h5> 
+					<div class="body-text"> 
+						<hr class="mt-4 mb-0"> 
+						<div class="form-group row">
+							<div class="col-lg-3 col-12">
+								<label for="">รหัสทรัพย์</label>
+								<input type="text" class="form-control" placeholder="xxxxxxxxx" required>
+							</div>
+							<div class="col-lg-6 col-12">
+								<label for="">โครงการ</label>
+								<div class="row row-lr">
+									<div class="col-lg-9 col-10">  
+										<select class="form-select" title="โครงการ" required>
+											<option value="">สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
+											<option value="">สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
+											<option value="">สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
+										</select> 
+									</div>
+									<div class="col-lg-3 col-2">
+										<button class="btn btn-primary btn-sm btn-block">
+											<span class="material-symbols-outlined pc-x">
+											add
+											</span>
+											<span class="mb-x">
+												เพิ่มโครงการ
+											</span>
+										</button>
+									</div>
 								</div>
 							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">Listing Name</label>
+								<input type="text" class="form-control" required>
+							</div>
+						</div> 
+						<div class="form-group row">
+							<div class="col-lg-3 col-12">
+								<label for="">รหัสทรัพย์</label>
+								<select class="form-select" title="รหัสทรัพย์" required>
+									<option value="">ไม่ระบุ</option> 
+									<option value="">ไม่ระบุ</option> 
+									<option value="">ไม่ระบุ</option> 
+								</select> 
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">ประเภททรัพย์</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">ประเภท</label>
+								<select class="form-select" title="ประเภท" required>
+									<option value="">ขาย</option> 
+									<option value="">ขาย</option>  
+								</select> 
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">ประเภทสัญญา</label>
+								<select class="form-select" title="ประเภท" required>
+									<option value="">ขาย</option> 
+									<option value="">ขาย</option>  
+								</select> 
+							</div>
 						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">Listing Name</label>
-							<input type="text" class="form-control">
-						</div>
-					</div> 
-					<div class="form-group row">
-						<div class="col-lg-3 col-12">
-							<label for="">รหัสทรัพย์</label>
-							<select class="form-select" title="รหัสทรัพย์">
-								<option value="">ไม่ระบุ</option> 
-								<option value="">ไม่ระบุ</option> 
-								<option value="">ไม่ระบุ</option> 
-							</select> 
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ประเภททรัพย์</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ประเภท</label>
-							<select class="form-select" title="ประเภท">
-								<option value="">ขาย</option> 
-								<option value="">ขาย</option>  
-							</select> 
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ประเภทสัญญา</label>
-							<select class="form-select" title="ประเภท">
-								<option value="">ขาย</option> 
-								<option value="">ขาย</option>  
-							</select> 
+						<div class="form-group row">
+							<div class="col-lg-1 col-6">
+								<div class="custom-control custom-radio">
+									<input type="checkbox" id="customRadio11" name="customRadio" class="form-check-input" required>
+									<label class="form-check-label" for="customRadio11">Duplex</label>
+								</div>
+							</div>
+							<div class="col-lg-1 col-6">
+								<div class="custom-control custom-radio">
+									<input type="checkbox" id="customRadio12" name="customRadio" class="form-check-input" required>
+									<label class="form-check-label" for="customRadio12">Penthouse</label>
+								</div>
+							</div>
+						</div> 
+						<div class="form-group row"> 
+							<div class="col-lg-3 col-12">
+								<label for="">บ้านเลขที่</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">ชั้นที่</label>
+								<select class="form-select" title="ชั้นที่" required>
+									<option value="">14</option> 
+									<option value="">14</option>  
+								</select> 
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">พื้นที่ใช้สอย</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">ห้องน้ำ</label>
+								<input type="text" class="form-control" required>
+							</div>
+						</div> 
+						<div class="form-group row"> 
+							<div class="col-lg-3 col-12">
+								<label for="">ห้องนอนหากเป็นห้องStudio ให้ใส่ 0</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">ห้องอื่นๆ</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">ที่จอดรถ</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">เลี้ยงสัตว์</label>
+								<select class="form-select" title="เลี้ยงสัตว์">
+									<option value="">อนุญาต</option> 
+									<option value="">ไม่อนุญาต</option>  
+								</select> 
+							</div>
+						</div>  
+						<div class="form-group row"> 
+							<div class="col-lg-3 col-12">
+								<label for="">ทิศ</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">วิว</label>
+								<select class="form-select" title="วิว">
+									<option value="">ยังไม่ระบุ</option> 
+									<option value="">ยังไม่ระบุ</option>  
+								</select> 
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">ราคา</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-3 col-12">
+								<label for="">ราคาต่อรองแล้ว</label>
+								<input type="text" class="form-control" required>
+							</div>
+						</div> 
+						<div class="form-group row"> 
+							<div class="col-lg-3 col-12">
+								<label for="">ค่าส่วนกลาง</label>
+								<input type="text" class="form-control" required>
+							</div> 
+						</div> 
+						<div class="form-group row"> 
+							<div class="col-lg-9 col-12">
+								<label for="">ค่าส่วนกลาง</label>
+								<textarea name="" class="form-control" required></textarea>
+							</div> 
+							<div class="col-lg-3 col-12">
+								<br>
+								<span class="mb-x"><br></span>
+								<a href="#" class="text-danger">คลิกเพื่อวิธีการกรอกที่ถูกต้อง</a>
+							</div>
+						</div> 
+					</div>
+				</div>
+
+				
+
+				<div class="box1">
+					<h5 class="header-text">
+						สถานะ Listing 
+						<span class="material-symbols-outlined chk active">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
+						</span>
+					</h5> 
+					<div class="body-text"> 
+						<hr class="mt-4 mb-0">
+						<div class="form-group row">   
+							<div class="col-lg-3 col-12">
+								<label for="">สถานะปัจจุบัน</label>
+								<select class="form-select" title="สถานะปัจจุบัน">
+									<option value="">Available</option> 
+									<option value="">Available</option>  
+								</select> 
+							</div>   
+							<div class="col-lg-3 col-12">
+								<label for="">Remark</label>
+								<select class="form-select" title="Remark">
+									<option value="">สำหรับกรอกหมายเหตุสถานะของ listing</option> 
+									<option value="">สำหรับกรอกหมายเหตุสถานะของ listing</option>  
+								</select> 
+							</div>   
 						</div>
 					</div>
+				</div>
+
+				<div class="box1"> 
+					<h5 class="header-text">
+						ที่อยู่
+						<span class="material-symbols-outlined chk  ">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
+						</span>
+					</h5> 
+					<div class="body-text"> 
+						<hr class="mt-4 mb-0">
+						<div class="form-group row">   
+							<div class="col-lg-6 col-12">
+								<label for="">ซอย</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-6 col-12">
+								<label for="">ซอย / Eng</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-6 col-12">
+								<label for="">ถนน</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="col-lg-6 col-12">
+								<label for="">ถนน / Eng</label>
+								<input type="text" class="form-control" required>
+							</div> 
+							<div class="col-lg-6 col-12">
+								<label for="">จังหวัด</label>
+								<select class="form-select" title="จังหวัด">
+									<option value="">กรุงเทพมหานคร</option> 
+									<option value="">กรุงเทพมหานคร</option>  
+								</select> 
+							</div>  
+							<div class="col-lg-6 col-12">
+								<label for="">อำเภอ</label>
+								<select class="form-select" title="อำเภอ">
+									<option value="">วัฒนา</option> 
+									<option value="">วัฒนา</option>  
+								</select> 
+							</div>     
+							<div class="col-lg-6 col-12">
+								<label for="">ตำบล</label>
+								<select class="form-select" title="ตำบล">
+									<option value="">คลองเตย 1</option> 
+									<option value="">คลองเตย 1</option>  
+								</select> 
+							</div>    
+							<div class="col-lg-6 col-12">
+								<label for="">รถไฟฟ้า</label>
+								<select class="form-select" title="รถไฟฟ้า">
+									<option value="">BTS นานา</option> 
+									<option value="">BTS นานา</option>  
+								</select> 
+							</div>
+							<div class="col-lg-6 col-12">
+								<label for="">จำนวนอาคาร</label>
+								<select class="form-select" title="จำนวนอาคาร">
+									<option value="">2</option> 
+									<option value="">2</option>  
+								</select> 
+							</div>   
+							<div class="col-lg-6 col-12">
+								<label for="">โซน</label>
+								<select class="form-select" title="โซน">
+									<option value="">นานาฝั่งเหนือ</option> 
+									<option value="">นานาฝั่งเหนือ</option>  
+								</select> 
+							</div>   
+						</div>
+					</div>
+				</div>
+
+				<div class="box1"> 
+					<h5 class="header-text">
+						จุดเด่น
+						<span class="material-symbols-outlined chk  ">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
+						</span>
+					</h5> 
+					<div class="body-text">
+						<hr class="mt-4 mb-0">
+						<div class="form-group row"> 
+							<div class="col-lg-3 col-6">
+								<div class="custom-control custom-radio">
+									<input type="checkbox" id="customRadio51" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio51">วิวสวย | nice view</label>
+								</div> 
+							</div> 
+							<div class="col-lg-3 col-6">
+								<div class="custom-control custom-radio">
+									<input type="checkbox" id="customRadio52" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio52">ชั้นสูง | high floor</label>
+								</div> 
+							</div> 
+							<div class="col-lg-3 col-6">
+								<div class="custom-control custom-radio">
+									<input type="checkbox" id="customRadio53" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio53">รีโนเวทในม่ | newly renovated </label>
+								</div> 
+							</div> 
+							<div class="col-lg-3 col-6">
+								<div class="custom-control custom-radio">
+									<input type="checkbox" id="customRadio54" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio54">ห้องมุม | comer unit</label>
+								</div> 
+							</div> 
+							<div class="col-lg-3 col-6">
+								<div class="custom-control custom-radio">
+									<input type="checkbox" id="customRadio55" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio55">หน้ากว้าง | wide frontage</label>
+								</div> 
+							</div> 
+							<div class="col-lg-3 col-6">
+								<div class="custom-control custom-radio">
+									<input type="checkbox" id="customRadio56" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio56">วิวแม่น้ำ | river view</label>
+								</div> 
+							</div>   
+						</div>
+					</div>
+				</div>
+
+				<div class="box1"> 
+					<h5 class="header-text">
+						เฟอร์นิเจอร์
+						<span class="material-symbols-outlined chk  ">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
+						</span>
+					</h5> 
+					<div class="body-text">
+						<hr class="mt-4 mb-0">
+						<div class="form-group row">  
+							<div class="col-lg-3 col-6">
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio21" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio21">Fully furnished</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio22" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio22">Partly furnished</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-6">
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio23" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio23">Unfurnished</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box1"> 
+					<h5 class="header-text">
+						สิ่งอำนายความสะดวก
+						<span class="material-symbols-outlined chk  ">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
+						</span>
+					</h5>  
+					<div class="body-text"> 
+						<hr class="mt-4 mb-0">
+						<div class="form-group row">
+							<div class="col-lg-6 col-12">
+								<label for="">สิ่งอำนายความสะดวก</label>
+								<textarea name="" class="form-control" required>
+		- Lobby
+		- สระว่ายน้ำ
+		- ฟิดเนส
+		- Key Card
+		- รปภ. 24 ขม.
+								</textarea>
+							</div> 
+							<div class="col-lg-6 col-12">
+								<label for="">สิ่งอำนวยความสะดวก EN :</label>
+								<textarea name="" class="form-control" required>
+		- Lobby
+		- Swimming pool
+		- Fitness
+		- Key Card
+		- Security 24 hours
+								</textarea>
+							</div> 
+
+						</div>
+						<div class="form-group row">
+							<div class="col-12">
+								<label for="">สิ่งอำนายความสะดวก</label>
+								<hr>
+							</div>  
+						</div>
+						<div class="form-group row">
+							<div class="col-lg-6 col-12">
+								<label for="">สถานที่ใกล้เคึยง </label>
+								<textarea name="" class="form-control" required>
+		1. รถให้ฟ้า BTS นานา
+		2. เอ็มดวอเทียร์
+		3. รพ.บำรุงราษฎร์
+								</textarea>
+							</div> 
+							<div class="col-lg-6 col-12">
+								<label for="">สถานที่ใกล้เคึยง EN :</label>
+								<textarea name="" class="form-control" required>
+		1. BTS Nana
+		2. Emquartier
+		3. Bamrungrad Hospital
+								</textarea>
+							</div> 
+
+						</div>
+
+						<div class="form-group row"> 
+							<div class="col-lg-6 col-12">
+								<label for="">รายละเอียดเพิ่มเติม:</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+							</div> 
+							<div class="col-lg-6 col-12">
+								<label for="">Description EN:</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+							</div> 
+						</div>
+
+						<div class="form-group row"> 
+							<div class="col-lg-6 col-12">
+								<label for="">Link Youtube:</label>
+								<input type="text" class="form-control" value="https://www.youtube.com">
+							</div> 
+							<div class="col-lg-6 col-12">
+								<label for="">Google MAP Link:</label>
+								<input type="text" class="form-control" value="https://www.youtube.com">
+							</div> 
+						</div> 
+
+						<div class="form-group row"> 
+							<div class="col-lg-6 col-12">
+								<label for="">ละดิจุด:</label>
+								<input type="text" class="form-control" required>
+							</div> 
+							<div class="col-lg-6 col-12">
+								<label for="">ลองดิจุด:</label>
+								<input type="text" class="form-control" required>
+							</div> 
+						</div>
+						<br>
+						<hr>
+
+
+						<div class="form-group row"> 
+							<div class="col-lg-6 col-12">
+								<label for="">ผู้เพิ่มข้อมูล :</label>
+								<input type="text" class="form-control" required>
+							</div>  
+						</div>
+						<div class="form-group row"> 
+							<div class="col-lg-6 col-12">
+								<label for="">ผู้ติดต่อ:</label>
+								<input type="text" class="form-control" required>
+							</div>  
+						</div>   
+					</div>  
+				</div>
+
+				<div class="box1"> 
+					<h5 class="header-text">
+						ข้อมูล Owner คนที่ 1
+						<span class="material-symbols-outlined chk  ">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
+						</span>
+					</h5>  
+					<div class="body-text">
+						<hr class="mt-4 mb-0"> 
+						<div class="form-group row">
+							<div class="col-lg-6 col-12">
+								<label for="">Name:</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+								<label for="">Line:</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+								<label for="">Email::</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+								<label for="">facebook::</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+							</div>  
+							<div class="col-lg-6 col-12">
+								<label for="">Tel:</label>
+								<input type="text" class="form-control" placeholder="Phone 1">
+								<label for="">&nbsp;</label>
+								<input type="text" class="form-control" placeholder="Phone 2">
+								<label for="">&nbsp;</label>
+								<input type="text" class="form-control" placeholder="Phone 3">
+								<label for="">&nbsp;</label>
+								<input type="text" class="form-control" placeholder="Phone 4">
+							</div>  
+						</div> 
+					</div>
+				</div>
+
+				<div class="box1"> 
+					<h5 class="header-text">
+						ข้อมูล Owner คนที่ 2
+						<span class="material-symbols-outlined chk  ">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
+						</span>
+					</h5>  
+					<div class="body-text">
+						<hr class="mt-4 mb-0"> 
+						<div class="form-group row">
+							<div class="col-lg-6 col-12">
+								<label for="">Name:</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+								<label for="">Line:</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+								<label for="">Email::</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+								<label for="">facebook::</label>
+								<input type="text" class="form-control" placeholder="Enter....">
+							</div>  
+							<div class="col-lg-6 col-12">
+								<label for="">Tel:</label>
+								<input type="text" class="form-control" placeholder="Phone 1">
+								<label for="">&nbsp;</label>
+								<input type="text" class="form-control" placeholder="Phone 2">
+								<label for="">&nbsp;</label>
+								<input type="text" class="form-control" placeholder="Phone 3">
+								<label for="">&nbsp;</label>
+								<input type="text" class="form-control" placeholder="Phone 4">
+							</div>  
+						</div> 
+					</div>
+				</div>
+	
+				
+				<div class="box1">
+					<h5 class="header-text">
+						ข้อเสนออนุมัติให้เป็นห้อง PM
+						<span class="material-symbols-outlined chk  ">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
+						</span>
+					</h5>  
+					<div class="body-text"> 
+						<hr class="mt-4 mb-0"> 
+						<div class="form-group row">
+							<div class="col-lg-3 col-12">
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio31" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio31">ขออนุมัติห้อง PM</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio32" name="customRadio" class="form-check-input">
+									<label class="form-check-label" for="customRadio32">เพื่อไม่ให้โพสต์รูปภาพในห้อง</label>
+								</div>
+							</div>  
+							<div class="col-lg-9 col-12">
+								<label for="">โปรดระบุเหตุผลที่เราควรอนุมัติให้เป็น PM Listing</label>
+								<textarea name="" class="form-control" required></textarea>
+							</div>  
+						</div> 
+					</div>
+				</div>
+				
+
+				<div class="box1">
+					<h5 class="header-text">
+						ภาพประกอบ Listing
+						<span class="material-symbols-outlined chk  ">
+							check_circle
+							</span>
+						<span class="material-symbols-outlined arr">
+						keyboard_arrow_down
+						</span>
+					</h5>  
+					<div class="body-text"> 
+						<div class="form-group row">
+							<div class="col-lg-6 col-12"> </div>
+							<div class="col-lg-3 col-6 pr-1x">
+								<button type="button" class="btn btn-block btn-outline-primary btn-fig" data-bs-toggle="modal" data-bs-target="#add_photoModal">
+									<span class="material-symbols-outlined">
+									add_to_photos
+									</span>
+									อัพโหลดไฟล์ภาพ
+								</button> 
+							</div>
+							<div class="col-lg-3 col-6 pl-1x">
+								<a href="#" class="btn btn-block btn-outline-success btn-fig">
+									<span class="material-symbols-outlined">
+									visibility
+									</span>
+									View Listing
+								</a>  
+							</div>
+							
+						</div>
+						<br>
+						<hr>
+						<br>
+						<div class="form-group row">
+							<div class="col-lg-3 col-12">
+								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
+							</div>   
+							<div class="col-lg-3 col-12">
+								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
+							</div>   
+							<div class="col-lg-3 col-12">
+								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
+							</div>   
+							<div class="col-lg-3 col-12">
+								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
+							</div>   
+						</div> 
+						<br>
+						<hr>
+						<div class="form-group row">
+							<div class="col-lg-3 col-12">
+								<div class="row">
+									<div class="col-6">
+										<label for="">คะแนนรูปภาพ</label> 
+									</div>
+									<div class="col-6">
+										<select class="form-select mt-2" title="คะแนนรูปภาพ">
+											<option value="">ปานกลาง</option> 
+											<option value="">ปานกลาง</option> 
+											<option value="">ปานกลาง</option> 
+										</select> 
+									</div>
+								</div>
+							</div>   
+						</div> 
+						<hr>
+						<br>
+
+						<div class="form-group row">
+							<div class="col-lg-6 col-6">
+								<div class="form-check">
+									<label class="form-check-label" for="customControlInline31">Premium ประกาศ</label>
+									<input type="checkbox" class="form-check-input" id="customControlInline31">
+								</div>
+							</div>   
+							<div class="col-lg-6 col-6">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="customControlInline32">
+									<label class="form-check-label" for="customControlInline32">เปิดให้เห็นเบอร์ Owner</label>
+								</div>
+							</div>  
+						</div> 
+						<hr> 
+
+						<div class="form-group row">
+							<div class="col-lg-6 col-12">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="customControlInline33">
+									<label class="form-check-label" for="customControlInline33">คลิกเพื่อ Copy Listing นี้ โดยใช้รหัส CX ใหม่</label>
+								</div>
+							</div>    
+						</div>  
+
+					</div>
+				</div>
+			
+				<div class="box1 pb-3">  
 					<div class="form-group row">
-						<div class="col-lg-1 col-6">
-							<div class="custom-control custom-radio">
-								<input type="checkbox" id="customRadio11" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio11">Duplex</label>
-							</div>
-						</div>
-						<div class="col-lg-1 col-6">
-							<div class="custom-control custom-radio">
-								<input type="checkbox" id="customRadio12" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio12">Penthouse</label>
-							</div>
-						</div>
-					</div> 
-					<div class="form-group row"> 
-						<div class="col-lg-3 col-12">
-							<label for="">บ้านเลขที่</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ชั้นที่</label>
-							<select class="form-select" title="ชั้นที่">
-								<option value="">14</option> 
-								<option value="">14</option>  
-							</select> 
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">พื้นที่ใช้สอย</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ห้องน้ำ</label>
-							<input type="text" class="form-control">
-						</div>
-					</div> 
-					<div class="form-group row"> 
-						<div class="col-lg-3 col-12">
-							<label for="">ห้องนอนหากเป็นห้องStudio ให้ใส่ 0</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ห้องอื่นๆ</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ที่จอดรถ</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">เลี้ยงสัตว์</label>
-							<select class="form-select" title="เลี้ยงสัตว์">
-								<option value="">อนุญาต</option> 
-								<option value="">ไม่อนุญาต</option>  
-							</select> 
+						<div class="col-12 text-right-center">
+							<button class="btn btn-primary btn-sm">บันทึก / อัพเดตข้อมูล</button>
 						</div>
 					</div>  
-					<div class="form-group row"> 
-						<div class="col-lg-3 col-12">
-							<label for="">ทิศ</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">วิว</label>
-							<select class="form-select" title="วิว">
-								<option value="">ยังไม่ระบุ</option> 
-								<option value="">ยังไม่ระบุ</option>  
-							</select> 
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ราคา</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-3 col-12">
-							<label for="">ราคาต่อรองแล้ว</label>
-							<input type="text" class="form-control">
-						</div>
-					</div> 
-					<div class="form-group row"> 
-						<div class="col-lg-3 col-12">
-							<label for="">ค่าส่วนกลาง</label>
-							<input type="text" class="form-control">
-						</div> 
-					</div> 
-					<div class="form-group row"> 
-						<div class="col-lg-9 col-12">
-							<label for="">ค่าส่วนกลาง</label>
-							<textarea name="" class="form-control"></textarea>
-						</div> 
-						<div class="col-lg-3 col-12">
-							<br>
-							<span class="mb-x"><br></span>
-							<a href="#" class="text-danger">คลิกเพื่อวิธีการกรอกที่ถูกต้อง</a>
-						</div>
-					</div> 
 				</div>
-			</div>
 
-	 
-
-			<div class="box1">
-				<h5 class="header-text">
-					สถานะ Listing 
-					<span class="material-symbols-outlined chk active">
-						check_circle
-						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5> 
-				<div class="body-text"> 
-					<hr class="mt-4 mb-0">
-					<div class="form-group row">   
-						<div class="col-lg-3 col-12">
-							<label for="">สถานะปัจจุบัน</label>
-							<select class="form-select" title="สถานะปัจจุบัน">
-								<option value="">Available</option> 
-								<option value="">Available</option>  
-							</select> 
-						</div>   
-						<div class="col-lg-3 col-12">
-							<label for="">Remark</label>
-							<select class="form-select" title="Remark">
-								<option value="">สำหรับกรอกหมายเหตุสถานะของ listing</option> 
-								<option value="">สำหรับกรอกหมายเหตุสถานะของ listing</option>  
-							</select> 
-						</div>   
-					</div>
-				</div>
-			</div>
-
-			<div class="box1"> 
-				<h5 class="header-text">
-					ที่อยู่
-					<span class="material-symbols-outlined chk  ">
-						check_circle
-						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5> 
-				<div class="body-text"> 
-					<hr class="mt-4 mb-0">
-					<div class="form-group row">   
-						<div class="col-lg-6 col-12">
-							<label for="">ซอย</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-6 col-12">
-							<label for="">ซอย / Eng</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-6 col-12">
-							<label for="">ถนน</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-lg-6 col-12">
-							<label for="">ถนน / Eng</label>
-							<input type="text" class="form-control">
-						</div> 
-						<div class="col-lg-6 col-12">
-							<label for="">จังหวัด</label>
-							<select class="form-select" title="จังหวัด">
-								<option value="">กรุงเทพมหานคร</option> 
-								<option value="">กรุงเทพมหานคร</option>  
-							</select> 
-						</div>  
-						<div class="col-lg-6 col-12">
-							<label for="">อำเภอ</label>
-							<select class="form-select" title="อำเภอ">
-								<option value="">วัฒนา</option> 
-								<option value="">วัฒนา</option>  
-							</select> 
-						</div>     
-						<div class="col-lg-6 col-12">
-							<label for="">ตำบล</label>
-							<select class="form-select" title="ตำบล">
-								<option value="">คลองเตย 1</option> 
-								<option value="">คลองเตย 1</option>  
-							</select> 
-						</div>    
-						<div class="col-lg-6 col-12">
-							<label for="">รถไฟฟ้า</label>
-							<select class="form-select" title="รถไฟฟ้า">
-								<option value="">BTS นานา</option> 
-								<option value="">BTS นานา</option>  
-							</select> 
-						</div>
-						<div class="col-lg-6 col-12">
-							<label for="">จำนวนอาคาร</label>
-							<select class="form-select" title="จำนวนอาคาร">
-								<option value="">2</option> 
-								<option value="">2</option>  
-							</select> 
-						</div>   
-						<div class="col-lg-6 col-12">
-							<label for="">โซน</label>
-							<select class="form-select" title="โซน">
-								<option value="">นานาฝั่งเหนือ</option> 
-								<option value="">นานาฝั่งเหนือ</option>  
-							</select> 
-						</div>   
-					</div>
-				</div>
-			</div>
-
-			<div class="box1"> 
-				<h5 class="header-text">
-					จุดเด่น
-					<span class="material-symbols-outlined chk  ">
-						check_circle
-						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5> 
-				<div class="body-text">
-					<hr class="mt-4 mb-0">
-					<div class="form-group row"> 
-						<div class="col-lg-3 col-6">
-							<div class="custom-control custom-radio">
-								<input type="checkbox" id="customRadio51" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio51">วิวสวย | nice view</label>
-							</div> 
-						</div> 
-						<div class="col-lg-3 col-6">
-							<div class="custom-control custom-radio">
-								<input type="checkbox" id="customRadio52" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio52">ชั้นสูง | high floor</label>
-							</div> 
-						</div> 
-						<div class="col-lg-3 col-6">
-							<div class="custom-control custom-radio">
-								<input type="checkbox" id="customRadio53" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio53">รีโนเวทในม่ | newly renovated </label>
-							</div> 
-						</div> 
-						<div class="col-lg-3 col-6">
-							<div class="custom-control custom-radio">
-								<input type="checkbox" id="customRadio54" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio54">ห้องมุม | comer unit</label>
-							</div> 
-						</div> 
-						<div class="col-lg-3 col-6">
-							<div class="custom-control custom-radio">
-								<input type="checkbox" id="customRadio55" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio55">หน้ากว้าง | wide frontage</label>
-							</div> 
-						</div> 
-						<div class="col-lg-3 col-6">
-							<div class="custom-control custom-radio">
-								<input type="checkbox" id="customRadio56" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio56">วิวแม่น้ำ | river view</label>
-							</div> 
-						</div>   
-					</div>
-				</div>
-			</div>
-
-			<div class="box1"> 
-				<h5 class="header-text">
-					เฟอร์นิเจอร์
-					<span class="material-symbols-outlined chk  ">
-						check_circle
-						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5> 
-				<div class="body-text">
-					<hr class="mt-4 mb-0">
-					<div class="form-group row">  
-						<div class="col-lg-3 col-6">
-							<div class="custom-control custom-radio">
-								<input type="radio" id="customRadio21" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio21">Fully furnished</label>
-							</div>
-						</div>
-						<div class="col-lg-3 col-6">
-							<div class="custom-control custom-radio">
-								<input type="radio" id="customRadio22" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio22">Partly furnished</label>
-							</div>
-						</div>
-						<div class="col-lg-3 col-6">
-							<div class="custom-control custom-radio">
-								<input type="radio" id="customRadio23" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio23">Unfurnished</label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="box1"> 
-				<h5 class="header-text">
-					สิ่งอำนายความสะดวก
-					<span class="material-symbols-outlined chk  ">
-						check_circle
-						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5>  
-				<div class="body-text"> 
-					<hr class="mt-4 mb-0">
-					<div class="form-group row">
-						<div class="col-lg-6 col-12">
-							<label for="">สิ่งอำนายความสะดวก</label>
-							<textarea name="" class="form-control">
-	- Lobby
-	- สระว่ายน้ำ
-	- ฟิดเนส
-	- Key Card
-	- รปภ. 24 ขม.
-							</textarea>
-						</div> 
-						<div class="col-lg-6 col-12">
-							<label for="">สิ่งอำนวยความสะดวก EN :</label>
-							<textarea name="" class="form-control">
-	- Lobby
-	- Swimming pool
-	- Fitness
-	- Key Card
-	- Security 24 hours
-							</textarea>
-						</div> 
-
-					</div>
-					<div class="form-group row">
-						<div class="col-12">
-							<label for="">สิ่งอำนายความสะดวก</label>
-							<hr>
-						</div>  
-					</div>
-					<div class="form-group row">
-						<div class="col-lg-6 col-12">
-							<label for="">สถานที่ใกล้เคึยง </label>
-							<textarea name="" class="form-control">
-	1. รถให้ฟ้า BTS นานา
-	2. เอ็มดวอเทียร์
-	3. รพ.บำรุงราษฎร์
-							</textarea>
-						</div> 
-						<div class="col-lg-6 col-12">
-							<label for="">สถานที่ใกล้เคึยง EN :</label>
-							<textarea name="" class="form-control">
-	1. BTS Nana
-	2. Emquartier
-	3. Bamrungrad Hospital
-							</textarea>
-						</div> 
-
-					</div>
-
-					<div class="form-group row"> 
-						<div class="col-lg-6 col-12">
-							<label for="">รายละเอียดเพิ่มเติม:</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-						</div> 
-						<div class="col-lg-6 col-12">
-							<label for="">Description EN:</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-						</div> 
-					</div>
-
-					<div class="form-group row"> 
-						<div class="col-lg-6 col-12">
-							<label for="">Link Youtube:</label>
-							<input type="text" class="form-control" value="https://www.youtube.com">
-						</div> 
-						<div class="col-lg-6 col-12">
-							<label for="">Google MAP Link:</label>
-							<input type="text" class="form-control" value="https://www.youtube.com">
-						</div> 
-					</div> 
-
-					<div class="form-group row"> 
-						<div class="col-lg-6 col-12">
-							<label for="">ละดิจุด:</label>
-							<input type="text" class="form-control">
-						</div> 
-						<div class="col-lg-6 col-12">
-							<label for="">ลองดิจุด:</label>
-							<input type="text" class="form-control">
-						</div> 
-					</div>
-					<br>
-					<hr>
-
-
-					<div class="form-group row"> 
-						<div class="col-lg-6 col-12">
-							<label for="">ผู้เพิ่มข้อมูล :</label>
-							<input type="text" class="form-control">
-						</div>  
-					</div>
-					<div class="form-group row"> 
-						<div class="col-lg-6 col-12">
-							<label for="">ผู้ติดต่อ:</label>
-							<input type="text" class="form-control">
-						</div>  
-					</div>   
-				</div>  
-			</div>
-
-			<div class="box1"> 
-				<h5 class="header-text">
-					ข้อมูล Owner คนที่ 1
-					<span class="material-symbols-outlined chk  ">
-						check_circle
-						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5>  
-				<div class="body-text">
-					<hr class="mt-4 mb-0"> 
-					<div class="form-group row">
-						<div class="col-lg-6 col-12">
-							<label for="">Name:</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-							<label for="">Line:</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-							<label for="">Email::</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-							<label for="">facebook::</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-						</div>  
-						<div class="col-lg-6 col-12">
-							<label for="">Tel:</label>
-							<input type="text" class="form-control" placeholder="Phone 1">
-							<label for="">&nbsp;</label>
-							<input type="text" class="form-control" placeholder="Phone 2">
-							<label for="">&nbsp;</label>
-							<input type="text" class="form-control" placeholder="Phone 3">
-							<label for="">&nbsp;</label>
-							<input type="text" class="form-control" placeholder="Phone 4">
-						</div>  
-					</div> 
-				</div>
-			</div>
-
-			<div class="box1"> 
-				<h5 class="header-text">
-					ข้อมูล Owner คนที่ 2
-					<span class="material-symbols-outlined chk  ">
-						check_circle
-						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5>  
-				<div class="body-text">
-					<hr class="mt-4 mb-0"> 
-					<div class="form-group row">
-						<div class="col-lg-6 col-12">
-							<label for="">Name:</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-							<label for="">Line:</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-							<label for="">Email::</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-							<label for="">facebook::</label>
-							<input type="text" class="form-control" placeholder="Enter....">
-						</div>  
-						<div class="col-lg-6 col-12">
-							<label for="">Tel:</label>
-							<input type="text" class="form-control" placeholder="Phone 1">
-							<label for="">&nbsp;</label>
-							<input type="text" class="form-control" placeholder="Phone 2">
-							<label for="">&nbsp;</label>
-							<input type="text" class="form-control" placeholder="Phone 3">
-							<label for="">&nbsp;</label>
-							<input type="text" class="form-control" placeholder="Phone 4">
-						</div>  
-					</div> 
-				</div>
-			</div>
- 
-			
-			<div class="box1">
-				<h5 class="header-text">
-					ข้อเสนออนุมัติให้เป็นห้อง PM
-					<span class="material-symbols-outlined chk  ">
-						check_circle
-						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5>  
-				<div class="body-text"> 
-					<hr class="mt-4 mb-0"> 
-					<div class="form-group row">
-						<div class="col-lg-3 col-12">
-							<div class="custom-control custom-radio">
-								<input type="radio" id="customRadio31" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio31">ขออนุมัติห้อง PM</label>
-							</div>
-							<div class="custom-control custom-radio">
-								<input type="radio" id="customRadio32" name="customRadio" class="form-check-input">
-								<label class="form-check-label" for="customRadio32">เพื่อไม่ให้โพสต์รูปภาพในห้อง</label>
-							</div>
-						</div>  
-						<div class="col-lg-9 col-12">
-							<label for="">โปรดระบุเหตุผลที่เราควรอนุมัติให้เป็น PM Listing</label>
-							<textarea name="" class="form-control"></textarea>
-						</div>  
-					</div> 
-				</div>
-			</div>
-			
-
-			<div class="box1">
-				<h5 class="header-text">
-					ภาพประกอบ Listing
-					<span class="material-symbols-outlined chk  ">
-						check_circle
-						</span>
-					<span class="material-symbols-outlined arr">
-					keyboard_arrow_down
-					</span>
-				</h5>  
-				<div class="body-text"> 
-					<div class="form-group row">
-						<div class="col-lg-6 col-12"> </div>
-						<div class="col-lg-3 col-6 pr-1x">
-							<button type="button" class="btn btn-block btn-outline-primary btn-fig" data-bs-toggle="modal" data-bs-target="#add_photoModal">
-								<span class="material-symbols-outlined">
-								add_to_photos
-								</span>
-								อัพโหลดไฟล์ภาพ
-							</button> 
-						</div>
-						<div class="col-lg-3 col-6 pl-1x">
-							<a href="#" class="btn btn-block btn-outline-success btn-fig">
-								<span class="material-symbols-outlined">
-								visibility
-								</span>
-								View Listing
-							</a>  
-						</div>
-						
-					</div>
-					<br>
-					<hr>
-					<br>
-					<div class="form-group row">
-						<div class="col-lg-3 col-12">
-							<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-						</div>   
-						<div class="col-lg-3 col-12">
-							<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-						</div>   
-						<div class="col-lg-3 col-12">
-							<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-						</div>   
-						<div class="col-lg-3 col-12">
-							<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-						</div>   
-					</div> 
-					<br>
-					<hr>
-					<div class="form-group row">
-						<div class="col-lg-3 col-12">
-							<div class="row">
-								<div class="col-6">
-									<label for="">คะแนนรูปภาพ</label> 
-								</div>
-								<div class="col-6">
-									<select class="form-select mt-2" title="คะแนนรูปภาพ">
-										<option value="">ปานกลาง</option> 
-										<option value="">ปานกลาง</option> 
-										<option value="">ปานกลาง</option> 
-									</select> 
-								</div>
-							</div>
-						</div>   
-					</div> 
-					<hr>
-					<br>
-
-					<div class="form-group row">
-						<div class="col-lg-6 col-6">
-							<div class="form-check">
-								<label class="form-check-label" for="customControlInline31">Premium ประกาศ</label>
-								<input type="checkbox" class="form-check-input" id="customControlInline31">
-							</div>
-						</div>   
-						<div class="col-lg-6 col-6">
-							<div class="form-check">
-								<input type="checkbox" class="form-check-input" id="customControlInline32">
-								<label class="form-check-label" for="customControlInline32">เปิดให้เห็นเบอร์ Owner</label>
-							</div>
-						</div>  
-					</div> 
-					<hr> 
-
-					<div class="form-group row">
-						<div class="col-lg-6 col-12">
-							<div class="form-check">
-								<input type="checkbox" class="form-check-input" id="customControlInline33">
-								<label class="form-check-label" for="customControlInline33">คลิกเพื่อ Copy Listing นี้ โดยใช้รหัส CX ใหม่</label>
-							</div>
-						</div>    
-					</div>  
-
-				</div>
-			</div>
-		 
-			<div class="box1 pb-3">  
-				<div class="form-group row">
-					<div class="col-12 text-right-center">
-						<button class="btn btn-primary btn-sm">บันทึก / อัพเดตข้อมูล</button>
-					</div>
-				</div>  
-			</div>
-
- 
+			</form>
 
 		</div>
 	</main>
@@ -1172,7 +1175,11 @@
 	 
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  \
+
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
 
 	<script>
 		$(document).ready(function() {
