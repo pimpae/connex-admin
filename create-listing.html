@@ -455,9 +455,10 @@
 								<div class="row row-lr">
 									<div class="col-lg-9 col-10">  
 										<select class="form-select" title="โครงการ" required>
-											<option value="">สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
-											<option value="">สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
-											<option value="">สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
+											<option></option> 
+											<option>สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
+											<option>สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
+											<option>สุขุมวิท ซิตี้ รีสอร์ท | Sukhumvit City Resort</option> 
 										</select> 
 									</div>
 									<div class="col-lg-3 col-2">
@@ -481,9 +482,10 @@
 							<div class="col-lg-3 col-12">
 								<label for="">รหัสทรัพย์</label>
 								<select class="form-select" title="รหัสทรัพย์" required>
-									<option value="">ไม่ระบุ</option> 
-									<option value="">ไม่ระบุ</option> 
-									<option value="">ไม่ระบุ</option> 
+									<option></option> 
+									<option>ไม่ระบุ</option> 
+									<option>ไม่ระบุ</option> 
+									<option>ไม่ระบุ</option> 
 								</select> 
 							</div>
 							<div class="col-lg-3 col-12">
@@ -493,15 +495,17 @@
 							<div class="col-lg-3 col-12">
 								<label for="">ประเภท</label>
 								<select class="form-select" title="ประเภท" required>
-									<option value="">ขาย</option> 
-									<option value="">ขาย</option>  
+									<option></option> 
+									<option>ขาย</option> 
+									<option>ขาย</option>  
 								</select> 
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">ประเภทสัญญา</label>
 								<select class="form-select" title="ประเภท" required>
-									<option value="">ขาย</option> 
-									<option value="">ขาย</option>  
+									<option></option> 
+									<option>ขาย</option> 
+									<option>ขาย</option>  
 								</select> 
 							</div>
 						</div>
@@ -527,8 +531,8 @@
 							<div class="col-lg-3 col-12">
 								<label for="">ชั้นที่</label>
 								<select class="form-select" title="ชั้นที่" required>
-									<option value="">14</option> 
-									<option value="">14</option>  
+									<option>14</option> 
+									<option>14</option>  
 								</select> 
 							</div>
 							<div class="col-lg-3 col-12">
@@ -556,8 +560,8 @@
 							<div class="col-lg-3 col-12">
 								<label for="">เลี้ยงสัตว์</label>
 								<select class="form-select" title="เลี้ยงสัตว์">
-									<option value="">อนุญาต</option> 
-									<option value="">ไม่อนุญาต</option>  
+									<option>อนุญาต</option> 
+									<option>ไม่อนุญาต</option>  
 								</select> 
 							</div>
 						</div>  
@@ -568,10 +572,12 @@
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">วิว</label>
-								<select class="form-select" title="วิว">
-									<option value="">ยังไม่ระบุ</option> 
-									<option value="">ยังไม่ระบุ</option>  
-								</select> 
+								<select class="form-select" data-placeholder="วิว" id="invalid-was-validated-single-field" required>
+									<option></option> 
+									<option>ยังไม่ระบุ</option> 
+									<option>ยังไม่ระบุ</option>  
+									<option>ยังไม่ระบุ</option>  
+								</select>  
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">ราคา</label>
@@ -620,15 +626,17 @@
 							<div class="col-lg-3 col-12">
 								<label for="">สถานะปัจจุบัน</label>
 								<select class="form-select" title="สถานะปัจจุบัน">
-									<option value="">Available</option> 
-									<option value="">Available</option>  
+									<option></option> 
+									<option>Available</option> 
+									<option>Available</option>  
 								</select> 
 							</div>   
 							<div class="col-lg-3 col-12">
 								<label for="">Remark</label>
 								<select class="form-select" title="Remark">
-									<option value="">สำหรับกรอกหมายเหตุสถานะของ listing</option> 
-									<option value="">สำหรับกรอกหมายเหตุสถานะของ listing</option>  
+									<option></option> 
+									<option>สำหรับกรอกหมายเหตุสถานะของ listing</option> 
+									<option>สำหรับกรอกหมายเหตุสถานะของ listing</option>  
 								</select> 
 							</div>   
 						</div>
@@ -666,44 +674,50 @@
 							</div> 
 							<div class="col-lg-6 col-12">
 								<label for="">จังหวัด</label>
-								<select class="form-select" title="จังหวัด">
-									<option value="">กรุงเทพมหานคร</option> 
-									<option value="">กรุงเทพมหานคร</option>  
+								<select class="form-select" title="จังหวัด" required>
+									<option></option> 
+									<option>กรุงเทพมหานคร</option> 
+									<option>กรุงเทพมหานคร</option>  
 								</select> 
 							</div>  
 							<div class="col-lg-6 col-12">
 								<label for="">อำเภอ</label>
-								<select class="form-select" title="อำเภอ">
-									<option value="">วัฒนา</option> 
-									<option value="">วัฒนา</option>  
+								<select class="form-select" title="อำเภอ" required>
+									<option></option> 
+									<option>วัฒนา</option> 
+									<option>วัฒนา</option>  
 								</select> 
 							</div>     
 							<div class="col-lg-6 col-12">
 								<label for="">ตำบล</label>
-								<select class="form-select" title="ตำบล">
-									<option value="">คลองเตย 1</option> 
-									<option value="">คลองเตย 1</option>  
+								<select class="form-select" title="ตำบล" required>
+									<option></option> 
+									<option>คลองเตย 1</option> 
+									<option>คลองเตย 1</option>  
 								</select> 
 							</div>    
 							<div class="col-lg-6 col-12">
 								<label for="">รถไฟฟ้า</label>
-								<select class="form-select" title="รถไฟฟ้า">
-									<option value="">BTS นานา</option> 
-									<option value="">BTS นานา</option>  
+								<select class="form-select" title="รถไฟฟ้า" required>
+									<option></option> 
+									<option>BTS นานา</option> 
+									<option>BTS นานา</option>  
 								</select> 
 							</div>
 							<div class="col-lg-6 col-12">
 								<label for="">จำนวนอาคาร</label>
-								<select class="form-select" title="จำนวนอาคาร">
-									<option value="">2</option> 
-									<option value="">2</option>  
+								<select class="form-select" title="จำนวนอาคาร" required>
+									<option></option> 
+									<option>2</option> 
+									<option>2</option>  
 								</select> 
 							</div>   
 							<div class="col-lg-6 col-12">
 								<label for="">โซน</label>
-								<select class="form-select" title="โซน">
-									<option value="">นานาฝั่งเหนือ</option> 
-									<option value="">นานาฝั่งเหนือ</option>  
+								<select class="form-select" title="โซน" required>
+									<option></option> 
+									<option>นานาฝั่งเหนือ</option> 
+									<option>นานาฝั่งเหนือ</option>  
 								</select> 
 							</div>   
 						</div>
@@ -725,37 +739,37 @@
 						<div class="form-group row"> 
 							<div class="col-lg-3 col-6">
 								<div class="custom-control custom-radio">
-									<input type="checkbox" id="customRadio51" name="customRadio" class="form-check-input">
+									<input type="checkbox" id="customRadio51" name="customRadio" class="form-check-input" >
 									<label class="form-check-label" for="customRadio51">วิวสวย | nice view</label>
 								</div> 
 							</div> 
 							<div class="col-lg-3 col-6">
 								<div class="custom-control custom-radio">
-									<input type="checkbox" id="customRadio52" name="customRadio" class="form-check-input">
+									<input type="checkbox" id="customRadio52" name="customRadio" class="form-check-input" >
 									<label class="form-check-label" for="customRadio52">ชั้นสูง | high floor</label>
 								</div> 
 							</div> 
 							<div class="col-lg-3 col-6">
 								<div class="custom-control custom-radio">
-									<input type="checkbox" id="customRadio53" name="customRadio" class="form-check-input">
+									<input type="checkbox" id="customRadio53" name="customRadio" class="form-check-input" >
 									<label class="form-check-label" for="customRadio53">รีโนเวทในม่ | newly renovated </label>
 								</div> 
 							</div> 
 							<div class="col-lg-3 col-6">
 								<div class="custom-control custom-radio">
-									<input type="checkbox" id="customRadio54" name="customRadio" class="form-check-input">
+									<input type="checkbox" id="customRadio54" name="customRadio" class="form-check-input" >
 									<label class="form-check-label" for="customRadio54">ห้องมุม | comer unit</label>
 								</div> 
 							</div> 
 							<div class="col-lg-3 col-6">
 								<div class="custom-control custom-radio">
-									<input type="checkbox" id="customRadio55" name="customRadio" class="form-check-input">
+									<input type="checkbox" id="customRadio55" name="customRadio" class="form-check-input" >
 									<label class="form-check-label" for="customRadio55">หน้ากว้าง | wide frontage</label>
 								</div> 
 							</div> 
 							<div class="col-lg-3 col-6">
 								<div class="custom-control custom-radio">
-									<input type="checkbox" id="customRadio56" name="customRadio" class="form-check-input">
+									<input type="checkbox" id="customRadio56" name="customRadio" class="form-check-input" >
 									<label class="form-check-label" for="customRadio56">วิวแม่น้ำ | river view</label>
 								</div> 
 							</div>   
@@ -778,19 +792,19 @@
 						<div class="form-group row">  
 							<div class="col-lg-3 col-6">
 								<div class="custom-control custom-radio">
-									<input type="radio" id="customRadio21" name="customRadio" class="form-check-input">
+									<input type="radio" id="customRadio21" name="customRadio" class="form-check-input" required>
 									<label class="form-check-label" for="customRadio21">Fully furnished</label>
 								</div>
 							</div>
 							<div class="col-lg-3 col-6">
 								<div class="custom-control custom-radio">
-									<input type="radio" id="customRadio22" name="customRadio" class="form-check-input">
+									<input type="radio" id="customRadio22" name="customRadio" class="form-check-input" required>
 									<label class="form-check-label" for="customRadio22">Partly furnished</label>
 								</div>
 							</div>
 							<div class="col-lg-3 col-6">
 								<div class="custom-control custom-radio">
-									<input type="radio" id="customRadio23" name="customRadio" class="form-check-input">
+									<input type="radio" id="customRadio23" name="customRadio" class="form-check-input" required>
 									<label class="form-check-label" for="customRadio23">Unfurnished</label>
 								</div>
 							</div>
@@ -862,11 +876,11 @@
 						<div class="form-group row"> 
 							<div class="col-lg-6 col-12">
 								<label for="">รายละเอียดเพิ่มเติม:</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 							</div> 
 							<div class="col-lg-6 col-12">
 								<label for="">Description EN:</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 							</div> 
 						</div>
 
@@ -925,23 +939,23 @@
 						<div class="form-group row">
 							<div class="col-lg-6 col-12">
 								<label for="">Name:</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 								<label for="">Line:</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 								<label for="">Email::</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 								<label for="">facebook::</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 							</div>  
 							<div class="col-lg-6 col-12">
 								<label for="">Tel:</label>
-								<input type="text" class="form-control" placeholder="Phone 1">
+								<input type="text" class="form-control" placeholder="Phone 1" required>
 								<label for="">&nbsp;</label>
-								<input type="text" class="form-control" placeholder="Phone 2">
+								<input type="text" class="form-control" placeholder="Phone 2" required>
 								<label for="">&nbsp;</label>
-								<input type="text" class="form-control" placeholder="Phone 3">
+								<input type="text" class="form-control" placeholder="Phone 3" required>
 								<label for="">&nbsp;</label>
-								<input type="text" class="form-control" placeholder="Phone 4">
+								<input type="text" class="form-control" placeholder="Phone 4" required>
 							</div>  
 						</div> 
 					</div>
@@ -962,23 +976,23 @@
 						<div class="form-group row">
 							<div class="col-lg-6 col-12">
 								<label for="">Name:</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 								<label for="">Line:</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 								<label for="">Email::</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 								<label for="">facebook::</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 							</div>  
 							<div class="col-lg-6 col-12">
 								<label for="">Tel:</label>
-								<input type="text" class="form-control" placeholder="Phone 1">
+								<input type="text" class="form-control" placeholder="Phone 1" required>
 								<label for="">&nbsp;</label>
-								<input type="text" class="form-control" placeholder="Phone 2">
+								<input type="text" class="form-control" placeholder="Phone 2" required>
 								<label for="">&nbsp;</label>
-								<input type="text" class="form-control" placeholder="Phone 3">
+								<input type="text" class="form-control" placeholder="Phone 3" required>
 								<label for="">&nbsp;</label>
-								<input type="text" class="form-control" placeholder="Phone 4">
+								<input type="text" class="form-control" placeholder="Phone 4" required>
 							</div>  
 						</div> 
 					</div>
@@ -1000,11 +1014,11 @@
 						<div class="form-group row">
 							<div class="col-lg-3 col-12">
 								<div class="custom-control custom-radio">
-									<input type="radio" id="customRadio31" name="customRadio" class="form-check-input">
+									<input type="radio" id="customRadio31" name="customRadio" class="form-check-input" required>
 									<label class="form-check-label" for="customRadio31">ขออนุมัติห้อง PM</label>
 								</div>
 								<div class="custom-control custom-radio">
-									<input type="radio" id="customRadio32" name="customRadio" class="form-check-input">
+									<input type="radio" id="customRadio32" name="customRadio" class="form-check-input" required>
 									<label class="form-check-label" for="customRadio32">เพื่อไม่ให้โพสต์รูปภาพในห้อง</label>
 								</div>
 							</div>  
@@ -1075,9 +1089,10 @@
 									</div>
 									<div class="col-6">
 										<select class="form-select mt-2" title="คะแนนรูปภาพ">
-											<option value="">ปานกลาง</option> 
-											<option value="">ปานกลาง</option> 
-											<option value="">ปานกลาง</option> 
+											<option></option> 
+											<option>ปานกลาง</option> 
+											<option>ปานกลาง</option> 
+											<option>ปานกลาง</option> 
 										</select> 
 									</div>
 								</div>
@@ -1095,7 +1110,7 @@
 							</div>   
 							<div class="col-lg-6 col-6">
 								<div class="form-check">
-									<input type="checkbox" class="form-check-input" id="customControlInline32">
+									<input type="checkbox" class="form-check-input" id="customControlInline32" required>
 									<label class="form-check-label" for="customControlInline32">เปิดให้เห็นเบอร์ Owner</label>
 								</div>
 							</div>  
@@ -1143,7 +1158,7 @@
 						<div class="form-group row">
 							<div class="col-lg-12 col-12">
 								<label for="">รหัสทรัพย์</label>
-								<input type="text" class="form-control" placeholder="Enter....">
+								<input type="text" class="form-control" placeholder="Enter...." required>
 							</div> 
 						</div> 
 						<div class="input-div">
