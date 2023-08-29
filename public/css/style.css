@@ -1113,6 +1113,13 @@ h3.h3{
   width: 100%;  
   height: 20px; 
 }
+.h5-text{
+  text-align: center;
+  color: #418EFD;
+  font-size: 12px;   
+  margin-top: 5px;
+  z-index: 2;   
+}
 .search-box .h5x span{
   text-decoration: underline;
 }
@@ -1420,10 +1427,10 @@ h5.dp{
   cursor: pointer;
 }
 .btb{
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
 .div-h5{
-  padding-bottom: 10px;
+  padding-bottom: 10px !important;
 }
 .optionx{
   border-radius: 4px;
@@ -2455,11 +2462,23 @@ ol, ul {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1px;
+} 
+.btn-web.xs.w-200{
+  width: 200px !important;
+}
+.btn-web4.xs.w-200{
+  width: 200px !important;
 }
 
-
-
-
+.btn.w-200 .material-symbols-outlined { 
+  margin-right: 0px;
+}
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option {
+  font-size: 12px !important;
+}
+.select2-container--bootstrap-5 .select2-dropdown .select2-search .select2-search__field{
+  font-size: 12px !important;  
+}
 
 /*
 #418EFD 
