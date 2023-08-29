@@ -1668,19 +1668,24 @@ h5.dp{
 } 
 .icon-span2{
   position: absolute;
-  right: 23px;
+  right: 35px;
   top: 60px;
   color: #979797;
+} 
+.icon-span2.t7{ 
+  top: 7px; 
+  z-index: 4;
+  right: 35px;
 } 
 .icon-span2.t21{ 
   top: 48px; 
   z-index: 4;
-  right: 20px;
+  right: 35px;
 } 
 .icon-span2.t31{ 
   top: 39px; 
   z-index: 4;
-  right: 20px;
+  right: 35px;
 } 
 .icon-span2.t41{ 
   top: 41px; 
