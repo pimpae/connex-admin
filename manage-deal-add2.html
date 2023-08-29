@@ -429,132 +429,77 @@
 				<li><div>3</div> <span>ข้อมูลเพิ่มเติม</span></li>
 			</ul>
 			
-			<div class="box1"> 
-				<h5 class="h5">
-					<b>ข้อมูลการตลาด</b> 
-				</h5> 
-				<div class="div-h5"> 
-					<hr class="mt-4 mb-0">  
-					<div class="form-group row">
-						<div class="col-lg-4 col-12">
-							<label for="">ประเภททรัพย์</label>
-							<select class="form-select" title="ประเภททรัพย์">
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-							</select> 
+			<form action="" class="was-validated">
+				<div class="box1"> 
+					<h5 class="h5">
+						<b>ข้อมูลการตลาด</b> 
+					</h5> 
+					<div class="div-h5"> 
+						<hr class="mt-4 mb-0">  
+						<div class="form-group row">
+							<div class="col-lg-4 col-12">
+								<label for="">ประเภททรัพย์</label>
+								<select class="form-select" data-placeholder="ประเภททรัพย์" required>
+									<option></option> 
+									<option>ไม่เลือก</option> 
+									<option>ไม่เลือก</option> 
+									<option>ไม่เลือก</option> 
+								</select> 
+							</div>
+							<div class="col-lg-4 col-12">
+								<label for="">ประเภททรัพย์</label>
+								<select class="form-select" data-placeholder="ประเภททรัพย์" required>
+									<option></option> 
+									<option>ไม่เลือก</option> 
+									<option>ไม่เลือก</option> 
+									<option>ไม่เลือก</option> 
+								</select> 
+							</div>  
+							<div class="col-lg-4 col-12">
+								<label for="">ประเภททรัพย์</label>
+								<select class="form-select" data-placeholder="ประเภททรัพย์" required>
+									<option></option> 
+									<option>ไม่เลือก</option> 
+									<option>ไม่เลือก</option> 
+									<option>ไม่เลือก</option> 
+								</select> 
+							</div>  
+							<div class="col-lg-4 col-12">
+								<label for="">CX ที่ลูกค้าเลือกมา</label>
+								<input type="text" class="form-control" placeholder="โปรดกรอก" required>
+							</div>  
+						</div> 
+						<div class="form-group row">
+							<div class="col-lg-4">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="customControlInline33" required>
+									<label class="form-check-label" for="customControlInline33">เลือกเพื่อให้ข้อมูล CX ไปแสดงที่ดีล (กรณีมากรอก cx ในภายหลัง)</label>
+								</div>
+							</div>
 						</div>
-						<div class="col-lg-4 col-12">
-							<label for="">ประเภททรัพย์</label>
-							<select class="form-select" title="ประเภททรัพย์">
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-							</select> 
-						</div>  
-						<div class="col-lg-4 col-12">
-							<label for="">ประเภททรัพย์</label>
-							<select class="form-select" title="ประเภททรัพย์">
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-								<option value="">ไม่เลือก</option> 
-							</select> 
-						</div>  
-						<div class="col-lg-4 col-12">
-							<label for="">CX ที่ลูกค้าเลือกมา</label>
-							<input type="text" class="form-control" placeholder="โปรดกรอก">
-						</div>  
-					</div> 
-					<div class="form-group row">
-						<div class="col-lg-4">
-							<div class="form-check">
-								<input type="checkbox" class="form-check-input" id="customControlInline33">
-								<label class="form-check-label" for="customControlInline33">เลือกเพื่อให้ข้อมูล CX ไปแสดงที่ดีล (กรณีมากรอก cx ในภายหลัง)</label>
+						<div class="form-group row">
+							<div class="col-lg-12">
+								<label for="">Requirement</label>
+								<textarea name="" class="form-control" required></textarea>
 							</div>
 						</div>
 					</div>
-					<div class="form-group row">
-						<div class="col-lg-12">
-							<label for="">Requirement</label>
-							<textarea name="" class="form-control"></textarea>
-						</div>
-					</div>
 				</div>
-			</div>
 
-			<div class="box1 pb-3">  
-				<div class="form-group row">
-					<div class="col-12 text-right-center">
-						<button class="btn btn-white btn-b">ยกเลิก</button>
-						<a href="manage-deal-add3.html" class="btn btn-primary btn-b">ต่อไป</a>
-					</div>
-				</div>  
-			</div>
+				<div class="box1 pb-3">  
+					<div class="form-group row">
+						<div class="col-12 text-right-center">
+							<button class="btn btn-white btn-b">ยกเลิก</button>
+							<button type="submit" class="btn btn-primary btn-b">ต่อไป</button>
+						</div>
+					</div>  
+				</div>
+			</form>
 			
 		</div>
 	</main>
 
-	
-	<div class="modal fade modal1 search-m" id="add_photoModal">
-		<div class="modal-dialog modal-dialog-centered modal-xl">
-			<div class="modal-content"> 
-				<div class="modal-body"> 
-					<form>
-						<h6>ภาพประกอบ</h6>
-						<span class="material-symbols-outlined closex" data-bs-dismiss="modal">
-						close
-						</span>
-						<hr>
-						<div class="form-group row">
-							<div class="col-lg-12 col-12">
-								<label for="">รหัสทรัพย์</label>
-								<input type="text" class="form-control" placeholder="Enter....">
-							</div> 
-						</div>
-						<div class="dorp-img">
-							<div>
-								<span class="material-symbols-outlined">
-								photo
-								</span>
-								<h4>Drag & Drop ไฟล์ที่นี่</h4>
-							</div>
-						</div>
-						<h5>ไม่อนุญาตให้ Upload ภาพนามสกุลอื่น นอกจาก jpg หากเป็นนามสกุลอื่นโปรคคิดต่อเจ้าหน้าที่ไอที</h5>
-						<div class="row">
-							<div class="col-lg-3 col-12 photo-div">
-								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-								<span class="material-symbols-outlined">
-								close
-								</span>
-							</div>
-							<div class="col-lg-3 col-12 photo-div">
-								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-								<span class="material-symbols-outlined">
-								close
-								</span>
-							</div>
-							<div class="col-lg-3 col-12 photo-div">
-								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-								<span class="material-symbols-outlined">
-								close
-								</span>
-							</div>
-							<div class="col-lg-3 col-12 photo-div">
-								<img src="public/images/i1.png" alt="images" class="img-fluid m-auto d-block">
-								<span class="material-symbols-outlined">
-								close
-								</span>
-							</div>
-							<div class="col-12 text-center">
-								<br>
-								<button type="button" class="btn btn-primary btn-sm">บันทึก / และเพิ่มภาพ</button>
-							</div>
-						</div>
-					</form>
-				</div> 
-			</div>
-		</div>
-	</div>
+ 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
