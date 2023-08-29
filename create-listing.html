@@ -1188,17 +1188,19 @@
 			$("body").toggleClass("expand");  
 		}); 
 
-		$('.menux').click(function(){    
-			$(".menu-mb").addClass("active" , 300);  
-			$("body").addClass("active" , 300);    
+		$('.menux').click(function(){     
+			$(".menu-mb").addClass("active");
+			$("body").addClass("active");      
+			$('.menu-mb').animate({'left': '0'}, 600);
 		}); 
 		$('.backdp').click(function(){     
-			$(".menu-mb").removeClass("active" , 300);  
-			$("body").removeClass("active" , 300);    
+			$(".menu-mb").removeClass("active");  
+			$("body").removeClass("active");    
 		}); 
 		$('.menux-close').click(function(){    
-			$(".menu-mb").removeClass("active" , 300);  
-			$("body").removeClass("active" , 300);    
+			$(".menu-mb").removeClass("active");  
+			$("body").removeClass("active");    
+			$('.menu-mb').animate({'left': '-100%'}, 300); 
 		});
 		$('.header-text').click(function(){    
 			$('.header-text').removeClass("active" , 300);   
