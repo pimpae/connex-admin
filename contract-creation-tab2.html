@@ -555,7 +555,9 @@
 	<script>
 
 		$(document).ready(function() {
-			$('.js-example-basic-multiple').select2();
+			$( '.form-select' ).select2( {
+				theme: "bootstrap-5"
+			} ); 
 			$('.header-text').addClass("active" , 300); 
 		}); 
 

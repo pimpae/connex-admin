@@ -704,7 +704,9 @@
 
 	<script>
 		$(document).ready(function() {
-			$('.js-example-basic-multiple').select2();
+			$( '.form-select' ).select2( {
+				theme: "bootstrap-5"
+			} ); 
 		});
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   
