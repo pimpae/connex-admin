@@ -2496,7 +2496,20 @@ ol, ul {
 .table1 tbody td .dropdown-item:hover span {
   background-color: transparent; 
 }
-
+.datepicker td.day, .datepicker .dow { 
+  -webkit-border-radius: 100% !important;
+  -moz-border-radius: 100% !important;
+  border-radius: 100% !important; 
+  padding: 6px 8px;
+  font-size: 12px !important;
+}
+.datepicker td.active{ 
+  background: var(--bg-main) !important;
+}
+.datepicker td.today{ 
+  padding: 7px 6px !important;
+  background: var(--bg-body) !important;
+}
 
 /*
 #418EFD 
@@ -3111,6 +3124,12 @@ body.expand
   .btn-mb-f .material-symbols-outlined{
     font-size: 19px;
     top: 5;
+  }
+  .btn .material-symbols-outlined {
+    position: relative;
+    margin-right: 0px;
+    font-size: 20px;
+    top: 5px;
   }
 }
 @media only screen and (min-width: 1025px) { /* PC */
