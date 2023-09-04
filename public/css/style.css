@@ -39,7 +39,7 @@ body{
 .menu{
   position: fixed;
   padding: 20px 10px 40px;  
-  width: 360px; 
+  width: 300px; 
   background: #FFFFFF; 
   height: 100%;
   max-height: 100%;
@@ -154,8 +154,7 @@ body.expand .menu .sub ul{
   background: #FFFFFF;
   border: 1px solid #E4E8EB;
   border-radius: 10px;
-  color: var(--bg-black);
-  transition: .33s all ease-out; 
+  color: var(--bg-black); 
 }
 .menu ul li div{
   display: block;
@@ -164,8 +163,7 @@ body.expand .menu .sub ul{
   background: #FFFFFF;
   border: 1px solid #E4E8EB;
   border-radius: 10px;
-  color: var(--bg-black);
-  transition: .33s all ease-out; 
+  color: var(--bg-black); 
   height: 50px; 
   cursor: pointer;
 }
@@ -210,7 +208,7 @@ body.expand .menu .sub ul{
 .menu ul li a:hover span{  
   color: var(--bg-white);
 }  
-.menu ul li:hover div{  
+.menu ul li div:hover  i{  
   color: var(--bg-white);
 }
 .menu ul li div:hover span{  
@@ -235,12 +233,13 @@ body.expand .menu .sub ul{
   color: var(--bg-white);
 }
 .menu ul li.sub.active ul{   
-  padding: 0px 10px 10px; 
-}
+  padding: 0px 10px 10px ; 
+} 
 .menu ul li.sub.active ul li{   
   margin-top: 7px;
   margin-bottom: 7px;
   height: 35px;
+  margin-right: 7px;
 }
 .menu ul li.sub.active ul a{   
   padding-left: 64px;
@@ -249,14 +248,14 @@ body.expand .menu .sub ul{
 }
 .menu ul li.sub.active ul li.active a{   
   background: var(--bg-sky);
-  border-radius: 0px;
+  border-radius: 6px;
 }
 .menu ul li.sub.active ul li:hover a{   
   background: var(--bg-sky); 
-  border-radius: 0px;
+  border-radius: 6px;
 } 
 main{
-  padding: 90px 20px 20px 380px;
+  padding: 90px 20px 20px 320px;
 }
 .nav-top{
   position: absolute;
@@ -264,7 +263,7 @@ main{
   top: 0;
   width: 100%;
   height: 70px;
-  padding-left: 355px;
+  padding-left: 295px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(43, 45, 55, 0.0105441);
   z-index: 2;
@@ -1066,7 +1065,7 @@ h3.h3{
   border-radius: 4px;
   border: 1px solid #D9D9D9;
   background: #FFF;
-  color: #979797; 
+  color: #000; 
   font-size: 12px; 
   font-weight: 400;
   line-height: 24px;
@@ -1312,6 +1311,7 @@ h3.h3{
 } 
 .btn.btn-fig{
   color: var(--bg-text2);  
+  line-height: 30px;
 }
 .btn.btn-fig:hover{
   color: #fff;  
@@ -2510,6 +2510,90 @@ ol, ul {
   padding: 7px 6px !important;
   background: var(--bg-body) !important;
 }
+.accordion{ 
+  position: relative;
+  border-radius: 6px; 
+  margin-bottom: 10px;
+}
+.accordion-item{
+  padding: 20px !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  outline: none !important;
+  margin-bottom: 10px;
+  border: none !important;
+}  
+
+.accordion-button{
+  padding: 0px !important;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+} 
+.accordion-button{
+  --bs-accordion-border-color: none !important;
+}
+.accordion-button:focus{
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+} 
+.accordion-button:not(.collapsed){
+  background-color: transparent !important; 
+}  
+.accordion-body{
+  padding: 0px !important; 
+}
+.accordion-body .body-text{ 
+  display: block !important;
+}
+.accordion-body label {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.accordion-button::after{ 
+  content: none !important;
+}
+.accordion-button span.chk {
+  position: absolute;
+  color: #979797;
+  right: 30px;
+}
+.accordion-button span.arr {
+  position: absolute;
+  color: #979797;
+  right: 0px;
+  transform: rotate(180deg);
+}
+.accordion-button.collapsed span.arr {
+  transform: rotate(0deg);
+}
+
+.accordion-button span.active{  
+  color: var(--bg-success); 
+}
+.accordion .btn.btn-sm {
+  background-color: var(--bg-main);
+  padding: 7px 20px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 4px;
+}
+.search-m .modal-dialog.modal-xlx { 
+  margin-top: 16px;
+}
+.fc-daygrid-week-number{
+  display: none;
+}
 
 /*
 #418EFD 
@@ -3130,6 +3214,25 @@ body.expand
     margin-right: 0px;
     font-size: 20px;
     top: 5px;
+  }
+  .search-m .modal-body form .col-lg-12.col-6.text-end{
+    display: flex;
+    width: 100%;
+  }
+  .search-m .modal-body form .col-lg-12.col-6.text-end button:nth-child(1){
+    margin-right: 5px !important;
+    width: 100% !important;
+  }
+  .search-m .modal-body form .col-lg-12.col-6.text-end button:nth-child(2){
+    margin-left: 5px !important;
+    width: 100% !important;
+  }
+  .accordion .btn.btn-sm{
+    width: 100%;
+  }
+  .mbb-x{
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
   }
 }
 @media only screen and (min-width: 1025px) { /* PC */
