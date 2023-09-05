@@ -1900,6 +1900,9 @@ h5.dp{
   margin-left: 4px;
   margin-right: 4px;
 }
+.active-box .icon span{ 
+  font-size: 18px; 
+}
 .active-box h5{
   color: #0054FE; 
   font-size: 12px; 
