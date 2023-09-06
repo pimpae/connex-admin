@@ -8,16 +8,16 @@
 	<title> Connex Admin </title>
 	<link rel="icon" type="image/x-icon" href="public/images/logo.png">  
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet" type="text/css" />      
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>  
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" /> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" /> 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" /> 
-    <link href="public/css/style.css" rel="stylesheet" type="text/css" />     
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 
 </head>
@@ -463,7 +463,12 @@
 					</div>
 				</div> 
 				<div class="col-lg-6 col-12"> 
-					<h3 class="h3   ">จัดการดีล</h3>
+					<h3 class="h3 expandx" data-bs-toggle="modal" data-bs-target="#myModal">
+						จัดการดีล
+						<span class="material-symbols-outlined">
+						expand_more
+						</span>
+					</h3>
 				</div>
 				<div class="col-lg-6 col-12 text-end mb-x"> 
 					<a href="manage-deal-add.html" class="btn btn-primary btb" > 
@@ -484,6 +489,31 @@
 				</div>
 			</div> 
 			<div class="col-12 mb-x">&nbsp;</div>
+
+
+			<div class="modal fade modal-more-b" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">  
+						<div class="modal-body">
+							<a href="manage-deal-add.html" class="btn btn-primary btb mb-3 text-start" > 
+								<span class="material-symbols-outlined me-2">
+								add_box
+								</span>เพิ่มข้อมูล 
+							</a>
+							<a href="#" class="btn btn-primary btb mb-3 text-start" > 
+								<span class="material-symbols-outlined me-2">
+								calendar_month
+								</span>ปฎิทิน 
+							</a>
+							<a href="report.html" class="btn btn-primary btb mb-3 text-start" > 
+								<span class="material-symbols-outlined me-2">
+								lab_profile
+								</span>รายงาน 
+							</a>
+						</div>  
+					</div>
+				</div>
+			</div>
 
 			<div class="col search-box">
 				<div class="row mb-x"> 
@@ -854,7 +884,7 @@
 
 	
 	<div class="modal modal-none-b fade modal1 search-m" id="desModal">
-		<div class="modal-dialog modal-dialog-centered modal-xl modal-bottom">
+		<div class="modal-dialog modal-dialog-centered modal-xl modal-bottom modal-xlx">
 			<div class="modal-content"> 
 				<div class="modal-body">
 					<div data-bs-dismiss="modal" class="dis-m pc-x"></div>
@@ -896,7 +926,7 @@
 							</tr>  
 							<tr>
 								<td>Work load</td>
-								<td>ไม่ระบุ</td>
+								<td><span data-bs-toggle="modal" data-bs-target="#dealModal">ไม่ระบุ</span></td>
 							</tr>  
 							<tr>
 								<td>วันที่สร้าง</td>
@@ -906,15 +936,90 @@
 								<td>วันที่อัพเดต</td>
 								<td>2023/03/03 <br> 09:00:05</td>
 							</tr>  
+							<tr>
+								<td>จัดการ</td>
+								<td>
+									<div class="d-flex w-100">
+										<a href="javascript:void(0)" class="text-link">
+											แก้ไข
+											<span class="material-symbols-outlined">
+											edit
+											</span>
+											
+										</a>
+										<a href="javascript:void(0)" class="text-link">
+											ลบ
+											<span class="material-symbols-outlined">
+											delete
+											</span>
+										</a>
+									</div>
+								</td>
+							</tr>
 						</tbody>
 					</table>
 				</div> 
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade " id="dealModal">
+		<div class="modal-dialog modal-dialog-centered ">  
+			<div class="modal-content"> 
+				<div class="modal-body"> 
+					<form>
+						<h6><b>Workload Deal : D-018745</b></h6>
+						<span class="material-symbols-outlined closex" data-bs-dismiss="modal">
+						close
+						</span>
+						<hr class="mb-0">
+						<div class="form-group row">
+							<div class="col-lg-12 col-12">
+								<label>เลือกสถานะ</label>
+								<select class="form-select"  >
+									<option value="">ไม่เลือก</option> 
+									<option value="">ไม่เลือก</option>  
+								</select>  
+							</div> 
+						</div>
+						<br>
+						<p class="ppp">กรณีเลือก Close Lost ดำเนินการเลือกเหตุผล</p>
+						<div class="form-group row">
+							<div class="col-lg-12 col-12">
+								<label>เหตุผลยกเลิกดีล</label>
+								<select class="form-select mt-2">
+									<option></option> 
+									<option>ปานกลาง</option> 
+									<option>ปานกลาง</option> 
+									<option>ปานกลาง</option> 
+								</select> 
+							</div> 
+						</div> 
+						<div class="form-group row">
+							<div class="col-lg-12 col-12">
+								<label>Remark</label>
+								<textarea class="form-control"></textarea>
+							</div> 
+						</div>
+					 	<br>
+						<div class="row"> 
+							<div class="col-12 text-center"> 
+								<button class="btn btn-white"> 
+									ยกเลิก
+								</button> 
+								<button class="btn btn-primary "> 
+									ยืนยัน
+								</button>
+							</div>
+						</div>
+					</form>
+				</div> 
+			</div>
+		</div>
+	</div>
  
 	<div class="modal fade modal1 search-m" id="searchModal">
-		<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-dialog modal-dialog-centered modal-xl ">
 			<div class="modal-content"> 
 				<div class="modal-body">
 					<div data-bs-dismiss="modal" class="dis-m pc-x"></div>
@@ -933,13 +1038,13 @@
 							</div>
 							<div class="col-lg-4 col-12">
 								<label for="">ความสนใจ</label>
-								<select class="form-select" title="ความสนใจ" data-live-search="true">
+								<select class="form-select" title="ความสนใจ">
 									<option value="">ไม่ระบุ</option> 
 								</select> 
 							</div>
 							<div class="col-lg-4 col-12">
 								<label for="">เลือกเซลล์</label>
-								<select class="form-select" title="เลือกเซลล์" data-live-search="true">
+								<select class="form-select" title="เลือกเซลล์">
 									<option value="">ไม่ระบุ</option> 
 								</select> 
 							</div>
@@ -947,19 +1052,19 @@
 						<div class="form-group row mt-2"> 
 							<div class="col-lg-4 col-12">
 								<label for="">Process</label>
-								<select class="form-select" title="Process" data-live-search="true">
+								<select class="form-select" title="Process">
 									<option value="">ไม่ระบุ</option> 
 								</select> 
 							</div>
 							<div class="col-lg-4 col-12">
 								<label for="">Workload</label>
-								<select class="form-select" title="Workload" data-live-search="true">
+								<select class="form-select" title="Workload">
 									<option value="">ไม่ระบุ</option> 
 								</select> 
 							</div>
 							<div class="col-lg-4 col-12">
 								<label for="">แหล่งที่มา</label>
-								<select class="form-select" title="แหล่งที่มา" data-live-search="true">
+								<select class="form-select" title="แหล่งที่มา">
 									<option value="">ไม่ระบุ</option> 
 								</select> 
 							</div>
@@ -967,7 +1072,7 @@
 						<div class="form-group row mt-2"> 
 							<div class="col-lg-4 col-12">
 								<label for="">ติดต่อจาก</label>
-								<select class="form-select" title="ติดต่อจาก" data-live-search="true">
+								<select class="form-select" title="ติดต่อจาก">
 									<option value="">ไม่ระบุ</option> 
 								</select> 
 							</div> 
@@ -996,66 +1101,15 @@
 		</div>
 	</div> 
 		
-	<div class="modal fade modal1 search-m" id="dealModal">
-		<div class="modal-dialog modal-dialog-centered "> <!-- modal-lg modal-xl -->
-			<div class="modal-content"> 
-				<div class="modal-body"> 
-					<form>
-						<h6><b>Workload Deal : D-018745</b></h6>
-						<span class="material-symbols-outlined closex" data-bs-dismiss="modal">
-						close
-						</span>
-						<hr>
-						<div class="form-group row">
-							<div class="col-lg-12 col-12">
-								<label>เลือกสถานะ</label>
-								<select class="form-select" title="เลือกสถานะ">
-									<option value="">ไม่เลือก</option> 
-									<option value="">ไม่เลือก</option>  
-								</select> 
-							</div> 
-						</div>
-						<br>
-						<p>กรณีเลือก Close Lost ดำเนินการเลือกเหตุผล</p>
-						<div class="form-group row">
-							<div class="col-lg-12 col-12">
-								<label>เหตุผลยกเลิกดีล</label>
-								<select class="form-select" title="เหตุผลยกเลิกดีล">
-									<option value="">ไม่เลือก</option> 
-									<option value="">ไม่เลือก</option>  
-								</select> 
-							</div> 
-						</div>
-						<br>
-						<div class="form-group row">
-							<div class="col-lg-12 col-12">
-								<label>Remark</label>
-								<textarea class="form-control"></textarea>
-							</div> 
-						</div>
-					 	<br>
-						<div class="row"> 
-							<div class="col-12 text-center"> 
-								<button class="btn btn-white"> 
-									ยกเลิก
-								</button> 
-								<button class="btn btn-primary "> 
-									ยืนยัน
-								</button>
-							</div>
-						</div>
-					</form>
-				</div> 
-			</div>
-		</div>
-	</div>
 
 				
+				
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
-	 
+ 
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
@@ -1088,38 +1142,8 @@
 			$(".menu-mb").removeClass("active");  
 			$("body").removeClass("active");    
 			$('.menu-mb').animate({'left': '-100%'}, 300); 
-		});
-		$('.list-tabs ul li').click(function(){    
-			$(".list-tabs ul li").removeClass("active" , 300);  
-			$(this).addClass("active" , 300);    
-			$(".tb-data").removeClass("active" , 300);   
-			$(".tb-data" + $(this).attr("data-tabs")).addClass("active" , 300);     
-		});
-
-		$('.del-mo').click(function(){      
-			$('#desModal').modal('hide');
-			$('#delModal').modal('show');
 		}); 
-		
-	 
-		
-
-		function sideScroll(element,direction,speed,distance,step){
-			scrollAmount = 0;
-			var slideTimer = setInterval(function(){
-				if(direction == 'left'){
-					element.scrollLeft -= step;
-				} else {
-					element.scrollLeft += step;
-				}
-				scrollAmount += step;
-				if(scrollAmount >= distance){
-					window.clearInterval(slideTimer);
-				}
-			}, speed);
-		}
-
-
+ 
 	</script>
 	
 
