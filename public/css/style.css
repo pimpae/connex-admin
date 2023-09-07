@@ -1098,6 +1098,15 @@ h3.h3{
   right: 0;
   top: 0;
 }
+.btn-nextx:hover{ 
+  background-color: #F5F6FA !important; 
+}
+.btn-nextx:focus{ 
+  background-color: #F5F6FA !important; 
+}
+.btn-nextx:active{ 
+  background-color: #F5F6FA !important; 
+}
 .btn-nextx span{ 
   color: #0054FE;
   margin-right: 0px !important; 
@@ -1696,6 +1705,21 @@ h5.dp{
   top: 39px; 
   z-index: 4;
   right: 35px;
+} 
+.icon-span2.tn1{ 
+  top: 39px; 
+  z-index: 4;
+  right: 20px;
+} 
+.icon-span2.tn2{ 
+  top: 39px; 
+  z-index: 4;
+  right: 20px;
+} 
+.icon-span2.tn3{ 
+  top: 32px; 
+  z-index: 4;
+  right: 20px;
 } 
 .icon-span2.t41{ 
   top: 41px; 
@@ -2616,6 +2640,18 @@ ol, ul {
   line-height: 24px; 
   margin-bottom: 0px;
 }
+.btn-bai{
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #B0C2DB;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+.btn-bai:hover{
+  border: 1px solid #B0C2DB;
+  background: #F3F3F3;
+}
 
 
 
@@ -3258,6 +3294,21 @@ body.expand
     margin-bottom: 0px !important;
     margin-top: 0px !important;
   }
+  .h-42x{
+    height: 42px !important;
+  }
+  .m4{
+    margin-bottom: 1.5rem!important;
+  }
+  .m2{
+    margin-bottom: 0.5rem!important;
+  }
+  .icon-span2.tn1 {
+    top: 31px; 
+  }
+  .icon-span2.tn3{ 
+    top: 39px;  
+  } 
 }
 @media only screen and (min-width: 1025px) { /* PC */
   .pc-x{

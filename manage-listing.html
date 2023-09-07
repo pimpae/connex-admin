@@ -475,7 +475,7 @@
 			</div> 
 			<div class="col-12 mb-x">&nbsp;</div>
  
-			<div class="col-12 list-tabs pl-0 pr-0" >
+			<div class="col-12 list-tabs pl-0 pr-0 position-relative" >
 				<ul id="next-tab">
 					<li data-tabs="1" class="active" >
 						<a href="#">Listing All</a>
@@ -2998,6 +2998,17 @@
 		} 
 	</script>
 	
+	<script>
+		function leftScroll() {
+		  const left = document.querySelector(".scroll-images");
+		  left.scrollBy(200, 0);
+		}
+		function rightScroll() {
+		  const right = document.querySelector(".scroll-images");
+		  right.scrollBy(-200, 0);
+		}
+	</script>
+
 
 </body>
 </html>
