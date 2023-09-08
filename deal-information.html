@@ -387,32 +387,7 @@
 				</div>
 			</div>
 
-			<div class="content-map">
-				<div class="row">
-					<div class="col-6">
-						<img src="public/images/1111.png" alt="">
-						<h6>Update : 25 ก.พ. 2565 13:00</h6>
-						<a href="#" class="btn">นำเสนอห้อง</a>
-					</div>
-					<div class="col-6">
-						<p>
-							โดรงการ : 15 สุขุมวิท เรสซิเดนซ์ <br>
-							สกานีรถไฟฟ้า : BTร-นานา Nana <br>
-							รหัสทรัพย์ : CX-06931 <br>
-							ราดาเช่า : 33,000 บาท <br>
-							ประเภท : คอนโด <br>
-							ตั้งอยู่ชั้นที่ : 15 <br>
-							พื่นที่ใช้สอย : 65.4 ตร.ม. <br>
-							ห้องนอน : 2 ห้อง <br>
-							ห้องนำ : 1 ห้อง <br>
-							<span>สถานะ : Available  </span>
-						</p>
-					</div>
-				</div>
-			</div>
-	  
-			<br>
-				
+		  
 			<div class="box1">  
 				<div class="div-h5">    
 					<ul class="nav nav-tabs nav-tabs-de" role="tablist">
@@ -696,26 +671,10 @@
 								</div>
 							</div>
 						</div>
-					</div> 
-
-
-					<div class="modal fade mapx" id="mapModal">
-						<div class="modal-dialog modal-dialog-centered modal-xl">
-							<div class="modal-content"> 
-								<div class="modal-body">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-									<div id="map">xxxx</div>
-
-
-
-								</div> 
-							</div>
-						</div>
-					</div>
-
+					</div>  
 
 					<div class="col tb-box"> 
-						<h4 class="h4x">โครงการที่เกี่ยวข้อง <img src="public/images/mapx.png" alt=""></h4>
+						<h4 class="h4x">โครงการที่เกี่ยวข้อง <img src="public/images/mapx.png" alt="" data-bs-toggle="modal" data-bs-target="#mapModal"></h4>
 
 						<div class="related-box bg1 pc-x">
 							<div class="row">
@@ -729,7 +688,7 @@
 										สถานีรถไฟฟ้า : BTS-นาน / Nana <br>
 										โซน : นานาฝั่งหนือ นานาฝั่งใต้ <br>
 										ปีที่สร้าง : 2557 <br>
-										แผนที่ : <a href="#">คลิกดูแผนที่</a> <br>
+										แผนที่ : <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal">คลิกดูแผนที่</a> <br>
 										ราคาเฉลี่ย <br>
 										จำนวนทรัพย์ : 121
 									</p>
@@ -748,7 +707,7 @@
 										สถานีรถไฟฟ้า : BTS-นาน / Nana <br>
 										โซน : นานาฝั่งหนือ นานาฝั่งใต้ <br>
 										ปีที่สร้าง : 2557 <br>
-										แผนที่ : <a href="#">คลิกดูแผนที่</a> <br>
+										แผนที่ : <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal">คลิกดูแผนที่</a> <br>
 										ราคาเฉลี่ย <br>
 										จำนวนทรัพย์ : 121
 									</p>
@@ -767,7 +726,7 @@
 										สถานีรถไฟฟ้า : BTS-นาน / Nana <br>
 										โซน : นานาฝั่งหนือ นานาฝั่งใต้ <br>
 										ปีที่สร้าง : 2557 <br>
-										แผนที่ : <a href="#">คลิกดูแผนที่</a> <br>
+										แผนที่ : <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal">คลิกดูแผนที่</a> <br>
 										ราคาเฉลี่ย <br>
 										จำนวนทรัพย์ : 121
 									</p>
@@ -786,7 +745,7 @@
 										สถานีรถไฟฟ้า : BTS-นาน / Nana <br>
 										โซน : นานาฝั่งหนือ นานาฝั่งใต้ <br>
 										ปีที่สร้าง : 2557 <br>
-										แผนที่ : <a href="#">คลิกดูแผนที่</a> <br>
+										แผนที่ : <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal">คลิกดูแผนที่</a> <br>
 										ราคาเฉลี่ย <br>
 										จำนวนทรัพย์ : 121
 									</p>
@@ -2422,7 +2381,9 @@
 
 				</div>
 			</div>
- 
+			
+			<button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalDetail">Detail Popup </button>
+
 		</div>
 
 		
@@ -2430,7 +2391,772 @@
 
 	</main>
 
-	
+	<div class="modal fade modal10 search-m" id="modalDetail">
+		<div class="modal-dialog modal-dialog-centered modal-xl modal-xlx modal-bottom">
+			<div class="modal-content"> 
+				<div class="modal-body">
+					<div data-bs-dismiss="modal" class="dis-m pc-x"></div>
+					<h4 class="h4x text-black">โครงการ : 15 สุขุมวิท เรสซิเดนซ์ <img src="public/images/mapx.png" alt="" data-bs-toggle="modal" data-bs-target="#mapModal"></h4>
+					<div class="inner-body">
+						<div class="row">
+							<div class="col-lg-4 col-12">
+								<img src="public/images/1111.png" alt="images">
+								<p>Update : 25 ก.พ. 2565 <br>
+									13:00</p>
+							</div>
+							<div class="col-lg-8 col-12">
+								<h3>Project</h3>
+								<h6>โครงการ : 15 สุขุมวิท เรสซิเดนซ์</h6>
+								<h6>จำนวนชั้น : 25 จำนวน UNIT : 500</h6>
+								<h6>สถานีรถไฟฟ้า : BTร-นานา | BTS-นานา</h6>
+								<h6>โซน : นานาฝังเหนือ นานาฝั่งได้</h6>
+								<h6>ปีที่สร้าง : 2557</h6>
+								<h6>ผู้สร้าง : บริษัท ตราวน์ ดีเวลลอปเม้นท์ จำกัด | VSSL Enterprise Co.,LTD</h6>
+								<h6>แผนที่ : <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal">คลิกดูแผนที่</a></h6>
+								<br>
+								<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popModal">นำเสนอห้อง</button>
+							</div>
+						</div>
+					</div> 
+					<h4 class="h4x mb-x">โครงการที่เกี่ยวข้อง <img src="public/images/mapx.png" alt="" data-bs-toggle="modal" data-bs-target="#mapModal"></h4>
+					<div class="table-responsive tb-data tb-data1 active mb-x "> 
+						<table class="table table1">
+							<thead>
+								<tr>
+									<th>
+										No
+									</th>
+									<th>
+										Image
+									</th>
+									<th>
+										คุณภาพ <br> (img) 
+									</th>
+									<th>
+										Status
+									</th>
+									<th>
+										Type
+									</th>
+									<th>
+										Deal
+									</th>
+									<th>
+										Project
+									</th>
+									<th>
+										House No.
+									</th>
+									<th>
+										Floor
+									</th>
+									<th>
+										Room
+									</th>
+									<th>
+										พื้นที่ <br> (ตรม.)
+									</th>
+									<th>
+										Price
+									</th> 
+									<th>
+										BTS
+									</th>
+									<th>
+										ความต้องการ
+									</th>
+									<th>
+										Update
+									</th> 
+									<th>
+										นำเสนอ
+									</th>
+									<th>
+										จัดการ
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="text-main">
+										CX-74371
+									</td>
+									<td class="text-success">
+										<span class="material-symbols-outlined">
+										check_circle
+										</span>
+									</td> 
+									<td class="text-success">
+										(ดี)
+									</td> 
+									<td class="text-success">
+										Available
+									</td>  
+									<td>
+										คอนโด
+									</td>  
+									<td>
+										เช่า
+									</td> 
+									<td>
+										Metro Sky <br> Wutthakat
+									</td> 
+									<td>
+										101/136
+									</td> 
+									<td>
+										24
+									</td> 
+									<td>
+										1 นอน | 1 น้ำ
+									</td> 
+									<td>
+										25
+									</td> 
+									<td>
+										4,635,000
+									</td>  
+									<td>
+										BTS <br> ห้าแยก <br>
+										ลาดพร้าว
+									</td> 
+									<td class="text-warning">
+										ตรง
+									</td> 
+									<td>
+										02/03/2023, <br>13:00
+									</td>  
+									<td>
+										<button  class="btn btn-tb">นำเสนอห้อง</button>
+									</td>  
+									<td>
+										<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+											<span class="material-symbols-outlined">
+												more_horiz
+											</span>
+										</div>
+										<div class="dropdown mb-x">
+											<div data-bs-toggle="dropdown">
+												<span class="material-symbols-outlined">
+												expand_more
+												</span>
+											</div>
+											<div class="dropdown-menu"> 
+												<a class="dropdown-item active" href="#"> 
+													<span class="material-symbols-outlined">
+													search
+													</span>
+													ดูรายละเอียด
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													edit_square
+													</span>
+													แก้ไข
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													attachment
+													</span>
+													ไฟล์แนบ
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													block
+													</span>
+													ยกเลิก
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													check_circle
+													</span>
+													ปิดเคสสัญญา
+												</a>
+												<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
+													<span class="material-symbols-outlined">
+													delete
+													</span>
+													ลบ
+												</a>
+											</div>
+										</div> 
+									</td> 
+								</tr>  
+								<tr>
+									<td class="text-main">
+										CX-74371
+									</td>
+									<td class="text-success">
+										<span class="material-symbols-outlined">
+										check_circle
+										</span>
+									</td> 
+									<td class="text-success">
+										(ดี)
+									</td> 
+									<td class="text-success">
+										Available
+									</td>  
+									<td>
+										คอนโด
+									</td>  
+									<td>
+										เช่า
+									</td> 
+									<td>
+										Metro Sky <br> Wutthakat
+									</td> 
+									<td>
+										101/136
+									</td> 
+									<td>
+										24
+									</td> 
+									<td>
+										1 นอน | 1 น้ำ
+									</td> 
+									<td>
+										25
+									</td> 
+									<td>
+										4,635,000
+									</td>  
+									<td>
+										BTS <br> ห้าแยก <br>
+										ลาดพร้าว
+									</td> 
+									<td class="text-warning">
+										ตรง
+									</td> 
+									<td>
+										02/03/2023, <br>13:00
+									</td>  
+									<td>
+										<button  class="btn btn-tb">นำเสนอห้อง</button>
+									</td>  
+									<td>
+										<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+											<span class="material-symbols-outlined">
+												more_horiz
+											</span>
+										</div>
+										<div class="dropdown mb-x">
+											<div data-bs-toggle="dropdown">
+												<span class="material-symbols-outlined">
+												expand_more
+												</span>
+											</div>
+											<div class="dropdown-menu"> 
+												<a class="dropdown-item active" href="#"> 
+													<span class="material-symbols-outlined">
+													search
+													</span>
+													ดูรายละเอียด
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													edit_square
+													</span>
+													แก้ไข
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													attachment
+													</span>
+													ไฟล์แนบ
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													block
+													</span>
+													ยกเลิก
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													check_circle
+													</span>
+													ปิดเคสสัญญา
+												</a>
+												<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
+													<span class="material-symbols-outlined">
+													delete
+													</span>
+													ลบ
+												</a>
+											</div>
+										</div> 
+									</td> 
+								</tr> 
+								<tr class="optr">
+									<td class="text-main">
+										CX-74371
+									</td>
+									<td class="text-success">
+										<span class="material-symbols-outlined">
+										check_circle
+										</span>
+									</td> 
+									<td class="text-success">
+										(ดี)
+									</td> 
+									<td class="text-success">
+										Available
+									</td>  
+									<td>
+										คอนโด
+									</td>  
+									<td>
+										เช่า
+									</td> 
+									<td>
+										Metro Sky <br> Wutthakat
+									</td> 
+									<td>
+										101/136
+									</td> 
+									<td>
+										24
+									</td> 
+									<td>
+										1 นอน | 1 น้ำ
+									</td> 
+									<td>
+										25
+									</td> 
+									<td>
+										4,635,000
+									</td>  
+									<td>
+										BTS <br> ห้าแยก <br>
+										ลาดพร้าว
+									</td> 
+									<td class="text-warning">
+										ตรง
+									</td> 
+									<td>
+										02/03/2023, <br>13:00
+									</td>  
+									<td>
+										<button  class="btn btn-tb">นำเสนอห้อง</button>
+									</td>  
+									<td>
+										<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+											<span class="material-symbols-outlined">
+												more_horiz
+											</span>
+										</div>
+										<div class="dropdown mb-x">
+											<div data-bs-toggle="dropdown">
+												<span class="material-symbols-outlined">
+												expand_more
+												</span>
+											</div>
+											<div class="dropdown-menu"> 
+												<a class="dropdown-item active" href="#"> 
+													<span class="material-symbols-outlined">
+													search
+													</span>
+													ดูรายละเอียด
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													edit_square
+													</span>
+													แก้ไข
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													attachment
+													</span>
+													ไฟล์แนบ
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													block
+													</span>
+													ยกเลิก
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													check_circle
+													</span>
+													ปิดเคสสัญญา
+												</a>
+												<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
+													<span class="material-symbols-outlined">
+													delete
+													</span>
+													ลบ
+												</a>
+											</div>
+										</div> 
+									</td> 
+								</tr> 
+								<tr class="optr">
+									<td class="text-main">
+										CX-74371
+									</td>
+									<td class="text-success">
+										<span class="material-symbols-outlined">
+										check_circle
+										</span>
+									</td> 
+									<td class="text-success">
+										(ดี)
+									</td> 
+									<td class="text-success">
+										Available
+									</td>  
+									<td>
+										คอนโด
+									</td>  
+									<td>
+										เช่า
+									</td> 
+									<td>
+										Metro Sky <br> Wutthakat
+									</td> 
+									<td>
+										101/136
+									</td> 
+									<td>
+										24
+									</td> 
+									<td>
+										1 นอน | 1 น้ำ
+									</td> 
+									<td>
+										25
+									</td> 
+									<td>
+										4,635,000
+									</td>  
+									<td>
+										BTS <br> ห้าแยก <br>
+										ลาดพร้าว
+									</td> 
+									<td class="text-warning">
+										ตรง
+									</td> 
+									<td>
+										02/03/2023, <br>13:00
+									</td>  
+									<td>
+										<button  class="btn btn-tb">นำเสนอห้อง</button>
+									</td>  
+									<td>
+										<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+											<span class="material-symbols-outlined">
+												more_horiz
+											</span>
+										</div>
+										<div class="dropdown mb-x">
+											<div data-bs-toggle="dropdown">
+												<span class="material-symbols-outlined">
+												expand_more
+												</span>
+											</div>
+											<div class="dropdown-menu"> 
+												<a class="dropdown-item active" href="#"> 
+													<span class="material-symbols-outlined">
+													search
+													</span>
+													ดูรายละเอียด
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													edit_square
+													</span>
+													แก้ไข
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													attachment
+													</span>
+													ไฟล์แนบ
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													block
+													</span>
+													ยกเลิก
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													check_circle
+													</span>
+													ปิดเคสสัญญา
+												</a>
+												<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
+													<span class="material-symbols-outlined">
+													delete
+													</span>
+													ลบ
+												</a>
+											</div>
+										</div> 
+									</td> 
+								</tr> 
+								<tr>
+									<td class="text-main">
+										CX-74371
+									</td>
+									<td class="text-success">
+										<span class="material-symbols-outlined">
+										check_circle
+										</span>
+									</td> 
+									<td class="text-success">
+										(ดี)
+									</td> 
+									<td class="text-success">
+										Available
+									</td>  
+									<td>
+										คอนโด
+									</td>  
+									<td>
+										เช่า
+									</td> 
+									<td>
+										Metro Sky <br> Wutthakat
+									</td> 
+									<td>
+										101/136
+									</td> 
+									<td>
+										24
+									</td> 
+									<td>
+										1 นอน | 1 น้ำ
+									</td> 
+									<td>
+										25
+									</td> 
+									<td>
+										4,635,000
+									</td>  
+									<td>
+										BTS <br> ห้าแยก <br>
+										ลาดพร้าว
+									</td> 
+									<td class="text-warning">
+										ตรง
+									</td> 
+									<td>
+										02/03/2023, <br>13:00
+									</td>  
+									<td>
+										<button  class="btn btn-tb">นำเสนอห้อง</button>
+									</td>  
+									<td>
+										<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+											<span class="material-symbols-outlined">
+												more_horiz
+											</span>
+										</div>
+										<div class="dropdown mb-x">
+											<div data-bs-toggle="dropdown">
+												<span class="material-symbols-outlined">
+												expand_more
+												</span>
+											</div>
+											<div class="dropdown-menu"> 
+												<a class="dropdown-item active" href="#"> 
+													<span class="material-symbols-outlined">
+													search
+													</span>
+													ดูรายละเอียด
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													edit_square
+													</span>
+													แก้ไข
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													attachment
+													</span>
+													ไฟล์แนบ
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													block
+													</span>
+													ยกเลิก
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													check_circle
+													</span>
+													ปิดเคสสัญญา
+												</a>
+												<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
+													<span class="material-symbols-outlined">
+													delete
+													</span>
+													ลบ
+												</a>
+											</div>
+										</div> 
+									</td> 
+								</tr> 
+								<tr>
+									<td class="text-main">
+										CX-74371
+									</td>
+									<td class="text-success">
+										<span class="material-symbols-outlined">
+										check_circle
+										</span>
+									</td> 
+									<td class="text-success">
+										(ดี)
+									</td> 
+									<td class="text-success">
+										Available
+									</td>  
+									<td>
+										คอนโด
+									</td>  
+									<td>
+										เช่า
+									</td> 
+									<td>
+										Metro Sky <br> Wutthakat
+									</td> 
+									<td>
+										101/136
+									</td> 
+									<td>
+										24
+									</td> 
+									<td>
+										1 นอน | 1 น้ำ
+									</td> 
+									<td>
+										25
+									</td> 
+									<td>
+										4,635,000
+									</td>  
+									<td>
+										BTS <br> ห้าแยก <br>
+										ลาดพร้าว
+									</td> 
+									<td class="text-warning">
+										ตรง
+									</td> 
+									<td>
+										02/03/2023, <br>13:00
+									</td>  
+									<td>
+										<button  class="btn btn-tb">นำเสนอห้อง</button>
+									</td>  
+									<td>
+										<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+											<span class="material-symbols-outlined">
+												more_horiz
+											</span>
+										</div>
+										<div class="dropdown mb-x">
+											<div data-bs-toggle="dropdown">
+												<span class="material-symbols-outlined">
+												expand_more
+												</span>
+											</div>
+											<div class="dropdown-menu"> 
+												<a class="dropdown-item active" href="#"> 
+													<span class="material-symbols-outlined">
+													search
+													</span>
+													ดูรายละเอียด
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													edit_square
+													</span>
+													แก้ไข
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													attachment
+													</span>
+													ไฟล์แนบ
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													block
+													</span>
+													ยกเลิก
+												</a>
+												<a class="dropdown-item" href="#"> 
+													<span class="material-symbols-outlined">
+													check_circle
+													</span>
+													ปิดเคสสัญญา
+												</a>
+												<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
+													<span class="material-symbols-outlined">
+													delete
+													</span>
+													ลบ
+												</a>
+											</div>
+										</div> 
+									</td> 
+								</tr> 
+							</tbody>
+						</table>
+					</div>  
+
+				</div> 
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-pop" id="popModal">
+		<div class="modal-dialog modal-dialog-centered  ">
+			<div class="modal-content"> 
+				<div class="modal-body"> 
+					<form>
+						<h6>ดำเนินการ Create Sub Deal : D-018745</h6>
+						<span class="material-symbols-outlined closex" data-bs-dismiss="modal">
+						close
+						</span>
+						<hr> 
+						<div class="form-group row mb-3"> 
+							<div class="col-lg-12 col-12"> 
+								<label for="">Remark</label>
+								<textarea class="form-control"></textarea>
+							</div> 
+						</div>
+						  
+						<div class="row"> 
+							<div class="col-12 text-center">
+								<br>
+								<button type="button" class="btn btn-white btn-sm" data-bs-dismiss="modal">ยกเลิก</button>
+								<button type="button" class="btn btn-primary btn-sm">ยืนยัน</button>
+							</div>
+						</div>
+					</form>
+				</div> 
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade mapx" id="mapModal">
+		<div class="modal-dialog modal-dialog-centered modal-xl">
+			<div class="modal-content"> 
+				<div class="modal-body">
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					<div id="map"></div>   
+				</div> 
+			</div>
+		</div>
+	</div>
 
 	<div class="modal fade modal-pop" id="modalPop1">
 		<div class="modal-dialog modal-dialog-centered  ">
@@ -2948,12 +3674,12 @@
 		const contentString =
 			'<div class="content-map">' + 
 			'<div class="row">' + 
-			'<div class="col-6">' + 
+			'<div class="col-lg-6 col-12">' + 
 			'<img src="public/images/1111.png" alt="">' + 
 			'<h6>Update : 25 ก.พ. 2565 13:00</h6>' + 
 			'<a href="#" class="btn">นำเสนอห้อง</a>' + 
 			'</div>' + 
-			'<div class="col-6">' + 
+			'<div class="col-lg-6 col-12">' + 
 			'<p>' + 
 			'โดรงการ : 15 สุขุมวิท เรสซิเดนซ์ <br>' + 
 			'สกานีรถไฟฟ้า : BTร-นานา Nana <br>' + 
