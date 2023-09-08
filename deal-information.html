@@ -386,20 +386,44 @@
 					</a>
 				</div>
 			</div>
+
+			<div class="content-map">
+				<div class="row">
+					<div class="col-6">
+						<img src="public/images/1111.png" alt="">
+						<h6>Update : 25 ก.พ. 2565 13:00</h6>
+						<a href="#" class="btn">นำเสนอห้อง</a>
+					</div>
+					<div class="col-6">
+						<p>
+							โดรงการ : 15 สุขุมวิท เรสซิเดนซ์ <br>
+							สกานีรถไฟฟ้า : BTร-นานา Nana <br>
+							รหัสทรัพย์ : CX-06931 <br>
+							ราดาเช่า : 33,000 บาท <br>
+							ประเภท : คอนโด <br>
+							ตั้งอยู่ชั้นที่ : 15 <br>
+							พื่นที่ใช้สอย : 65.4 ตร.ม. <br>
+							ห้องนอน : 2 ห้อง <br>
+							ห้องนำ : 1 ห้อง <br>
+							<span>สถานะ : Available  </span>
+						</p>
+					</div>
+				</div>
+			</div>
 	  
 			<br>
 				
 			<div class="box1">  
 				<div class="div-h5">    
 					<ul class="nav nav-tabs nav-tabs-de" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link" href="#tab1" role="tab" data-bs-toggle="tab">Deal Info</a>
+						<li class="nav-item active">
+							<a class="nav-link active" href="#tab1" role="tab" data-bs-toggle="tab">Deal Info</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#tab2" role="tab" data-bs-toggle="tab">Deal Activity</a>
 						</li>
-						<li class="nav-item active">
-							<a class="nav-link active" href="#tab3" role="tab" data-bs-toggle="tab">Calendar</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#tab3" role="tab" data-bs-toggle="tab">Calendar</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#tab4" role="tab" data-bs-toggle="tab">Log Activity</a>
@@ -412,7 +436,7 @@
 			</div>
 			
 			<div class="tab-content">
-				<div role="tabpanel" class="tab-pane fade" id="tab1">
+				<div role="tabpanel" class="tab-pane fade show active" id="tab1">
 					<div class="box1">  
 						<div class="div-h5">    
 							<div class="row">
@@ -462,7 +486,7 @@
 										<button class="btn btn-block btn-warning btn-prf">แจ้งสต็อกช่วยหาห้อง</button>
 									</div>
 									<div class="pc-x">
-										<button class="btn btn-white btn-block show-less">ข้อมูลทั้งหมด</button>
+										<button class="btn btn-white btn-block show-less w-100">ข้อมูลทั้งหมด</button>
 									</div>
 								</div> 
 								<div class="col-xl-9">
@@ -627,10 +651,10 @@
 												<label class="pl-4">Google Map</label> 
 											</div>
 											<div class="col-lg-3"> 
-												<img src="public/images/a67dae745c44bc4ea840785d8eff6ac3.png" alt="" class="img-fluid m-auto d-block">
+												<img src="public/images/a67dae745c44bc4ea840785d8eff6ac3.png" alt="" class="img-fluid m-auto d-block"  data-bs-toggle="modal" data-bs-target="#mapModal">
 											</div>
 											<div class="col-lg-3"> 
-												<img src="public/images/a67dae745c44bc4ea840785d8eff6ac3.png" alt="" class="img-fluid m-auto d-block">
+												<img src="public/images/a67dae745c44bc4ea840785d8eff6ac3.png" alt="" class="img-fluid m-auto d-block"  data-bs-toggle="modal" data-bs-target="#mapModal">
 											</div>
 										</div>
 
@@ -673,9 +697,104 @@
 							</div>
 						</div>
 					</div> 
+
+
+					<div class="modal fade mapx" id="mapModal">
+						<div class="modal-dialog modal-dialog-centered modal-xl">
+							<div class="modal-content"> 
+								<div class="modal-body">
+									<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+									<div id="map">xxxx</div>
+
+
+
+								</div> 
+							</div>
+						</div>
+					</div>
+
+
 					<div class="col tb-box"> 
 						<h4 class="h4x">โครงการที่เกี่ยวข้อง <img src="public/images/mapx.png" alt=""></h4>
-						<div class="table-responsive tb-data tb-data1 active"> 
+
+						<div class="related-box bg1 pc-x">
+							<div class="row">
+								<div class="col-6">
+									<img src="public/images/1111.png" alt="">
+								</div>
+								<div class="col-6 ps-0">
+									<p>
+										โดรงการ : 15 สุขุมวิท เรสซิเดนซ์ <br>
+										จำนานชั้น : 25 <br>
+										สถานีรถไฟฟ้า : BTS-นาน / Nana <br>
+										โซน : นานาฝั่งหนือ นานาฝั่งใต้ <br>
+										ปีที่สร้าง : 2557 <br>
+										แผนที่ : <a href="#">คลิกดูแผนที่</a> <br>
+										ราคาเฉลี่ย <br>
+										จำนวนทรัพย์ : 121
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="related-box bg1 pc-x">
+							<div class="row">
+								<div class="col-6">
+									<img src="public/images/1111.png" alt="">
+								</div>
+								<div class="col-6 ps-0">
+									<p>
+										โดรงการ : 15 สุขุมวิท เรสซิเดนซ์ <br>
+										จำนานชั้น : 25 <br>
+										สถานีรถไฟฟ้า : BTS-นาน / Nana <br>
+										โซน : นานาฝั่งหนือ นานาฝั่งใต้ <br>
+										ปีที่สร้าง : 2557 <br>
+										แผนที่ : <a href="#">คลิกดูแผนที่</a> <br>
+										ราคาเฉลี่ย <br>
+										จำนวนทรัพย์ : 121
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="related-box bg2 pc-x">
+							<div class="row">
+								<div class="col-6">
+									<img src="public/images/1111.png" alt="">
+								</div>
+								<div class="col-6 ps-0">
+									<p>
+										โดรงการ : 15 สุขุมวิท เรสซิเดนซ์ <br>
+										จำนานชั้น : 25 <br>
+										สถานีรถไฟฟ้า : BTS-นาน / Nana <br>
+										โซน : นานาฝั่งหนือ นานาฝั่งใต้ <br>
+										ปีที่สร้าง : 2557 <br>
+										แผนที่ : <a href="#">คลิกดูแผนที่</a> <br>
+										ราคาเฉลี่ย <br>
+										จำนวนทรัพย์ : 121
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="related-box bg2 pc-x">
+							<div class="row">
+								<div class="col-6">
+									<img src="public/images/1111.png" alt="">
+								</div>
+								<div class="col-6 ps-0">
+									<p>
+										โดรงการ : 15 สุขุมวิท เรสซิเดนซ์ <br>
+										จำนานชั้น : 25 <br>
+										สถานีรถไฟฟ้า : BTS-นาน / Nana <br>
+										โซน : นานาฝั่งหนือ นานาฝั่งใต้ <br>
+										ปีที่สร้าง : 2557 <br>
+										แผนที่ : <a href="#">คลิกดูแผนที่</a> <br>
+										ราคาเฉลี่ย <br>
+										จำนวนทรัพย์ : 121
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="table-responsive tb-data tb-data1 active mb-x"> 
 							<table class="table table1">
 								<thead>
 									<tr>
@@ -1289,17 +1408,17 @@
 												<h4>ดิไอริส บางใหญ่</h4>
 											</div>
 											<div class="col-6 text-end pe-0">
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop1">
 													<span class="material-symbols-outlined">
 													arrow_forward
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop4">
 													<span class="material-symbols-outlined">
 													chat
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop3">
 													<span class="material-symbols-outlined">
 													close
 													</span>
@@ -1323,17 +1442,17 @@
 												<h4>ดิไอริส บางใหญ่</h4>
 											</div>
 											<div class="col-6 text-end pe-0">
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop4">
 													<span class="material-symbols-outlined">
 													arrow_forward
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop1">
 													<span class="material-symbols-outlined">
 													chat
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop2">
 													<span class="material-symbols-outlined">
 													close
 													</span>
@@ -1362,17 +1481,17 @@
 												<h4>ดิไอริส บางใหญ่</h4>
 											</div>
 											<div class="col-6 text-end pe-0">
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop4">
 													<span class="material-symbols-outlined">
 													arrow_forward
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop1">
 													<span class="material-symbols-outlined">
 													chat
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop2">
 													<span class="material-symbols-outlined">
 													close
 													</span>
@@ -1404,7 +1523,7 @@
 													arrow_forward
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop1">
 													<span class="material-symbols-outlined">
 													chat
 													</span>
@@ -1729,12 +1848,7 @@
 								 
 							</div>
 						</div>
-					</div>
-
-					
-					<button class="btn btn-info btn-xs mb-2" data-bs-toggle="modal" data-bs-target="#modalPop1"> นัดชมทรัพย์ CX-74276</button> 
-					<button class="btn btn-info btn-xs mb-2" data-bs-toggle="modal" data-bs-target="#modalPop2"> Note เสนอก้อง  CX-74276</button>
-					<button class="btn btn-info btn-xs mb-2" data-bs-toggle="modal" data-bs-target="#modalPop3"> ดำเนินการ Close Lost  CX-74276</button>
+					</div> 
 					<button class="btn btn-info btn-xs mb-2" data-bs-toggle="modal" data-bs-target="#modalPop4"> แนบภาพชมทรัพย์  CX-74276</button>
 					<button class="btn btn-info btn-xs mb-2" data-bs-toggle="modal" data-bs-target="#modalPop5"> นัดเซ็นสัญญา CX-74276</button>
 					<button class="btn btn-info btn-xs mb-2" data-bs-toggle="modal" data-bs-target="#modalPop6"> แนบภาพถ่ายหลังเซ็นสัญญา์  CX-74276</button>
@@ -1742,7 +1856,7 @@
 					<button class="btn btn-info btn-xs mb-2" data-bs-toggle="modal" data-bs-target="#modalPop8"> แนบภาพถ่ายหลังโอนเสร็จ  CX-74276</button>
 					<button class="btn btn-info btn-xs mb-2" data-bs-toggle="modal" data-bs-target="#modalPop9"> นัดโอนทรัพย์ CX-74276</button>
 				</div>
-				<div role="tabpanel" class="tab-pane fade show active" id="tab3">
+				<div role="tabpanel" class="tab-pane fade " id="tab3">
 					<div class="box1">  
 						<div class="div-h5">    
 							<button class="btn btn-primary btn-activity" data-bs-toggle="modal" data-bs-target="#modalActivity">เพิ่มกิจกรรม</button>
@@ -1764,17 +1878,17 @@
 												<h4>ดิไอริส บางใหญ่</h4>
 											</div>
 											<div class="col-6 text-end pe-0">
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop1">
 													<span class="material-symbols-outlined">
 													arrow_forward
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop4">
 													<span class="material-symbols-outlined">
 													chat
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop3">
 													<span class="material-symbols-outlined">
 													close
 													</span>
@@ -1842,7 +1956,7 @@
 													arrow_forward
 													</span>
 												</a>
-												<a href="#" class="icon">
+												<a href="javascript:void(0)" class="icon" data-bs-toggle="modal" data-bs-target="#modalPop2">
 													<span class="material-symbols-outlined">
 													chat
 													</span>
@@ -2308,11 +2422,15 @@
 
 				</div>
 			</div>
-
-
+ 
 		</div>
+
+		
+	
+
 	</main>
 
+	
 
 	<div class="modal fade modal-pop" id="modalPop1">
 		<div class="modal-dialog modal-dialog-centered  ">
@@ -2374,7 +2492,7 @@
 			<div class="modal-content"> 
 				<div class="modal-body"> 
 					<form>
-						<h6>Note เสนอก้อง  CX-74276</h6>
+						<h6>Note เสนอห้อง  CX-74276</h6>
 						<span class="material-symbols-outlined closex" data-bs-dismiss="modal">
 						close
 						</span>
@@ -2790,9 +2908,6 @@
 		</div>
 	</div>
 	 
-
-	<!-- modalActivity -->
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -2808,15 +2923,75 @@
 	<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@6.1.8/index.global.min.js"  ></script>  
 	<script src="https://static.cloudflareinsights.com/beacon.min.js"  ></script>  
 
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-	
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvNLmIPDzYq1O2zwT0Rx8K35Q3b5QH77g&callback=initMap&v=weekly"
+      defer
+    ></script>
+
 
 	<script>
+
 		$(document).ready(function() {
 			$( '.form-select' ).select2( {
 				theme: "bootstrap-5"
-			} ); 
+			} );   
 		});
+ 
+		function initMap() {
+		const uluru = { lat: 13.7421666, lng: 100.5573977 };
+		const map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 18,
+			center: uluru,
+		});
+		const contentString =
+			'<div class="content-map">' + 
+			'<div class="row">' + 
+			'<div class="col-6">' + 
+			'<img src="public/images/1111.png" alt="">' + 
+			'<h6>Update : 25 ก.พ. 2565 13:00</h6>' + 
+			'<a href="#" class="btn">นำเสนอห้อง</a>' + 
+			'</div>' + 
+			'<div class="col-6">' + 
+			'<p>' + 
+			'โดรงการ : 15 สุขุมวิท เรสซิเดนซ์ <br>' + 
+			'สกานีรถไฟฟ้า : BTร-นานา Nana <br>' + 
+			'รหัสทรัพย์ : CX-06931 <br>' + 
+			'ราดาเช่า : 33,000 บาท <br>' + 
+			'ประเภท : คอนโด <br>' + 
+			'ตั้งอยู่ชั้นที่ : 15 <br>' + 
+			'พื่นที่ใช้สอย : 65.4 ตร.ม. <br>' + 
+			'ห้องนอน : 2 ห้อง <br>' + 
+			'ห้องนำ : 1 ห้อง <br>' + 
+			'<span>สถานะ : Available  </span>' + 
+			'</p>' + 
+			'</div>' + 
+			'</div>' + 
+			"</div>";
+		const infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			ariaLabel: "Uluru",
+		});
+		const marker = new google.maps.Marker({
+			position: uluru,
+			map,
+			title: "Uluru (Ayers Rock)",
+		});
+
+		marker.addListener("click", () => {
+			infowindow.open({
+			anchor: marker,
+			map,
+			});
+		});
+		}
+
+		window.initMap = initMap;
+
+
+		
+
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   
 			$("body").removeClass("expand");  
@@ -2917,6 +3092,11 @@
 			todayHighlight: true,
 			toggleActive: true
 		});
+
+ 
+		
+
+
 
 	</script>
 
