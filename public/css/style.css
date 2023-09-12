@@ -1726,6 +1726,16 @@ h5.dp{
   z-index: 4;
   right: 30px;
 } 
+.icon-span2.t60{ 
+  top: 62px;  
+  z-index: 4;
+  right: 20px;
+} 
+.icon-span2.t70{ 
+  top: 7px;  
+  z-index: 4;
+  right: 9px;
+} 
 .box1 h6{
   margin-top: 10px;
   color: #566A7F; 
@@ -3523,6 +3533,9 @@ body.expand
   .modal10 .modal-body{
     padding: 50px 10px 10px;
   }
+  .icon-span2.t70{ 
+    top: 38px;   
+  } 
 }
 @media only screen and (min-width: 1025px) { /* PC */
   .pc-x{
