@@ -17,9 +17,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
- 
-
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" /> 
 
 </head>
 <body> 
@@ -659,38 +657,44 @@
 							<div class="col-lg-7 col-12">
 								<div class="row">
 									<div class="col-lg-4 col-12"> 
-										<div class="dorp-img">
+										<div class="input-div">
 											<div>
 												<span class="material-symbols-outlined">
-												photo
-												</span>
-												<h4>Drag &amp; Drop ไฟล์ที่นี่</h4>
+													photo
+													</span>
+												<h4>Drag & Drop ไฟล์ที่นี่</h4>
 											</div>
+											<input type="file" class="file" multiple="multiple" accept="image/jpeg, image/png, image/jpg">
 										</div>
-										<div class="input-group mb-3">
+										<br>
+										
+										<output></output>
+
+										<!-- <div class="input-group mb-3">
 											<input type="text" class="form-control" placeholder="เลือกไฟล์" aria-label="เลือกไฟล์" aria-describedby="button-addon2">
 											<div class="input-group-append">
 											<button class="btn btn-primary btn-sm" type="button" id="button-addon2">เลือกไฟล์</button>
 											</div>
-									</div>
+										</div> -->
 									</div> 
 								</div>
 							</div>
 						</div>
-						<hr>
+						<br>
+						<hr><br>
 						<div class="form-group row">
 							<div class="col-12 text-right-center">
 								<button class="btn btn-white btn-b">ปิด</button>
 								<a href="#" class="btn btn-primary btn-b">บันทึกข้อมูล</a>
 							</div>
 						</div>  
-					
-						
+				 
 
 					</div>
 				</div>
 			</form>
-		 
+
+			 
 		</div>
 	</main>
 
@@ -705,8 +709,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
-
+ 
 	<script>
+ 
+
+ 
+
 		$(document).ready(function() {
 			$( '.form-select' ).select2( {
 				theme: "bootstrap-5"
@@ -750,7 +758,58 @@
 			todayHighlight: true,
 			toggleActive: true
 		});
+	</script>	
+
+	<script>
+		const inputDiv = document.querySelector(".input-div");
+		const input = document.querySelector("input");
+		const output = document.querySelector("output");
+		let imagesArray = [];
+
+
+
+		input.addEventListener("change", () => {
+			const files = input.files
+			for (let i = 0; i < files.length; i++) {
+				imagesArray.push(files[i])
+			}
+			displayImages()
+		})
+
+		
+		inputDiv.addEventListener("drop", (e) => {
+			e.preventDefault();
+			const files = e.dataTransfer.files;
+			for (let i = 0; i < files.length; i++) {
+				if (!files[i].type.match("image")) continue;
+
+			if (imagesArray.every(image => image.name !== files[i].name));
+				imagesArray.push(files[i]);
+			}
+			displayImages();
+		});
+
+
+		function displayImages() {
+			let images = "";
+			imagesArray.forEach((image, index) => {
+				images += `<div class="image">
+							<img src="${URL.createObjectURL(image)}" alt="image">
+							<span onclick="deleteImage(${index})">&times;</span>
+						</div>`;
+			});
+			output.innerHTML = images;
+		}
+
+		function deleteImage(index) {
+			imagesArray.splice(index, 1);
+			displayImages();
+		} 
+
+	
+
 	</script>
+
 
 </body>
 </html>

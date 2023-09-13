@@ -581,25 +581,32 @@
 							<div class="col-lg-7 col-12">
 								<div class="row">
 									<div class="col-lg-4 col-12"> 
-										<div class="dorp-img">
+										<div class="input-div">
 											<div>
 												<span class="material-symbols-outlined">
-												photo
-												</span>
-												<h4>Drag &amp; Drop ไฟล์ที่นี่</h4>
+													photo
+													</span>
+												<h4>Drag & Drop ไฟล์ที่นี่</h4>
 											</div>
+											<input type="file" class="file" multiple="multiple" accept="image/jpeg, image/png, image/jpg">
 										</div>
-										<div class="input-group mb-3">
+										<br>
+										
+										<output></output>
+
+
+										<!-- <div class="input-group mb-3">
 											<input type="text" class="form-control" placeholder="เลือกไฟล์" aria-label="เลือกไฟล์" aria-describedby="button-addon2">
 											<div class="input-group-append">
 											<button class="btn btn-primary btn-sm" type="button" id="button-addon2">เลือกไฟล์</button>
 											</div>
-									</div>
+										</div> -->
 									</div> 
 								</div>
 							</div>
 						</div>
-						<hr>
+						<br>
+						<hr><br>
 						<div class="form-group row">
 							<div class="col-12 text-right-center">
 								<button class="btn btn-white btn-b">ปิด</button>
@@ -673,6 +680,57 @@
 			toggleActive: true
 		});
 	</script>
+
+	<script>
+		const inputDiv = document.querySelector(".input-div");
+		const input = document.querySelector("input");
+		const output = document.querySelector("output");
+		let imagesArray = [];
+
+
+
+		input.addEventListener("change", () => {
+			const files = input.files
+			for (let i = 0; i < files.length; i++) {
+				imagesArray.push(files[i])
+			}
+			displayImages()
+		})
+
+		
+		inputDiv.addEventListener("drop", (e) => {
+			e.preventDefault();
+			const files = e.dataTransfer.files;
+			for (let i = 0; i < files.length; i++) {
+				if (!files[i].type.match("image")) continue;
+
+			if (imagesArray.every(image => image.name !== files[i].name));
+				imagesArray.push(files[i]);
+			}
+			displayImages();
+		});
+
+
+		function displayImages() {
+			let images = "";
+			imagesArray.forEach((image, index) => {
+				images += `<div class="image">
+							<img src="${URL.createObjectURL(image)}" alt="image">
+							<span onclick="deleteImage(${index})">&times;</span>
+						</div>`;
+			});
+			output.innerHTML = images;
+		}
+
+		function deleteImage(index) {
+			imagesArray.splice(index, 1);
+			displayImages();
+		} 
+
+
+
+	</script>
+
 
 </body>
 </html>
