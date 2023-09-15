@@ -504,8 +504,9 @@
 					<li data-tabs="7">
 						<a href="#">No Status Listing (Delete)</a>
 					</li>
-					<li data-tabs="8" data-bs-toggle="modal" data-bs-target="#doublyModal">
-						<a href="#">ตรวจสอบ Listing ช้ำ</a>
+					<li data-tabs="8" >
+						<a href="#" class="mb-x" data-bs-toggle="modal" data-bs-target="#doublyModal">ตรวจสอบ Listing ช้ำ</a>
+						<a href="#" class="pc-x" data-bs-toggle="modal" data-bs-target="#doublyModalx">ตรวจสอบ Listing ช้ำ</a>
 					</li>
 					<li data-tabs="9">
 						<a href="#">PM Listing</a>
@@ -2485,6 +2486,127 @@
 		</div>
 	</main>
 
+	
+	<div class="modal modal-none-b fade modal1 search-m" id="doublyModalx">
+		<div class="modal-dialog modal-dialog-centered modal-xl  modal-xlx  modal-bottom">
+			<div class="modal-content"> 
+				<div class="modal-body">
+					<div data-bs-dismiss="modal" class="dis-m pc-x"></div>
+					<div class="table-responsive">
+						<table class="table table-des1 table-ext">
+							<tbody>
+								<tr>
+									<td>No</td> 
+									<td class="text-main">
+										CX-74371
+									</td> 
+									<td class="text-main">
+										CX-74371
+									</td> 
+									<td class="text-main">
+										CX-74371
+									</td> 
+								</tr>
+								<tr>
+									<td>Img</td> 
+									<td>
+										<span class="material-symbols-outlined mso-2">
+											imagesmode
+										</span>
+									</td> 
+									<td>
+										<span class="material-symbols-outlined mso-2">
+											imagesmode
+										</span>
+									</td> 
+									<td>
+										<span class="material-symbols-outlined mso-2">
+											imagesmode
+										</span>
+									</td> 
+								</tr>
+								<tr>
+									<td>ผู้เพิ่มข้อมูล</td> 
+									<td>Suchada</td> 
+									<td>Suchada</td> 
+									<td>Suchada</td> 
+								</tr>
+								<tr>
+									<td>วันที่เพิ่มข้อมูล</td> 
+									<td>10/05/2022</td> 
+									<td>10/05/2022</td> 
+									<td>10/05/2022</td> 
+								</tr>
+								<tr>
+									<td>Status</td> 
+									<td>ไม่รับสาย</td> 
+									<td><span class="text-danger">Rented <br> 01/05/2023</span></td> 
+									<td>ไม่รับสาย</td> 
+								</tr>
+								<tr>
+									<td>Type</td>  
+									<td>คอนโด</td>
+									<td>คอนโด</td>
+									<td>คอนโด</td>
+								</tr>
+								<tr>
+									<td>Deal</td>  
+									<td>เช่า</td>
+									<td>เช่า</td>
+									<td>เช่า</td>
+								</tr>
+								<tr>
+									<td>Project</td>  
+									<td>Metro Sky Wutthakat</td>
+									<td>Metro Sky Wutthakat</td>
+									<td>Metro Sky Wutthakat</td>
+								</tr>
+								<tr>
+									<td>House No.</td>  
+									<td>101/136</td>
+									<td>101/136</td>
+									<td>101/136</td>
+								</tr>
+								<tr>
+									<td>Floor</td>  
+									<td>24</td>
+									<td>24</td>
+									<td>24</td>
+								</tr>
+								<tr>
+									<td>Room</td>  
+									<td>1 นอน | 1 น้ำ</td>
+									<td>1 นอน | 1 น้ำ</td>
+									<td>1 นอน | 1 น้ำ</td>
+								</tr>
+								<tr>
+									<td>พื้นที่ (ตรม.)</td>  
+									<td>25</td>
+									<td>25</td>
+									<td>25</td>
+								</tr>
+								<tr>
+									<td>Price</td>  
+									<td>4,635,000</td>
+									<td>4,635,000</td>
+									<td>4,635,000</td>
+								</tr>
+								<tr>
+									<td>Owner</td>  
+									<td>สะดวกติดต่อ <br> ทางไลน์</td>
+									<td>สะดวกติดต่อ <br> ทางไลน์</td>
+									<td>สะดวกติดต่อ <br> ทางไลน์</td>
+								</tr>
+								 
+							</tbody>
+						</table>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+
+
 	<div class="modal fade modal1" id="doublyModal">
 		<div class="modal-dialog modal-dialog-centered modal-xl">
 			<div class="modal-content "> 
@@ -2741,7 +2863,6 @@
 			</div>
 		</div>
 	</div>
-
 	
 	<div class="modal modal-none-b fade modal1 search-m" id="desModal">
 		<div class="modal-dialog modal-dialog-centered modal-xl modal-bottom modal-xlx">
@@ -3085,51 +3206,6 @@
 			}, speed);
 		} 
 	</script>
-	
- 
-	<script>
-		// $(document).ready(function () {  
-		// 	$("#leftArrow").click(function () {
-		// 		var leftPos = $('#next-tab').scrollLeft();
-		// 		$("#next-tab").animate({
-		// 			scrollLeft: leftPos - 200
-		// 		}, 800);
-		// 	});
-
-		// 	$("#rightArrow").click(function () {
-		// 		var leftPos = $('#next-tab').scrollLeft();
-		// 		$("#next-tab").animate({
-		// 			scrollLeft: leftPos + 200
-		// 		}, 800);
-		// 	});
-
-		// 	$(".c").click(function () {
-		// 		$(this).addClass("question-viewed")
-		// 			.addClass("current-question")
-		// 			.siblings().removeClass("current-question");
-		// 	});
-
-		// 	$(function () {
-		// 		var scrollLeftPrev = 0;
-		// 		$('#next-tab').scroll(function () { 
-		// 			var $elem=$('#next-tab');
-		// 			var newScrollLeft = $elem.scrollLeft(),
-		// 				width=$elem.width(),
-		// 				scrollWidth=$elem.get(0).scrollWidth;
-		// 			var offset=8;
-		// 			if (scrollWidth- newScrollLeft-width==offset) {
-		// 				alert('right end');
-		// 			}
-		// 			if (newScrollLeft === 0) {
-		// 				alert('left end');
-		// 			}
-		// 			console.log($('#next-tab').width());
-					
-		// 			scrollLeftPrev = newScrollLeft; 
-		// 		});
-		// 	}); 
-		// });  
-	</script>
-
+	 
 </body>
 </html>

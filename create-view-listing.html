@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Connex Admin </title>
+	<link rel="icon" type="image/x-icon" href="public/images/logo.png">  
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet" type="text/css" />      
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>  
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" /> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+ 
+	 
+
+</head>
+<body> 
+	<header>
+		<div class="menu-mb">
+			<div class="top">
+				<img src="public/images/Arrow-left-alt.svg" alt="" class="menux-close">
+				<img src="public/images/logo.png" alt="" class="menux-logo">
+			</div>
+			<div class="user">
+				<div class="avatarx">
+					<img src="public/images/avatar.png" alt="" class="menux-close">
+					<h6>User Name</h6>
+				</div>
+				<span class="material-symbols-outlined more-vert">
+				more_vert
+				</span>
+			</div>
+			<div class="menu"> 
+				<ul>
+					<li>
+						<a href="index.html"> 
+							<i>Dashboard</i>
+							<span class="material-symbols-rounded">
+							dashboard
+							</span>
+						</a>
+					</li> 
+					<li class="sub">
+						<div> 
+							<i>จัดการลูกค้า</i>
+							<span class="material-symbols-rounded">
+							group
+							</span>
+						</div>
+						<ul>
+							<li class="active"><a href="#">Sub menu 1</a></li>
+							<li><a href="#">Sub menu 2</a></li>
+							<li><a href="#">Sub menu 3</a></li>
+							<li><a href="#">Sub menu 4</a></li> 
+						</ul>
+					</li>
+					<li class="active">
+						<a href="manage-listing.html"> 
+							<i>จัดการ listing</i>
+							<span class="material-symbols-rounded">
+							ballot
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="user.html"> 
+							<i>ผู้ใช้งาน</i>
+							<span class="material-symbols-outlined">
+							manage_accounts
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="download.html"> 
+							<i>Download</i>
+							<span class="material-symbols-outlined">
+							download
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="upload.html"> 
+							<i>Upload</i>
+							<span class="material-symbols-outlined">
+							upload
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="project.html"> 
+							<i>จัดการโครงการ/หมู่บ้าน</i>
+							<span class="material-symbols-outlined">
+							add_home_work
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report-listing.html"> 
+							<i>รายงาน Listing</i>
+							<span class="material-symbols-outlined">
+							summarize
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report.html"> 
+							<i>รายงาน</i>
+							<span class="material-symbols-outlined">
+							lab_profile
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="website.html"> 
+							<i>เว็บไซต์</i>
+							<span class="material-symbols-outlined">
+							computer
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="sales.html"> 
+							<i>ข้อมูลเซล์</i>
+							<span class="material-symbols-outlined">
+							bar_chart_4_bars
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="stock.html"> 
+							<i>Stock</i>
+							<span class="material-symbols-outlined">
+							inventory
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report2.html"> 
+							<i>รายงาน</i>
+							<span class="material-symbols-outlined">
+							chart_data
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="other.html"> 
+							<i>อื่นๆ</i>
+							<span class="material-symbols-outlined">
+							more
+							</span>
+						</a>
+					</li>
+				</ul> 
+			</div>
+		</div>
+		<div class="backdp"></div>
+
+		<div class="menu">
+			<div class="logo">
+				<a href="index.html">
+					<img src="public/images/logo.png" alt="logo">
+				</a>
+			</div>
+			<div class="logo-expand">
+				<a href="index.html">
+					<img src="public/images/logo1.png" alt="logo">
+				</a>
+			</div>
+			<h3>Menu</h3>
+			<div class="menu-dib">
+				<ul>
+					<li >
+						<a href="index.html"> 
+							<i>Dashboard</i>
+							<span class="material-symbols-rounded">
+							dashboard
+							</span>
+						</a>
+					</li> 
+					<li class="sub">
+						<div> 
+							<i>จัดการลูกค้า</i>
+							<span class="material-symbols-rounded">
+							group
+							</span>
+						</div>
+						<ul>
+							<li class="active"><a href="#">Sub menu 1</a></li>
+							<li><a href="#">Sub menu 2</a></li>
+							<li><a href="#">Sub menu 3</a></li>
+							<li><a href="#">Sub menu 4</a></li> 
+						</ul>
+					</li>
+					<li class="active">
+						<a href="manage-listing.html"> 
+							<i>จัดการ listing</i>
+							<span class="material-symbols-rounded">
+							ballot
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="user.html"> 
+							<i>ผู้ใช้งาน</i>
+							<span class="material-symbols-outlined">
+							manage_accounts
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="download.html"> 
+							<i>Download</i>
+							<span class="material-symbols-outlined">
+							download
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="upload.html"> 
+							<i>Upload</i>
+							<span class="material-symbols-outlined">
+							upload
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="project.html"> 
+							<i>จัดการโครงการ/หมู่บ้าน</i>
+							<span class="material-symbols-outlined">
+							add_home_work
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report-listing.html"> 
+							<i>รายงาน Listing</i>
+							<span class="material-symbols-outlined">
+							summarize
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report.html"> 
+							<i>รายงาน</i>
+							<span class="material-symbols-outlined">
+							lab_profile
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="website.html"> 
+							<i>เว็บไซต์</i>
+							<span class="material-symbols-outlined">
+							computer
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="sales.html"> 
+							<i>ข้อมูลเซล์</i>
+							<span class="material-symbols-outlined">
+							bar_chart_4_bars
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="stock.html"> 
+							<i>Stock</i>
+							<span class="material-symbols-outlined">
+							inventory
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report2.html"> 
+							<i>รายงาน</i>
+							<span class="material-symbols-outlined">
+							chart_data
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="other.html"> 
+							<i>อื่นๆ</i>
+							<span class="material-symbols-outlined">
+							more
+							</span>
+						</a>
+					</li>
+				</ul> 
+			</div>
+		</div>
+		<div class="nav-top">
+			<div class="container-fluid mb-x">
+				<div class="row">
+					<div class="col-6">
+						<ul class="mt">
+							<li class="meli menu-expand">
+								<img src="public/images/menu-left.png" alt="">
+							</li>
+							<li>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">Portfolio Listing</a>
+							</li>
+							<li>
+								<a href="#">Building</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6 text-end">
+						<ul class="user-il">
+							<li> 
+								<div class="dropdown user-dropdown alarm">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<p>13</p>
+										<span class="material-symbols-outlined">
+										notifications
+										</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-end">
+										<a href="#" class="dropdown-item">
+											<div class="alarm-box">
+												<img src="public/images/avatar.png" alt="">
+												<h4>Brad Diesel</h4>
+												<h5>Call me whenever you can Call me whenever you can</h5>
+												<h6>
+													<span class="material-symbols-outlined">
+														schedule
+													</span>
+													4 Hours ago
+												</h6>
+											</div>
+										</a>  
+										<a href="#" class="dropdown-item">
+											<div class="alarm-box">
+												<img src="public/images/avatar.png" alt="">
+												<h4>Brad Diesel</h4>
+												<h5>Call me whenever you can Call me whenever you can</h5>
+												<h6>
+													<span class="material-symbols-outlined">
+														schedule
+													</span>
+													4 Hours ago
+												</h6>
+											</div>
+										</a>  
+										<a href="#" class="dropdown-item">
+											<div class="alarm-box">
+												<img src="public/images/avatar.png" alt="">
+												<h4>Brad Diesel</h4>
+												<h5>Call me whenever you can Call me whenever you can</h5>
+												<h6>
+													<span class="material-symbols-outlined">
+														schedule
+													</span>
+													4 Hours ago
+												</h6>
+											</div>
+										</a>  
+										<hr>
+										<a href="#" class="dropdown-item text-center">
+											See All Messages
+										</a>
+									</div>
+								</div> 
+							</li>
+							<li>
+								<a href="#">
+									<img src="public/images/avatar.png" alt="img-name" class="img-name">
+								</a>
+							</li>
+							<li>
+								<div class="dropdown user-dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Marlene Sasoeur</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">My profile</a>
+										<a href="#" class="dropdown-item">Settings</a>
+										<a href="#" class="dropdown-item">Logout</a> 
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid pc-x menu-top-mb">
+				<div class="icon-menu">
+					<div class="menux">
+						<a href="manage-listing.html">
+							<span class="material-symbols-outlined">
+							keyboard_backspace
+							</span>
+						</a>
+					</div> 
+				</div>
+				<div class="text-header">
+					Create Listing
+				</div>
+			</div>
+		</div>
+	</header>
+ 
+	<main class="mv1">
+		<div class="container-fluid p-0"> 
+			<div class="navi-map">
+				<span>Home</span>
+				<span>/</span>
+				<span>Dashboard</span>
+				<span>/</span>
+				<a href="#">Create Listing</a>
+			</div>
+			<h3 class="h3 mb-x">View Listing</h3>
+
+			<form class="">
+				
+				<div class="box1">
+					<h4 class="h4x">View Listing</h4> 
+				</div>
+
+
+				<div class="box1"> 
+					
+					<button class="btn btn-view">โหลดภาพ</button>
+					<button class="btn btn-view">ภาพไม่มีลายน้ำ</button>
+					<button class="btn btn-view">+ แก้ไขข้อมูล</button>
+					<button class="btn btn-view">เบอร์ติดต่อ Owner</button>
+					<button class="btn btn-view">นำเสนอห้อง</button>
+					<button class="btn btn-view">หัวข้อประกาศ</button>
+
+					<br>
+					<br>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="row img-show">
+								<div class="col-lg-6 col-12 pe-0">
+									<img src="public/images/11.jpg" alt="img">
+								</div>
+								<div class="col-lg-6 col-4 ">
+									<img src="public/images/22.jpg" alt="img">
+								</div>
+								<div class="col-lg-6 col-4 pe-0">
+									<img src="public/images/33.jpg" alt="img">
+								</div>
+								<div class="col-lg-6 col-4">
+									<img src="public/images/44.jpg" alt="img">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="box-list-view">
+								<div class="mb-x">
+									<button class="btn btn-view">TH</button>
+									<button class="btn btn-view">EN</button>
+								</div>
+								<span class="mb-x"><br></span>
+								<br>
+								<input type="text" class="form-control" value="https://www.youtube.com/watch?v=XDuvNSlQfKU">
+								<br>
+								<button class="btn btn-view2">
+									<span class="material-symbols-outlined">link</span> คัดลอกลิ้งค์
+								</button>
+								<button class="btn btn-view2">
+									<span class="material-symbols-outlined">print</span> คัดลอกลิ้งค์
+								</button>
+								<br>
+								<br>
+								<h4>ขายคอนโด สุขุมวิท ชิตี้ สอร์ท BTS-นานา คลองเตยเหนือ เขต <br> วัฒนา กรุงเทพ CX-19659</h4>
+								<hr>
+								<h5>รายละเอียด</h5>
+								<ul class="des">
+									<li>
+										<p>โครงการ</p>
+										<p>: สุขุมวิท ซิตี้ รีสอร์ท Sukhumvit City Resort</p>
+									</li>
+									<li>
+										<p>ที่ตั้ง</p>
+										<p>: สุขุมวิท 11 สุขุมท แขวงคลองเตยเหนือ เขต วัฒนา กรุงเทพ 10110</p>
+									</li>
+									<li>
+										<p>พิภัด</p>
+										<p>: <a href="#">https://goo.gl/maps/VuyjHkd 1W28C7qvRA</a></p>
+									</li>
+									<li>
+										<p>สถานีรถไฟฟ้า</p>
+										<p>: BTS-นานา ] Nana</p>
+									</li>
+									<li>
+										<p>รหัสทรัพย์</p>
+										<p>: CX-19659</p>
+									</li>
+									<li>
+										<p>สถานะ</p>
+										<p>: <span>Available</span></p>
+									</li>
+									<li>
+										<p>ราคาขาย</p>
+										<p>: 6,300,000 บาท</p>
+									</li>
+									<li>
+										<p>ประเภท</p>
+										<p>: คอนโด</p>
+									</li>
+									<li>
+										<p>จำนวนชั้น</p>
+										<p>: 26 ปั้น</p>
+									</li>
+									<li>
+										<p>ตั้งอยู่ชั้นที่</p>
+										<p>: 14</p>
+									</li>
+									<li>
+										<p>พื้นที่ใช้สอย</p>
+										<p>: 68 ตร.ม.</p>
+									</li>
+									<li>
+										<p>ห้องนอน</p>
+										<p>: 2 ห้อง</p>
+									</li>
+									<li>
+										<p>ห้องน้ำ</p>
+										<p>: 2 ห้อง</p>
+									</li>
+								</ul>
+								<h5>เฟอร์นิเจอร์</h5>
+								<ul class="list">
+									<li>เฟอร์นิเจอร์ครบ</li>
+								</ul>
+								<hr>
+								<h5>สิ่งอำนวยความสะดวก</h5>
+								<ul class="list">
+									<li>Lobby</li>
+									<li>สระว่ายน้ำ</li>
+									<li>ฟิตเนส</li>
+									<li>Key Card</li>
+									<li>รปภ. 24 ชม.</li>
+								</ul>
+								<hr>
+								<h5>สิ่งอำนวยความสะดวก</h5>
+								<p>
+									นานาฝั่งเหนือ นานาฝั่งใต้ <br>
+									**บริการปรึกนาสินเชื่อฟรี! ดอกเบี้ยพิเศน และ วงเงินกู้สูงสุด 90-100% ของราคาประเมิน** <br>
+									สอบถามข้อมูลเพิ่มเติม ติดต่อ <br>
+									CONNEX PROPERTY สนใจซื้อ-ขายบ้าน ปรึกษาฟรี! ทีมงานมืออาชีพ <br>
+									Call:099-019-9900 <br>
+									Facebook: Connex Property <br>
+									LINE OA: @connexproperty <br>
+									Whatsapp: +66990199900 <br>
+									https://connex.in.th/
+								</p>
+								<hr>
+								<h5>ทำเลดี สถานที่ใกล้เคียง</h5>
+								<ol>
+									<li>รถไฟฟ้า BTS นานา</li>
+									<li>เอ็มควอเทียร์</li>
+									<li>รพ.บำรุงราษฎร์</li>
+								</ol>
+								<hr>
+								<h6>Remark : <span>รวมดอม โอนครึ่ง</span></h6>
+								<hr>
+								<h5>ผู้เพิ่มข้อมูล</h5>
+								<p>
+									เพิ่มโดยระบบ วันที่10 ส.ค. 2565 <br>
+									auto_1@connexproperty.co.th
+								</p>
+								<hr>
+								<h5>ผู้เพิ่มข้อมูล</h5>
+								<p>
+									เพิ่มโดยระบบ วันที่10 ส.ค. 2565 <br>
+									auto_1@connexproperty.co.th
+								</p> 
+								
+								<div class="row">
+									<div class="col-lg-3 col-6">
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="rad1">
+											<label class="form-check-label" for="rad1">อนุมัติเปิดใช้งาน</label>
+										</div> 
+									</div>
+									<div class="col-lg-3 col-6">
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="rad2">
+											<label class="form-check-label" for="rad2">Premium ประกาศ</label>
+										</div> 
+									</div>
+									<div class="col-lg-3 col-12">
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="rad3">
+											<label class="form-check-label" for="rad3">Boost Post ประกาศ</label>
+										</div> 
+									</div>
+								</div>
+
+								<br>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+  
+
+			</form>
+
+		</div>
+	</main>
+
+	
+
+
+
+	 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+	 
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
+ 
+
+	<script>
+		$(document).ready(function() {
+			$( '.form-select' ).select2( {
+				theme: "bootstrap-5"
+			} );  
+		}); 
+
+		$('.menu ul li.sub').click(function(){      
+			$(this).toggleClass("active");   
+			$("body").removeClass("expand");  
+		}); 
+		$('.menu-expand').click(function(){     
+			$("body").toggleClass("expand");  
+		}); 
+
+		$('.menux').click(function(){     
+			$(".menu-mb").addClass("active");
+			$("body").addClass("active");      
+			$('.menu-mb').animate({'left': '0'}, 600);
+		}); 
+		$('.backdp').click(function(){     
+			$(".menu-mb").removeClass("active");  
+			$("body").removeClass("active");    
+			$('.menu-mb').animate({'left': '-100%'}, 300); 
+		}); 
+		$('.menux-close').click(function(){    
+			$(".menu-mb").removeClass("active");  
+			$("body").removeClass("active");    
+			$('.menu-mb').animate({'left': '-100%'}, 300); 
+		}); 
+		
+
+	</script>
+
+	 
+
+ 
+
+
+
+</body>
+</html>
