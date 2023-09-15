@@ -8,1158 +8,913 @@
 	<title> Connex Admin </title>
 	<link rel="icon" type="image/x-icon" href="public/images/logo.png">  
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet" type="text/css" />      
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>  
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" /> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" /> 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" /> 
-    <link href="public/css/style.css" rel="stylesheet" type="text/css" />     
-
-	
-
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+ 
+	 
 
 </head>
 <body> 
-	<div class="menu-mb">
-		<div class="top">
-			<img src="public/images/Arrow-left-alt.svg" alt="" class="menux-close">
-			<img src="public/images/logo.png" alt="" class="menux-logo">
-		</div>
-		<div class="user">
-			<div class="avatarx">
-				<img src="public/images/avatar.png" alt="" class="menux-close">
-				<h6>User Name</h6>
+	<header>
+		<div class="menu-mb">
+			<div class="top">
+				<img src="public/images/Arrow-left-alt.svg" alt="" class="menux-close">
+				<img src="public/images/logo.png" alt="" class="menux-logo">
 			</div>
-			<span class="material-symbols-outlined more-vert">
-			more_vert
-			</span>
-		</div>
-		<div class="menu"> 
-			<ul>
-				<li>
-					<a href="index.html"> 
-						<i>Dashboard</i>
-						<span class="material-symbols-rounded">
-						dashboard
-						</span>
-					</a>
-				</li> 
-				<li class="sub">
-					<div> 
-						<i>จัดการลูกค้า</i>
-						<span class="material-symbols-rounded">
-						group
-						</span>
-					</div>
-					<ul>
-						<li class="active"><a href="#">Sub menu 1</a></li>
-						<li><a href="#">Sub menu 2</a></li>
-						<li><a href="#">Sub menu 3</a></li>
-						<li><a href="#">Sub menu 4</a></li> 
-					</ul>
-				</li>
-				<li >
-					<a href="manage-listing.html"> 
-						<i>จัดการ listing</i>
-						<span class="material-symbols-rounded">
-						ballot
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="user.html"> 
-						<i>ผู้ใช้งาน</i>
-						<span class="material-symbols-outlined">
-						manage_accounts
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="download.html"> 
-						<i>Download</i>
-						<span class="material-symbols-outlined">
-						download
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="upload.html"> 
-						<i>Upload</i>
-						<span class="material-symbols-outlined">
-						upload
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="project.html"> 
-						<i>จัดการโครงการ/หมู่บ้าน</i>
-						<span class="material-symbols-outlined">
-						add_home_work
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="report-listing.html"> 
-						<i>รายงาน Listing</i>
-						<span class="material-symbols-outlined">
-						summarize
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="report.html"> 
-						<i>รายงาน</i>
-						<span class="material-symbols-outlined">
-						lab_profile
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="website.html"> 
-						<i>เว็บไซต์</i>
-						<span class="material-symbols-outlined">
-						computer
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="sales.html"> 
-						<i>ข้อมูลเซล์</i>
-						<span class="material-symbols-outlined">
-						bar_chart_4_bars
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="stock.html"> 
-						<i>Stock</i>
-						<span class="material-symbols-outlined">
-						inventory
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="report2.html"> 
-						<i>รายงาน</i>
-						<span class="material-symbols-outlined">
-						chart_data
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="other.html"> 
-						<i>อื่นๆ</i>
-						<span class="material-symbols-outlined">
-						more
-						</span>
-					</a>
-				</li>
-			</ul> 
-		</div>
-	</div>
-	<div class="backdp"></div>
-
-	<div class="menu">
-		<div class="logo">
-			<a href="index.html">
-				<img src="public/images/logo.png" alt="logo">
-			</a>
-		</div>
-		<div class="logo-expand">
-			<a href="index.html">
-				<img src="public/images/logo1.png" alt="logo">
-			</a>
-		</div>
-		<h3>Menu</h3>
-		<div class="menu-dib">
-			<ul>
-				<li>
-					<a href="index.html"> 
-						<i>Dashboard</i>
-						<span class="material-symbols-rounded">
-						dashboard
-						</span>
-					</a>
-				</li> 
-				<li class="sub">
-					<div> 
-						<i>จัดการลูกค้า</i>
-						<span class="material-symbols-rounded">
-						group
-						</span>
-					</div>
-					<ul>
-						<li class="active"><a href="#">Sub menu 1</a></li>
-						<li><a href="#">Sub menu 2</a></li>
-						<li><a href="#">Sub menu 3</a></li>
-						<li><a href="#">Sub menu 4</a></li> 
-					</ul>
-				</li>
-				<li >
-					<a href="manage-listing.html"> 
-						<i>จัดการ listing</i>
-						<span class="material-symbols-rounded">
-						ballot
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="user.html"> 
-						<i>ผู้ใช้งาน</i>
-						<span class="material-symbols-outlined">
-						manage_accounts
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="download.html"> 
-						<i>Download</i>
-						<span class="material-symbols-outlined">
-						download
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="upload.html"> 
-						<i>Upload</i>
-						<span class="material-symbols-outlined">
-						upload
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="project.html"> 
-						<i>จัดการโครงการ/หมู่บ้าน</i>
-						<span class="material-symbols-outlined">
-						add_home_work
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="report-listing.html"> 
-						<i>รายงาน Listing</i>
-						<span class="material-symbols-outlined">
-						summarize
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="report.html"> 
-						<i>รายงาน</i>
-						<span class="material-symbols-outlined">
-						lab_profile
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="website.html"> 
-						<i>เว็บไซต์</i>
-						<span class="material-symbols-outlined">
-						computer
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="sales.html"> 
-						<i>ข้อมูลเซล์</i>
-						<span class="material-symbols-outlined">
-						bar_chart_4_bars
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="stock.html"> 
-						<i>Stock</i>
-						<span class="material-symbols-outlined">
-						inventory
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="report2.html"> 
-						<i>รายงาน</i>
-						<span class="material-symbols-outlined">
-						chart_data
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="other.html"> 
-						<i>อื่นๆ</i>
-						<span class="material-symbols-outlined">
-						more
-						</span>
-					</a>
-				</li>
-			</ul> 
-		</div>
-	</div>
-	<div class="nav-top">
-		<div class="container-fluid mb-x">
-			<div class="row">
-				<div class="col-6">
-					<ul class="mt">
-						<li class="meli menu-expand">
-							<img src="public/images/menu-left.png" alt="">
-						</li>
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">Portfolio Listing</a>
-						</li>
-						<li>
-							<a href="#">Building</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-					</ul>
+			<div class="user">
+				<div class="avatarx">
+					<img src="public/images/avatar.png" alt="" class="menux-close">
+					<h6>User Name</h6>
 				</div>
-				<div class="col-6 text-end">
-					<ul class="user-il">
-						<li>
-							<div class="dropdown user-dropdown alarm">
-								<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-									<p>13</p>
-									<span class="material-symbols-outlined">
-									notifications
-									</span>
-								</a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="#" class="dropdown-item">
-										<div class="alarm-box">
-											<img src="public/images/avatar.png" alt="">
-											<h4>Brad Diesel</h4>
-											<h5>Call me whenever you can Call me whenever you can</h5>
-											<h6>
-												<span class="material-symbols-outlined">
-													schedule
-												</span>
-												4 Hours ago
-											</h6>
-										</div>
-									</a>  
-									<a href="#" class="dropdown-item">
-										<div class="alarm-box">
-											<img src="public/images/avatar.png" alt="">
-											<h4>Brad Diesel</h4>
-											<h5>Call me whenever you can Call me whenever you can</h5>
-											<h6>
-												<span class="material-symbols-outlined">
-													schedule
-												</span>
-												4 Hours ago
-											</h6>
-										</div>
-									</a>  
-									<a href="#" class="dropdown-item">
-										<div class="alarm-box">
-											<img src="public/images/avatar.png" alt="">
-											<h4>Brad Diesel</h4>
-											<h5>Call me whenever you can Call me whenever you can</h5>
-											<h6>
-												<span class="material-symbols-outlined">
-													schedule
-												</span>
-												4 Hours ago
-											</h6>
-										</div>
-									</a>  
-									<hr>
-									<a href="#" class="dropdown-item text-center">
-										See All Messages
-									</a>
-								</div>
-							</div> 
-						</li>
-						<li>
-							<a href="#">
-								<img src="public/images/avatar.png" alt="img-name" class="img-name">
-							</a>
-						</li>
-						<li>
-							<div class="dropdown user-dropdown">
-								<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Marlene Sasoeur</a>
-								<div class="dropdown-menu">
-									<a href="#" class="dropdown-item">My profile</a>
-									<a href="#" class="dropdown-item">Settings</a>
-									<a href="#" class="dropdown-item">Logout</a> 
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
+				<span class="material-symbols-outlined more-vert">
+				more_vert
+				</span>
 			</div>
-		</div>
-		<div class="container-fluid pc-x menu-top-mb">
-			<div class="icon-menu">
-				<div class="menux">
-					<span class="material-symbols-outlined">
-						menu
-					</span>
-				</div>
-				<div class="logo">
-					<img src="public/images/Logo2.png" alt="">
-				</div>
-			</div>
-			<div class="avatar-user">
-				<img src="public/images/avatar.png" class="u-img">
-				<div class="more-vert">
-					<span class="material-symbols-outlined">
-					more_vert
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="menu-bot pc-x">
-		<ul>
-			<li>
-				<a href="index.html">
-					<img src="public/images/vuesax-linear-home-2.svg" alt=""> 
-					<span>Home</span>
-				</a>
-			</li>
-			<li class="active">
-				<a href="manage-listing.html">
-					<img src="public/images/vuesax-linear-task-square2.svg" alt="">
-					<span>Listing</span>
-				</a> 
-			</li>
-			<li>
-				<a href="#">
-					<img src="public/images/vuesax-linear-calendar.svg" alt="">
-					<span>Calendar</span>
-				</a> 
-			</li>
-			<li>
-				<a href="#">
-					<img src="public/images/vuesax-linear-notification.svg" alt="">
-					<span>Notification</span>
-				</a> 
-			</li>
-			<li>
-				<a href="#">
-					<img src="public/images/vuesax-linear-setting-2.svg" alt="">
-					<span>Setting</span>
-				</a> 
-			</li>
-		</ul>
-	</div>
-	 
-	<main>
-		<div class="container-fluid p-0"> 
-			
-			<div class="row">
-				<div class="col-12">
-					<div class="navi-map">
-						<span>Home</span>
-						<span>/</span>
-						<a href="#">จัดการสัญญา ซื้อ-ขาย</a>
-					</div>
-				</div> 
-				<div class="col-lg-6 col-12"> 
-					<h3 class="h3 h3t">สัญญาที่จะซื้อขาย</h3>
-				</div>
-				<div class="col-lg-6 col-12 text-end">  
-					<div class="dropdown">
-						<button type="button" class="btn btn-primary btb" data-bs-toggle="dropdown">
+			<div class="menu"> 
+				<ul>
+					<li>
+						<a href="index.html"> 
+							<i>Dashboard</i>
+							<span class="material-symbols-rounded">
+							dashboard
+							</span>
+						</a>
+					</li> 
+					<li class="sub">
+						<div> 
+							<i>จัดการลูกค้า</i>
+							<span class="material-symbols-rounded">
+							group
+							</span>
+						</div>
+						<ul>
+							<li class="active"><a href="#">Sub menu 1</a></li>
+							<li><a href="#">Sub menu 2</a></li>
+							<li><a href="#">Sub menu 3</a></li>
+							<li><a href="#">Sub menu 4</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="manage-listing.html"> 
+							<i>จัดการ listing</i>
+							<span class="material-symbols-rounded">
+							ballot
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="user.html"> 
+							<i>ผู้ใช้งาน</i>
 							<span class="material-symbols-outlined">
-							add_box
-							</span>สร้างสัญญา 
-						</button>
-						<div class="dropdown-menu dropdown-menu-end">
-							<div class="dropdown-item">สร้างสัญญา</div>
-							<a class="dropdown-item" href="#">สัญญาซื้อขาย & เช่า</a>
-							<a class="dropdown-item" href="#">สัญญาจะซื้อจะขาย - ล็อคสิทธิ์</a>
-							<a class="dropdown-item" href="#">สัญญาจะซื้อจะขาย - ล็อคสิทธิ์</a>
+							manage_accounts
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="download.html"> 
+							<i>Download</i>
+							<span class="material-symbols-outlined">
+							download
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="upload.html"> 
+							<i>Upload</i>
+							<span class="material-symbols-outlined">
+							upload
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="project.html"> 
+							<i>จัดการโครงการ/หมู่บ้าน</i>
+							<span class="material-symbols-outlined">
+							add_home_work
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report-listing.html"> 
+							<i>รายงาน Listing</i>
+							<span class="material-symbols-outlined">
+							summarize
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report.html"> 
+							<i>รายงาน</i>
+							<span class="material-symbols-outlined">
+							lab_profile
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="website.html"> 
+							<i>เว็บไซต์</i>
+							<span class="material-symbols-outlined">
+							computer
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="sales.html"> 
+							<i>ข้อมูลเซล์</i>
+							<span class="material-symbols-outlined">
+							bar_chart_4_bars
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="stock.html"> 
+							<i>Stock</i>
+							<span class="material-symbols-outlined">
+							inventory
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report2.html"> 
+							<i>รายงาน</i>
+							<span class="material-symbols-outlined">
+							chart_data
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="other.html"> 
+							<i>อื่นๆ</i>
+							<span class="material-symbols-outlined">
+							more
+							</span>
+						</a>
+					</li>
+				</ul> 
+			</div>
+		</div>
+		<div class="backdp"></div>
+
+		<div class="menu">
+			<div class="logo">
+				<a href="index.html">
+					<img src="public/images/logo.png" alt="logo">
+				</a>
+			</div>
+			<div class="logo-expand">
+				<a href="index.html">
+					<img src="public/images/logo1.png" alt="logo">
+				</a>
+			</div>
+			<h3>Menu</h3>
+			<div class="menu-dib">
+				<ul>
+					<li >
+						<a href="index.html"> 
+							<i>Dashboard</i>
+							<span class="material-symbols-rounded">
+							dashboard
+							</span>
+						</a>
+					</li> 
+					<li class="sub">
+						<div> 
+							<i>จัดการลูกค้า</i>
+							<span class="material-symbols-rounded">
+							group
+							</span>
+						</div>
+						<ul>
+							<li class="active"><a href="#">Sub menu 1</a></li>
+							<li><a href="#">Sub menu 2</a></li>
+							<li><a href="#">Sub menu 3</a></li>
+							<li><a href="#">Sub menu 4</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="manage-listing.html"> 
+							<i>จัดการ listing</i>
+							<span class="material-symbols-rounded">
+							ballot
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="user.html"> 
+							<i>ผู้ใช้งาน</i>
+							<span class="material-symbols-outlined">
+							manage_accounts
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="download.html"> 
+							<i>Download</i>
+							<span class="material-symbols-outlined">
+							download
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="upload.html"> 
+							<i>Upload</i>
+							<span class="material-symbols-outlined">
+							upload
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="project.html"> 
+							<i>จัดการโครงการ/หมู่บ้าน</i>
+							<span class="material-symbols-outlined">
+							add_home_work
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report-listing.html"> 
+							<i>รายงาน Listing</i>
+							<span class="material-symbols-outlined">
+							summarize
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report.html"> 
+							<i>รายงาน</i>
+							<span class="material-symbols-outlined">
+							lab_profile
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="website.html"> 
+							<i>เว็บไซต์</i>
+							<span class="material-symbols-outlined">
+							computer
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="sales.html"> 
+							<i>ข้อมูลเซล์</i>
+							<span class="material-symbols-outlined">
+							bar_chart_4_bars
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="stock.html"> 
+							<i>Stock</i>
+							<span class="material-symbols-outlined">
+							inventory
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="report2.html"> 
+							<i>รายงาน</i>
+							<span class="material-symbols-outlined">
+							chart_data
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="other.html"> 
+							<i>อื่นๆ</i>
+							<span class="material-symbols-outlined">
+							more
+							</span>
+						</a>
+					</li>
+				</ul> 
+			</div>
+		</div>
+		<div class="nav-top">
+			<div class="container-fluid mb-x">
+				<div class="row">
+					<div class="col-6">
+						<ul class="mt">
+							<li class="meli menu-expand">
+								<img src="public/images/menu-left.png" alt="">
+							</li>
+							<li>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">Portfolio Listing</a>
+							</li>
+							<li>
+								<a href="#">Building</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6 text-end">
+						<ul class="user-il">
+							<li> 
+								<div class="dropdown user-dropdown alarm">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<p>13</p>
+										<span class="material-symbols-outlined">
+										notifications
+										</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-end">
+										<a href="#" class="dropdown-item">
+											<div class="alarm-box">
+												<img src="public/images/avatar.png" alt="">
+												<h4>Brad Diesel</h4>
+												<h5>Call me whenever you can Call me whenever you can</h5>
+												<h6>
+													<span class="material-symbols-outlined">
+														schedule
+													</span>
+													4 Hours ago
+												</h6>
+											</div>
+										</a>  
+										<a href="#" class="dropdown-item">
+											<div class="alarm-box">
+												<img src="public/images/avatar.png" alt="">
+												<h4>Brad Diesel</h4>
+												<h5>Call me whenever you can Call me whenever you can</h5>
+												<h6>
+													<span class="material-symbols-outlined">
+														schedule
+													</span>
+													4 Hours ago
+												</h6>
+											</div>
+										</a>  
+										<a href="#" class="dropdown-item">
+											<div class="alarm-box">
+												<img src="public/images/avatar.png" alt="">
+												<h4>Brad Diesel</h4>
+												<h5>Call me whenever you can Call me whenever you can</h5>
+												<h6>
+													<span class="material-symbols-outlined">
+														schedule
+													</span>
+													4 Hours ago
+												</h6>
+											</div>
+										</a>  
+										<hr>
+										<a href="#" class="dropdown-item text-center">
+											See All Messages
+										</a>
+									</div>
+								</div> 
+							</li>
+							<li>
+								<a href="#">
+									<img src="public/images/avatar.png" alt="img-name" class="img-name">
+								</a>
+							</li>
+							<li>
+								<div class="dropdown user-dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Marlene Sasoeur</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">My profile</a>
+										<a href="#" class="dropdown-item">Settings</a>
+										<a href="#" class="dropdown-item">Logout</a> 
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid pc-x menu-top-mb">
+				<div class="icon-menu">
+					<div class="menux">
+						<a href="manage-listing.html">
+							<span class="material-symbols-outlined">
+							keyboard_backspace
+							</span>
+						</a>
+					</div> 
+				</div>
+				<div class="text-header">
+					สัญญาจะซื้อจะขาย - ล็อคสิทธิ์
+					<a href="#" class="btn btn-primary btn-sw"> 
+						<span class="material-symbols-outlined">
+						add_box
+						</span>สร้างสัญญา 
+					</a> 
+				</div>
+			</div>
+		</div>
+	</header>
+ 
+	<main class="mv1">
+		<div class="container-fluid p-0"> 
+			<div class="navi-map">
+				<span>Home</span>
+				<span>/</span>
+				<span>จัดการสัญญา ซื้อ-ขาย</span>
+				<span>/</span>
+				<a href="#">สัญญาจะซื้อจะขาย - ล็อคสิทธิ์</a>
+			</div>
+		 
+
+			<div class="box2 mb-x">
+				<h4>สัญญาจะซื้อจะขาย - ล็อคสิทธิ์</h4> 
+				<a href="#" class="btn btn-primary btb"> 
+					<span class="material-symbols-outlined">
+					add_box
+					</span>
+					สร้างสัญญา 
+				</a> 
+			</div>
+			
+			<div class="box1 box-cc">
+				<div class="row">
+					<div class="col-lg-3 col-6">
+						<div class="form-check" style="margin-top: -10px;">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+							<label class="form-check-label" for="flexCheck1">สัญญา MANUAL</label>
 						</div>
 					</div>
+					<div class="col-lg-3 col-6">
+						<div class="form-check" style="margin-top: -10px;">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+							<label class="form-check-label" for="flexCheck2">สัญญา Co-Agent</label>
+						</div>
+					</div> 
+					<div class="col-lg-3 col-12">
+						<div class="row">
+							<div class="col-lg-4 col-4">
+								<label class="mt-5x">ใบรับเงิน</label>
+							</div>
+							<div class="col-lg-8 col-8">
+								<select class="form-select" data-placeholder="เลือกใบรับเงิน">
+									<option></option>
+									<option>เลือกใบรับเงิน</option>
+									<option>เลือกใบรับเงิน</option> 
+									<option>เลือกใบรับเงิน</option> 
+									<option>เลือกใบรับเงิน</option> 
+									<option>เลือกใบรับเงิน</option> 
+								</select> 
+							</div>
+						</div>
+					</div> 
+				</div> 
+				<div class="row"> 
+					<div class="col-lg-3 col-12 mt-2 position-relative">
+						<div class="row">  
+							<div class="col-lg-4 col-4 ">  
+								<label for="date1" class="mt-2">วันทำสัญญา
+									<span class="material-symbols-outlined icon-span2 t7" style="right: 20px;">
+									calendar_month
+									</span>
+								</label>  
+							</div>  
+							<div class="col-lg-8 col-8 position-relative"> 
+								<input type="text" class="form-control date" id="date1" >  
+							</div>   
+						</div>
+					</div>
+					<div class="col-lg-3 col-12 mt-2 position-relative">
+						<div class="row">  
+							<div class="col-lg-4 col-4 ">  
+								<label for="date2" class="mt-2">วันโอนกรรมสิทธิ์
+									<span class="material-symbols-outlined icon-span2 t7" style="right: 20px;">
+									calendar_month
+									</span>
+								</label>  
+							</div>  
+							<div class="col-lg-8 col-8 position-relative"> 
+								<input type="text" class="form-control date" id="date2" >  
+							</div>   
+						</div>
+					</div> 
+					<div class="col-lg-3 col-12 mt-2">
+						<div class="row">  
+							<div class="col-lg-4 col-4">  
+								<label  class="mt-2">สถานที่ทำสัญญา </label>  
+							</div>  
+							<div class="col-lg-8 col-8"> 
+								<input type="text" class="form-control" >  
+							</div>   
+						</div>
+					</div>
+				</div>
 
-					  
-				</div>
-			</div>  
-			<br>
-		 
-			<div class="col search-box search-box-sell">
-				<div class="row">
-					<div class="col-lg-11 col-10">
-						<input type="text" class="form-control" >
-					</div>
-					<div class="col-lg-1 col-2 ps-0">
-						<button class="btn btn-web btn-mb-f">
-							<span class="material-symbols-outlined material-sp pc-x">search</span>
-							<span class="mb-x">ค้นหา</span>
-						</button>
-					</div>
-				</div>
 				<br>
-				<div class="form-group row">
-					<div class="col-lg-3 col-12 m4">
-						<label for="" class="mb-2">เลือกเอกสาร </label>
-						<select class="form-select" title="โปรดเลือก">
-							<option value="">ไม่เลือก</option> 
-							<option value="">ไม่เลือก</option> 
-							<option value="">ไม่เลือก</option> 
-						</select> 
-					</div> 
-					<div class="col-lg-3 col-12 m4">
-						<label for="" class="mb-2">ประเภทเอกสาร </label>
-						<select class="form-select" title="โปรดเลือก">
-							<option value="">ไม่เลือก</option> 
-							<option value="">ไม่เลือก</option> 
-							<option value="">ไม่เลือก</option> 
-						</select> 
-					</div> 
-					<div class="col-lg-3 col-12 position-relative m4"> 
-						<label for="date1" class="mb-2">วันทำสัญญา
-							<span class="material-symbols-outlined icon-span2 tn2">
-							calendar_month
-							</span>
-						</label>  
-						<input type="text" class="form-control date" id="date1" placeholder="01/05/2023">  
-					</div> 
-					<div class="col-lg-3 col-12 position-relative ">
-						<label for="date2" class="mb-2">วันโอนทรัพย์
-							<span class="material-symbols-outlined icon-span2 tn1">
-							calendar_month
-							</span>
-						</label>    
-						<input type="text" class="form-control date" id="date2" placeholder="01/05/2023">  
-					</div> 
-				</div>
-			</div>
-			
-			<div class="col tb-box"> 
-				<div class="table-responsive tb-data tb-data1 active"> 
-					<table class="table table1 table-purchase-sell">
-						<thead>
-							<tr>
-								<th>
-									รหัส
-								</th>  
-								<th>
-									&nbsp;
-								</th>      
-								<th>
-									โครงการ
-								</th> 
-								<th>
-									ประเภททรัพย์
-								</th> 
-								<th>
+				<div class="box3">
+					<div class="mb-x">
+						<button class="btn btn-primary">เพิ่มรายชื่อ</button> 
+					</div>
+
+					<div class="row pc-x">
+						<div class="col-4 btn-se active" data-tabx="1">ผู้ขาย</div>
+						<div class="col-4 btn-se" data-tabx="2">ผู้ซื้อ</div>
+						<div class="col-4 btn-addx">+ เพิ่มรายชื่อ</div>
+					</div>
+
+					<div class="row m-inner">
+						<div class="col-lg-4 col1 active">
+							<div class="inner">
+								<h4>
+									ผู้จะขาย
+									<span class="material-symbols-outlined l1">
+										close
+									</span>
+									<span class="material-symbols-outlined l2">
+										expand_more
+									</span>
+								</h4>
+								<hr>
+								<label>คำนำหน้า</label>
+								<select class="form-select" data-placeholder="เลือกประเภท">
+									<option></option> 
+									<option>ยังไม่ระบุ</option> 
+									<option>ยังไม่ระบุ</option>  
+									<option>ยังไม่ระบุ</option>  
+								</select>  
+	
+								<label>ชื่อ - สกุล</label>
+								<input type="text" class="form-control" placeholder="โปรดกรอก">
+	
+								<label>เลขประจำตัวประชาชน</label>
+								<input type="text" class="form-control" placeholder="โปรดกรอก">
+	
+								<label>ที่อยู่</label>
+								<textarea class="form-control" placeholder="โปรดกรอก"></textarea> 
+							</div>
+						</div>
+						<div class="col-lg-4 col2">
+							<div class="inner">
+								<h4>
 									ผู้จะซื้อ
-								</th> 
-								<th>
-									วันทำสัญญา
-								</th> 
-								<th>
-									วันโอน
-									กรรมสิทธิ์
-								</th> 
-								<th>
-									ราคาซื้อขาย
-								</th> 
-								<th>
-									ผู้ทำรายการ
-								</th> 
-								<th>
-									จัดการ
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									ABCD
-								</td> 
-								<td class="text-left"> 
-									คอนโด   <span class="badge badge-success">RT [1]</span> 
-								</td>  
-								<td>
-									Metro Sky Wutthakat
-								</td> 
-								<td>
-									คอนโดมิเนียม
-								</td> 
-								<td>
-									Somchai Wutthakat
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									1,500,000
-								</td> 
-								<td>
-									AAA <br> 2023/03/03, 09:00:05
-								</td> 
-								 
-								<td>
-									<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+									<span class="material-symbols-outlined l1">
+										close
+									</span>
+									<span class="material-symbols-outlined l2">
+										expand_more
+									</span>
+								</h4>
+								<hr>
+								<label>คำนำหน้า</label>
+								<select class="form-select" data-placeholder="เลือกประเภท">
+									<option></option> 
+									<option>ยังไม่ระบุ</option> 
+									<option>ยังไม่ระบุ</option>  
+									<option>ยังไม่ระบุ</option>  
+								</select>  
+	
+								<label>ชื่อ - สกุล</label>
+								<input type="text" class="form-control" placeholder="โปรดกรอก">
+	
+								<label>เลขประจำตัวประชาชน</label>
+								<input type="text" class="form-control" placeholder="โปรดกรอก">
+	
+								<label>ที่อยู่</label>
+								<textarea class="form-control" placeholder="โปรดกรอก"></textarea> 
+							</div>
+						</div>
+						<div class="col-lg-4 col2">
+							<div class="inner">
+								<h4>
+									ผู้จะซื้อ
+									<span class="material-symbols-outlined l1">
+										close
+									</span>
+									<span class="material-symbols-outlined l2">
+										expand_more
+									</span>
+								</h4>
+								<hr>
+								<label>คำนำหน้า</label>
+								<select class="form-select" data-placeholder="เลือกประเภท">
+									<option></option> 
+									<option>ยังไม่ระบุ</option> 
+									<option>ยังไม่ระบุ</option>  
+									<option>ยังไม่ระบุ</option>  
+								</select>  
+	
+								<label>ชื่อ - สกุล</label>
+								<input type="text" class="form-control" placeholder="โปรดกรอก">
+	
+								<label>เลขประจำตัวประชาชน</label>
+								<input type="text" class="form-control" placeholder="โปรดกรอก">
+	
+								<label>ที่อยู่</label>
+								<textarea class="form-control" placeholder="โปรดกรอก"></textarea> 
+							</div>
+						</div> 
+					</div>
+				</div>
+				 
+				<div class="box3">
+					<div class="row">
+						<div class="col-lg-3"> 
+							<label>ประเภททรัพย์</label>
+							<select class="form-select" data-placeholder="เลือกประเภท">
+								<option></option>
+								<option>เลือกใบรับเงิน</option>
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+							</select> 
+						</div>
+						<div class="col-lg-5"> 
+							<label>โครงการ</label>
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div>
+						<div class="col-lg-2"> 
+							<label>โฉนดเลขที่</label>
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div>
+						<div class="col-lg-2"> 
+							<label>เลขที่ดิน</label>
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="row">
+								<div class="col-lg-6"> 
+									<label>ไร่</label>
+									<input type="text" class="form-control" placeholder="โปรดกรอก">
+								</div>
+								<div class="col-lg-6"> 
+									<label>งาน</label>
+									<input type="text" class="form-control" placeholder="โปรดกรอก">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="row">
+								<div class="col-lg-2"> 
+									<label>ตารางวา</label>
+									<input type="text" class="form-control" placeholder="โปรดกรอก">
+								</div>
+								<div class="col-lg-5"> 
+									<label>พื้นที่ใช้สอย</label>
+									<input type="text" class="form-control" placeholder="โปรดกรอก">
+								</div>
+								<div class="col-lg-5"> 
+									<label>ตำบล</label>
+									<input type="text" class="form-control" placeholder="โปรดกรอก">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="row">
+								<div class="col-lg-6"> 
+									<label>อำเภอ</label>
+									<input type="text" class="form-control" placeholder="โปรดกรอก">
+								</div>
+								<div class="col-lg-6"> 
+									<label>จังหวัด</label>
+									<input type="text" class="form-control" placeholder="โปรดกรอก">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row"> 
+						<div class="col-lg-2"> 
+							<label>ราคาต่อตารางวา / บาท</label>
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+						<div class="col-lg-2"> 
+							<label>รวมเป็นเงินทั้งสิ้น / บาท</label>
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+					</div>
+					<div class="row"> 
+						<div class="col-lg-2"> 
+							<label>เงินมัดจัำ</label>
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+						<div class="col-lg-2"> 
+							<label>จำนวนวันย้ายออก</label>
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+						<div class="col-lg-2"> 
+							<label>วันจาก</label>
+							<select class="form-select" data-placeholder="เลือกประเภท">
+								<option></option>
+								<option>เลือกใบรับเงิน</option>
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+							</select> 
+						</div> 
+						<div class="col-lg-2"> 
+							<label>จำนวนวันย้ายออก</label>
+							<input type="text" class="form-control" placeholder="โปรดกรอก">
+						</div> 
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<label>นายหน้าเป็นผู้ถือเงินมัดจำ</label>
+						</div>
+					</div>
+					
+					<div class="row">  
+						<div class="col-lg-2"> 
+							<label>ค่าธรรมเนียมการโอน</label>
+							<select class="form-select" data-placeholder="โปรดเลือก">
+								<option></option>
+								<option>เลือกใบรับเงิน</option>
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+							</select> 
+							<label>เป็นผู้ชำระ*</label>
+						</div>  
+						<div class="col-lg-2"> 
+							<label>ค่าภาษีเงินได้ หัก ณ ที่จ่าย</label>
+							<select class="form-select" data-placeholder="โปรดเลือก">
+								<option></option>
+								<option>เลือกใบรับเงิน</option>
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+							</select> 
+							<label>เป็นผู้ชำระ*</label>
+						</div>  
+						<div class="col-lg-2"> 
+							<label>ค่าอากรแสตมป์ หรือ ค่าภาษีธุรกิจเฉพาะ</label>
+							<select class="form-select" data-placeholder="โปรดเลือก">
+								<option></option>
+								<option>เลือกใบรับเงิน</option>
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+								<option>เลือกใบรับเงิน</option> 
+							</select> 
+							<label>เป็นผู้ชำระ*</label>
+						</div>  
+					</div>
+
+
+				</div> 
+
+				<div class="box3">
+					<div class="innerx">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>ลำดับ</th>
+									<th>ลงนาม</th>
+									<th>ตำแหน่ง</th>
+									<th>
 										<span class="material-symbols-outlined">
-											more_horiz
+										add_box
 										</span>
-									</div>
-									<div class="dropdown mb-x">
-										<div data-bs-toggle="dropdown">
-											<span class="material-symbols-outlined">
-											expand_more
-											</span>
-										</div>
-										<div class="dropdown-menu"> 
-											<a class="dropdown-item active" href="#"> 
-												<span class="material-symbols-outlined">
-												search
-												</span>
-												ดูรายละเอียด
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												edit_square
-												</span>
-												แก้ไข
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												attachment
-												</span>
-												ไฟล์แนบ
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												block
-												</span>
-												ยกเลิก
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												check_circle
-												</span>
-												ปิดเคสสัญญา
-											</a>
-											<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
-												<span class="material-symbols-outlined">
-												delete
-												</span>
-												ลบ
-											</a>
-										</div>
-									</div> 
-								</td>
-							</tr>    
-							<tr>
-								<td>
-									ABCD
-								</td> 
-								<td class="text-left"> 
-									คอนโด   
-									<span class="badge badge-success">RT [1]</span> 
-									<span class="badge badge-warning">7</span> 
-								</td>  
-								<td>
-									Metro Sky Wutthakat
-								</td> 
-								<td>
-									คอนโดมิเนียม
-								</td> 
-								<td>
-									Somchai Wutthakat
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									1,500,000
-								</td> 
-								<td>
-									AAA <br> 2023/03/03, 09:00:05
-								</td> 
-								 
-								<td>
-									<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>
+										<input type="text" class="form-control mb-x" value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
+										<p class="pc-x">Aanabdjdjdj  Avtuutriutirtir</p>
+									</td>
+									<td> 
+										<select class="form-select mb-x" data-placeholder="ผู้จะซื้อ">
+											<option></option>
+											<option>เลือกใบรับเงิน</option>
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+										</select> 
+										<p class="pc-x">ผู้จะขาย</p>
+									</td>
+									<td>
 										<span class="material-symbols-outlined">
-											more_horiz
+											do_not_disturb_on
 										</span>
-									</div>
-									<div class="dropdown mb-x">
-										<div data-bs-toggle="dropdown">
-											<span class="material-symbols-outlined">
-											expand_more
-											</span>
-										</div>
-										<div class="dropdown-menu"> 
-											<a class="dropdown-item active" href="#"> 
-												<span class="material-symbols-outlined">
-												search
-												</span>
-												ดูรายละเอียด
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												edit_square
-												</span>
-												แก้ไข
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												attachment
-												</span>
-												ไฟล์แนบ
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												block
-												</span>
-												ยกเลิก
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												check_circle
-												</span>
-												ปิดเคสสัญญา
-											</a>
-											<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
-												<span class="material-symbols-outlined">
-												delete
-												</span>
-												ลบ
-											</a>
-										</div>
-									</div> 
-								</td>
-							</tr>    
-							<tr>
-								<td>
-									ABCD
-								</td> 
-								<td class="text-left"> 
-									คอนโด   <span class="badge badge-success">RT [1]</span> 
-								</td>  
-								<td>
-									Metro Sky Wutthakat
-								</td> 
-								<td>
-									คอนโดมิเนียม
-								</td> 
-								<td>
-									Somchai Wutthakat
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									1,500,000
-								</td> 
-								<td>
-									AAA <br> 2023/03/03, 09:00:05
-								</td> 
-								 
-								<td>
-									<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+									</td>
+								</tr> 
+								<tr>
+									<td>2</td>
+									<td>
+										<input type="text" class="form-control mb-x" value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
+										<p class="pc-x">Aanabdjdjdj  Avtuutriutirtir</p>
+									</td>
+									<td> 
+										<select class="form-select mb-x" data-placeholder="ผู้จะซื้อ">
+											<option></option>
+											<option>เลือกใบรับเงิน</option>
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+										</select> 
+										<p class="pc-x">ผู้จะขาย</p>
+									</td>
+									<td>
 										<span class="material-symbols-outlined">
-											more_horiz
+											do_not_disturb_on
 										</span>
-									</div>
-									<div class="dropdown mb-x">
-										<div data-bs-toggle="dropdown">
-											<span class="material-symbols-outlined">
-											expand_more
-											</span>
-										</div>
-										<div class="dropdown-menu"> 
-											<a class="dropdown-item active" href="#"> 
-												<span class="material-symbols-outlined">
-												search
-												</span>
-												ดูรายละเอียด
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												edit_square
-												</span>
-												แก้ไข
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												attachment
-												</span>
-												ไฟล์แนบ
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												block
-												</span>
-												ยกเลิก
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												check_circle
-												</span>
-												ปิดเคสสัญญา
-											</a>
-											<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
-												<span class="material-symbols-outlined">
-												delete
-												</span>
-												ลบ
-											</a>
-										</div>
-									</div> 
-								</td>
-							</tr>    
-							<tr>
-								<td>
-									ABCD
-								</td> 
-								<td class="text-left"> 
-									คอนโด   <span class="badge badge-success">RT [1]</span> 
-								</td>  
-								<td>
-									Metro Sky Wutthakat
-								</td> 
-								<td>
-									คอนโดมิเนียม
-								</td> 
-								<td>
-									Somchai Wutthakat
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									1,500,000
-								</td> 
-								<td>
-									AAA <br> 2023/03/03, 09:00:05
-								</td> 
-								 
-								<td>
-									<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+									</td>
+								</tr> 
+								<tr>
+									<td>3</td>
+									<td>
+										<input type="text" class="form-control mb-x" value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
+										<p class="pc-x">Aanabdjdjdj  Avtuutriutirtir</p>
+									</td>
+									<td> 
+										<select class="form-select mb-x" data-placeholder="ผู้จะซื้อ">
+											<option></option>
+											<option>เลือกใบรับเงิน</option>
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+										</select> 
+										<p class="pc-x">ผู้จะขาย</p>
+									</td>
+									<td>
 										<span class="material-symbols-outlined">
-											more_horiz
+											do_not_disturb_on
 										</span>
-									</div>
-									<div class="dropdown mb-x">
-										<div data-bs-toggle="dropdown">
-											<span class="material-symbols-outlined">
-											expand_more
-											</span>
-										</div>
-										<div class="dropdown-menu"> 
-											<a class="dropdown-item active" href="#"> 
-												<span class="material-symbols-outlined">
-												search
-												</span>
-												ดูรายละเอียด
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												edit_square
-												</span>
-												แก้ไข
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												attachment
-												</span>
-												ไฟล์แนบ
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												block
-												</span>
-												ยกเลิก
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												check_circle
-												</span>
-												ปิดเคสสัญญา
-											</a>
-											<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
-												<span class="material-symbols-outlined">
-												delete
-												</span>
-												ลบ
-											</a>
-										</div>
-									</div> 
-								</td>
-							</tr>    
-							<tr>
-								<td>
-									ABCD
-								</td> 
-								<td class="text-left"> 
-									คอนโด   <span class="badge badge-success">RT [1]</span> 
-								</td>  
-								<td>
-									Metro Sky Wutthakat
-								</td> 
-								<td>
-									คอนโดมิเนียม
-								</td> 
-								<td>
-									Somchai Wutthakat
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									2023/03/03 09:00:05
-								</td> 
-								<td>
-									1,500,000
-								</td> 
-								<td>
-									AAA <br> 2023/03/03, 09:00:05
-								</td> 
-								 
-								<td>
-									<div class="pc-x more-mb" data-bs-toggle="modal" data-bs-target="#desModal">
+									</td>
+								</tr> 
+								<tr>
+									<td>4</td>
+									<td>
+										<input type="text" class="form-control mb-x" value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.">
+										<p class="pc-x">Aanabdjdjdj  Avtuutriutirtir</p>
+									</td>
+									<td> 
+										<select class="form-select mb-x" data-placeholder="ผู้จะซื้อ">
+											<option></option>
+											<option>เลือกใบรับเงิน</option>
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+											<option>เลือกใบรับเงิน</option> 
+										</select> 
+										<p class="pc-x">ผู้จะขาย</p>
+									</td>
+									<td>
 										<span class="material-symbols-outlined">
-											more_horiz
+											do_not_disturb_on
 										</span>
-									</div>
-									<div class="dropdown mb-x">
-										<div data-bs-toggle="dropdown">
-											<span class="material-symbols-outlined">
-											expand_more
-											</span>
-										</div>
-										<div class="dropdown-menu"> 
-											<a class="dropdown-item active" href="#"> 
-												<span class="material-symbols-outlined">
-												search
-												</span>
-												ดูรายละเอียด
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												edit_square
-												</span>
-												แก้ไข
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												attachment
-												</span>
-												ไฟล์แนบ
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												block
-												</span>
-												ยกเลิก
-											</a>
-											<a class="dropdown-item" href="#"> 
-												<span class="material-symbols-outlined">
-												check_circle
-												</span>
-												ปิดเคสสัญญา
-											</a>
-											<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#delModal"> 
-												<span class="material-symbols-outlined">
-												delete
-												</span>
-												ลบ
-											</a>
-										</div>
-									</div> 
-								</td>
-							</tr>        
-						</tbody>
-					</table>
-				</div>  
+									</td>
+								</tr> 
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div> 
+
+			<div class="box1 text-center pc-x">
+				<button class="btn btn-primary br-btn">บันทึกข้อมูล</button>
 			</div>
 
-			<div class="col page-of">
-				<div class="row">
-					<div class="col pc-x">
-						<button class="btn btn-white btn-sm">Previous</button>
-					</div>
-					<div class="col"> 
-						<h4>Page 1 of 49</h4>
-					</div>	
-					<div class="col pc-x text-end">
-						<button class="btn btn-white btn-sm">Next</button> 
-					</div>
-				</div>
-				<ul class="mb-x">
-					<li class="focus">
-						<div>Previous</div>
-					</li>
-					<li class="active">
-						<div>1</div>
-					</li>
-					<li>
-						<div>2</div>
-					</li>
-					<li>
-						<div>3</div>
-					</li>
-					<li>
-						<div>4</div>
-					</li>
-					<li>
-						<div>5</div>
-					</li>
-					<li>
-						<div>6</div>
-					</li>
-					<li>
-						<div>7</div>
-					</li>
-					<li>
-						<div>8</div>
-					</li>
-					<li>
-						<div>9</div>
-					</li>
-					<li>
-						<div>10</div>
-					</li> 
-					<li class="focus">
-						<div>Next</div>
-					</li>
-					<li class="focus">
-						<div>Last >></div>
-					</li>
-				</ul>
-			</div>
-		 
 		</div>
 	</main>
- 
-	
-	<div class="modal fade modal1" id="delModal">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content"> 
-				<div class="modal-body">
-					<h4 class="text-danger">คุณมั่นใจจะลบ listing : CX-74371 นี้หรือไม่</h4>
-					<form>
-						<textarea class="form-control" placeholder="โปรดระบุเหตุผลในการลบ"></textarea>
-						<div class="row mt-4">
-							<div class="col-6">
-								<button class="btn btn-can">ยกเลิก</button>
-							</div>
-							<div class="col-6 text-end">
-								<button class="btn btn-primary">ยืนยัน</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="modal modal-none-b fade modal1 search-m" id="desModal">
-		<div class="modal-dialog modal-dialog-centered modal-xl modal-bottom modal-xlx">
-			<div class="modal-content"> 
-				<div class="modal-body">
-					<div data-bs-dismiss="modal" class="dis-m pc-x"></div>
-					<table class="table table-des1">
-						<tbody> 
-							<tr>
-								<td>รหัส</td>
-								<td>ABCD</td>
-							</tr>  
-							<tr>
-								<td>โครงการ</td>
-								<td>คอนโด <span class="badge badge-success">RT [1]</span> </td>
-							</tr>  
-							<tr>
-								<td>ประเภททรัพย์</td>
-								<td>Metro Sky Wutthakat</td>
-							</tr>  
-							<tr>
-								<td>ปู้จะซื้อ</td>
-								<td>คอนโดมิเนียม</td>
-							</tr>  
-							<tr>
-								<td>วันทำสัญญา</td>
-								<td>Metro Sky Wutthakat</td>
-							</tr>  
-							<tr>
-								<td>วันโอนกรรมสิทธิ์</td>
-								<td>2023/03/03<br>  09:00:05</td>
-							</tr>  
-							<tr>
-								<td>ราคาซื้อขาย</td>
-								<td>2023/03/03 <br> 09:00:05</td>
-							</tr>  
-							<tr>
-								<td>ผู้ทำรายการ</td>
-								<td>1,500,000</td>
-							</tr>  
-							<tr>
-								<td>จัดการ</td>
-								<td>AAA <br> 2023/03/03, 09:00:05</td>
-							</tr>  
-							<tr>
-								<td>จัดการ</td>
-								<td>
-									<div class="d-flex w-100">
-										<a href="javascript:void(0)" class="text-link">
-											แก้ไข
-											<span class="material-symbols-outlined">
-											edit
-											</span>
-											
-										</a>
-										<a href="javascript:void(0)" class="text-link del-mo">
-											ลบ
-											<span class="material-symbols-outlined">
-											delete
-											</span>
-										</a>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div> 
-			</div>
-		</div>
-	</div>
- 
-				
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
+
+	 
+	 
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
 
 	 
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
+ 
 
 	<script>
 		$(document).ready(function() {
 			$( '.form-select' ).select2( {
 				theme: "bootstrap-5"
-			} ); 
-		});
-		$('.menu ul li.sub').click(function(){       
+			} );  
+		}); 
+
+		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   
 			$("body").removeClass("expand");  
 		}); 
@@ -1181,18 +936,8 @@
 			$(".menu-mb").removeClass("active");  
 			$("body").removeClass("active");    
 			$('.menu-mb').animate({'left': '-100%'}, 300); 
-		});
-		$('.list-tabs ul li').click(function(){    
-			$(".list-tabs ul li").removeClass("active" , 300);  
-			$(this).addClass("active" , 300);    
-			$(".tb-data").removeClass("active" , 300);   
-			$(".tb-data" + $(this).attr("data-tabs")).addClass("active" , 300);     
-		});
+		});   
 
-		$('.del-mo').click(function(){      
-			$('#desModal').modal('hide');
-			$('#delModal').modal('show');
-		}); 
 		$('.date').datepicker({
 			format: 'dd MM yyyy',
 			clearBtn: true, 
@@ -1201,10 +946,21 @@
 			todayHighlight: true,
 			toggleActive: true
 		});
-		
-		 
+		$('.btn-se').click(function(){      
+			$(".btn-se").removeClass("active");    
+			$(this).addClass("active");  
+
+			$(".m-inner .col-lg-4").removeClass("active");  
+			$(".m-inner .col" + $(this).attr('data-tabx')).addClass("active");  
+		});  
+
 	</script>
-	
+
+	 
+
+ 
+
+
 
 </body>
 </html>
