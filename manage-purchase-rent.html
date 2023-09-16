@@ -521,7 +521,7 @@
 			</div>
 			
 			<div class="col tb-box"> 
-				<div class="table-responsive tb-data tb-data1 active"> 
+				<div class="tb-data tb-data1 active"> 
 					<table class="table table1 table-purchase-rent">
 						<thead>
 							<tr>
@@ -621,7 +621,7 @@
 												</span>
 												แก้ไข
 											</a>
-											<a class="dropdown-item" href="#"> 
+											<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#fileModal"> 
 												<span class="material-symbols-outlined">
 												attachment
 												</span>
@@ -709,7 +709,7 @@
 												</span>
 												แก้ไข
 											</a>
-											<a class="dropdown-item" href="#"> 
+											<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#fileModal"> 
 												<span class="material-symbols-outlined">
 												attachment
 												</span>
@@ -797,7 +797,7 @@
 												</span>
 												แก้ไข
 											</a>
-											<a class="dropdown-item" href="#"> 
+											<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#fileModal"> 
 												<span class="material-symbols-outlined">
 												attachment
 												</span>
@@ -885,7 +885,7 @@
 												</span>
 												แก้ไข
 											</a>
-											<a class="dropdown-item" href="#"> 
+											<a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#fileModal"> 
 												<span class="material-symbols-outlined">
 												attachment
 												</span>
@@ -975,6 +975,90 @@
 		 
 		</div>
 	</main>
+ 
+
+	<div class="modal fade modal-pop search-m" id="fileModal">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-xlx modal-bottom">
+			<div class="modal-content"> 
+				<div class="modal-body modal-file"> 
+					<div data-bs-dismiss="modal" class="dis-m pc-x"></div>
+					<h4>ไฟล์แนบ : <span>ABC12345</span></h4>
+					<hr>
+					<div class="file-box">
+						<button class="btn btn-warning"><span class="material-symbols-outlined">link</span>ทำสัญญา</button>
+						<h6>บัตรประชาชน (ผู้ขาย) (3) <span>*</span></h6>
+					</div>
+					<div class="file-box">
+						<button class="btn btn-warning"><span class="material-symbols-outlined">link</span>ทำสัญญา</button>
+						<h6>บัตรประชาชน (ผู้ขาย) (3) <span>*</span></h6> 
+					</div>
+					<div class="file-box">
+						<button class="btn btn-warning"><span class="material-symbols-outlined">link</span>ทำสัญญา</button>
+						<h6>บัตรประชาชน (ผู้ขาย) (3) <span>*</span></h6> 
+					</div>
+					<div class="tb-inner">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Size</th>
+									<th><span class="material-symbols-outlined">upload</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div>
+											<span class="material-symbols-outlined">imagesmode</span>
+										</div>
+										<p>บัตรประชาชน (ผู้ขาย) (3)</p>
+									</td>
+									<td>1 MB.</td>
+									<td><span class="material-symbols-outlined">cancel</span></td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											<span class="material-symbols-outlined">imagesmode</span>
+										</div>
+										<p>บัตรประชาชน (ผู้ขาย) (3)</p>
+									</td>
+									<td>1 MB.</td>
+									<td><span class="material-symbols-outlined">cancel</span></td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											<span class="material-symbols-outlined">imagesmode</span>
+										</div>
+										<p>บัตรประชาชน (ผู้ขาย) (3)</p>
+									</td>
+									<td>1 MB.</td>
+									<td><span class="material-symbols-outlined">cancel</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="file-box">
+						<button class="btn btn-success"><span class="material-symbols-outlined">link</span>ทำสัญญา</button>
+						<h6>บัตรประชาชน (ผู้ขาย) (3) <span>*</span></h6> 
+					</div>
+					<div class="file-box">
+						<button class="btn btn-success"><span class="material-symbols-outlined">link</span>ทำสัญญา</button>
+						<h6>บัตรประชาชน (ผู้ขาย) (3) <span>*</span></h6> 
+					</div>
+
+					<div class="file-box">
+						<button class="btn btn-success"><span class="material-symbols-outlined">link</span>ทำสัญญา</button>
+						<h6>บัตรประชาชน (ผู้ขาย) (3) <span>*</span></h6> 
+					</div>
+
+
+
+				</div> 
+			</div>
+		</div>
+	</div>
  
 	
 	<div class="modal fade modal1" id="delModal">
@@ -1106,8 +1190,7 @@
 				</div>
 			</div>
 		</div>
-	</div> 
- 
+	</div>  
 
 	<div class="modal fade modal-pop pop2" id="addModal">
 		<div class="modal-dialog modal-dialog-centered  ">
@@ -1202,7 +1285,7 @@
 			$( '.form-select' ).select2( {
 				theme: "bootstrap-5"
 			} ); 
-			$('#alertModal').modal('show');
+			//$('#alertModal').modal('show');
 		});
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   
@@ -1236,7 +1319,7 @@
 
 		$('.del-mo').click(function(){      
 			$('#desModal').modal('hide');
-			$('#delModal').modal('show');
+			$('#fileModal').modal('show');
 		}); 
 		$('.date').datepicker({
 			format: 'dd MM yyyy',

@@ -3486,6 +3486,172 @@ ol, ul {
 .br-btn{
   border-radius: 30px;
 }
+.modal-file h4{
+  color: #000; 
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;  
+}
+.modal-file h4 span{
+  color: #418EFD;  
+}
+.modal-file hr{
+  border-top: 1px solid #D9D9D9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.modal-file .file-box{
+  border-radius: 2px;
+  background: #F3F3F3;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 85px;
+}
+.modal-file .file-box .btn-warning{
+  padding: 2px 5px 3px;
+  border-radius: 4px;
+  background: #FFAB00; 
+  color: #FFF;
+  text-align: center; 
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px; 
+  border-color: #FFAB00;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.modal-file .file-box .btn-success{
+  padding: 2px 5px 3px;
+  border-radius: 4px;
+  background: #43C000;
+  color: #FFF;
+  text-align: center; 
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px; 
+  border-color: #43C000;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.modal-file .file-box .btn-success span{
+  transform: rotate(-45deg); 
+  font-size: 10px;
+  position: relative;
+  top: 2px;
+}
+.modal-file .file-box .btn-warning span{
+  transform: rotate(-45deg); 
+  font-size: 10px;
+  position: relative;
+  top: 2px;
+}
+.modal-file .file-box h6{
+  color: #74798C; 
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400; 
+  margin-bottom: 0px;
+}
+.modal-file .file-box h6 span{
+  color: #F12300;  
+}
+.tb-inner{
+  border-radius: 2px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.tb-inner table{ 
+  margin-bottom: 0px;
+} 
+.tb-inner table thead th{ 
+  background-color: #BDD6FA;
+  color: #1C1B1F;  
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; 
+  width: 33%;
+  border-bottom: 0px;
+  vertical-align: middle;
+} 
+.tb-inner table thead th:nth-child(2){ 
+  text-align: center;
+} 
+.tb-inner table thead th:nth-child(3){ 
+  text-align: center;
+} 
+.tb-inner table thead th:first-child{ 
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.tb-inner table thead th:last-child{ 
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.tb-inner table thead th span{  
+  color: #1C1B1F;  
+  text-align: center;
+  font-size: 20px;
+}  
+.tb-inner table tbody td span{  
+  color: #1C1B1F;  
+  text-align: center;
+  font-size: 20px;
+}
+.tb-inner table tbody td:nth-child(2){ 
+  text-align: center; 
+} 
+.tb-inner table tbody td:nth-child(3){ 
+  text-align: center; 
+}  
+.tb-inner table tbody td:first-child{ 
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.tb-inner table tbody td:last-child{ 
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.tb-inner table tbody td{ 
+  color: #74798C;  
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;  
+  background: #F3F3F3;
+  vertical-align: middle;
+  border-bottom: 0px;
+  position: relative;
+  height: 54px;
+}
+.tb-inner table tbody td div{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 5px;
+} 
+.tb-inner table tbody td p{ 
+  padding-left: 10px;
+  margin-bottom: 0px;
+  color: #74798C;
+  text-align: center; 
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+}
 
 
 
@@ -3502,8 +3668,17 @@ body.expand
 ######################################################################################################
 */ 
 
-@media only screen and (max-width: 1024px) { /* MOBILE */ 
-  
+@media only screen and (max-width: 1024px) { /* MOBILE */  
+  .tb-inner table tbody td p{  
+    padding-left: 33px;
+  } 
+  .tb-inner table tbody td div{
+    width: 24px;
+    height: 24px;
+  }
+  .modal-file h4{
+    text-align: center;
+  }
   .box3 .innerx table tbody p{
     color: #74798C !important; 
     font-size: 12px !important; 
@@ -4196,6 +4371,9 @@ body.expand
   .icon-span2.t70{ 
     top: 38px;   
   } 
+  .modal-file{
+    padding: 30px 20px !important;
+  }
 }
 @media only screen and (min-width: 1025px) { /* PC */
   .swip1{
