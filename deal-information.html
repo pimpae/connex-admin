@@ -1818,8 +1818,33 @@
 				<div role="tabpanel" class="tab-pane fade show active" id="tab3">
 					<div class="box1">  
 						<div class="div-h5">    
-							<button class="btn btn-primary btn-activity" data-bs-toggle="modal" data-bs-target="#modalActivity">เพิ่มกิจกรรม</button>
-							<div id='calendar'></div>
+							<button class="btn btn-primary btn-activity mb-x" data-bs-toggle="modal" data-bs-target="#modalActivity">เพิ่มกิจกรรม</button>
+							<div id='calendar'  ></div>
+
+							<div class="calendar-events pc-x">
+								<h4>Today’s events</h4>
+
+								<div class="list list1">
+									<h5>Virtual Doctors’ Appointment</h5>
+									<h6>Regular virutal catchup with the doct Regular virutal catchup with the doctRegular virutal catchup with the doct</h6>
+									<div>
+										<p>12:00 - 12:30</p>
+										<p> Dr. Juliean Adams</p>
+									</div>
+								</div>
+
+								<div class="list list2">
+									<h5>Virtual Doctors’ Appointment</h5>
+									<h6>Regular virutal catchup with the doct Regular virutal catchup with the doctRegular virutal catchup with the doct</h6>
+									<div>
+										<p>12:00 - 12:30</p>
+										<p> Dr. Juliean Adams</p>
+									</div>
+								</div>
+
+							</div>
+
+
 						</div>
 					</div>
 				</div>
@@ -3733,6 +3758,41 @@
 			</div>
 		</div>
 	</div>
+ 
+
+	<div class="modal fade modal-pop" id="schedule-view">
+		<div class="modal-dialog modal-dialog-centered  ">
+			<div class="modal-content"> 
+				<div class="modal-body"> 
+					<form> 
+						<span class="material-symbols-outlined closex" data-bs-dismiss="modal">
+						close
+						</span>
+						<ul class="list-cal">
+							<li class="m m1">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m2">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m3">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m4">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m5">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m1">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m2">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m3">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m4">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m5">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m1">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m2">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m3">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m4">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m5">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+						</ul>
+
+
+					</form>
+				</div> 
+			</div>
+		</div>
+	</div>
+
 	 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
@@ -3814,10 +3874,7 @@
 		}
 
 		window.initMap = initMap;
-
-
-		
-
+ 
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   
 			$("body").removeClass("expand");  
@@ -3856,7 +3913,7 @@
 			$(".more-dws").addClass("active" , 300);   
 			$(".show-less").hide();   
 		});
-		
+ 
 
 		document.addEventListener('DOMContentLoaded', function () {
 			var calendarEl = document.getElementById('calendar');
@@ -3870,32 +3927,32 @@
 				right: 'dayGridMonth,timeGridWeek,timeGridDay'
 				},
 				weekNumbers: true,
-				dayMaxEvents: true, // allow "more" link when too many events
-				events: [
+				dayMaxEvents: true, 
+				eventClick: function(calEvent, jsEvent, view, resourceObj) { 
+					$('#schedule-view').modal('show'); 
+				},
+				events: [ 
 					{
-						title: 'จองคอนโดฯ',
-						description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
-						start: '2023-08-26',
-						end: '2023-08-26',
-						className: 'fc-bg2',
-						icon : "circle"
+						title: '13:00 - 14:40',
+						start: '2023-09-12T14:00:00',
+						className: 'pin1', 
+					} ,
+					
+					{
+						title: '15:00 - 16:00',
+						start: '2023-09-12T16:00:00',
+						className: 'pin2',
 					} , 
 					{
-						title: 'จองคอนโดฯ',
-						description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
-						start: '2023-08-26',
-						end: '2023-08-26',
-						className: 'fc-bg1',
-						icon : "circle"
-					}  , 
+						title: '17:00 - 18:00',
+						start: '2023-09-12T17:00:00',
+						className: 'pin3',
+					} , 
 					{
-						title: 'จองคอนโดฯ',
-						description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
-						start: '2023-08-26',
-						end: '2023-08-26',
-						className: 'fc-bg3',
-						icon : "circle"
-					}
+						title: 'ดูทั้งหมด',
+						start: '2023-09-12',
+						className: 'btn', 
+					}  
 				] 
 			});
 
@@ -3904,9 +3961,9 @@
 
 		
 		$( document ).ready(function() {
-			$('.fc-dayGridMonth-button').text("Month view"); 
-			$('.fc-timeGridWeek-button').text("Week view"); 
-			$('.fc-agendaDay-button').text("Day view"); 
+			$('.fc-dayGridMonth-button').text("Month"); 
+			$('.fc-timeGridWeek-button').text("Week"); 
+			$('.fc-agendaDay-button').text("Day"); 
 		}); 
 
 		
@@ -3919,8 +3976,7 @@
 			toggleActive: true
 		});
 
- 
-		
+	 
 
 
 
