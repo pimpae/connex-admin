@@ -831,7 +831,7 @@ h3.h3{
 .btn .material-symbols-outlined{
   position: relative;
   margin-right: 10px;
-  font-size: 24px;
+  font-size: 20px;
   top: 5px;
 }
 .btn.btn-secondary{ 
@@ -869,6 +869,22 @@ h3.h3{
   width: 80px; 
 } 
 .btn.btn-can{ 
+  border-radius: 4px;
+  border: 1px solid #B0C2DB; 
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  padding: 8px 40px;
+  color: var(--bg-grey); 
+} 
+.btn.btn-can:hover{ 
+  border-radius: 4px;
+  border: 1px solid #B0C2DB; 
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  padding: 8px 40px;
+  color: var(--bg-grey); 
+} 
+.btn.btn-can:active{ 
   border-radius: 4px;
   border: 1px solid #B0C2DB; 
   background: #F3F3F3;
@@ -1097,7 +1113,7 @@ h3.h3{
   background-color: #F5F6FA;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5px;
 }
 .btn-nextx:hover{ 
   background-color: #F5F6FA !important; 
@@ -1120,7 +1136,7 @@ h3.h3{
   background-color: #F5F6FA;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 5px;
 }
 .btn-prevx:hover{ 
   background-color: #F5F6FA !important; 
@@ -3795,7 +3811,9 @@ ol, ul {
   border-radius: 1px;
   border-bottom: 1px solid #2A00F0;
 }
-
+.cur-pointer{ 
+  cursor: pointer;
+}
 /*
 #418EFD 
 transition: .33s all ease-out; 

@@ -996,8 +996,8 @@
 							<div class="col-lg-12 col-12">
 								<label>เลือกสถานะ</label>
 								<select class="form-select"  >
-									<option value="">ไม่เลือก</option> 
-									<option value="">ไม่เลือก</option>  
+									<option>ไม่เลือก</option> 
+									<option>ไม่เลือก</option>  
 								</select>  
 							</div> 
 						</div>
@@ -1056,43 +1056,47 @@
 								<input type="text" class="form-control" placeholder="ค้นหา">
 							</div>
 							<div class="col-lg-4 col-12">
-								<label for="">ความสนใจ</label>
-								<select class="form-select" title="ความสนใจ">
-									<option value="">ไม่ระบุ</option> 
+								<label for="">ความสนใจx</label>
+								<select class="form-select form-select2" data-placeholder="ความสนใจ">
+									<option></option>
+									<option>ไม่ระบุ</option> 
+									<option>ไม่ระบุ</option> 
+									<option>ไม่ระบุ</option> 
+									<option>ไม่ระบุ</option> 
 								</select> 
 							</div>
 							<div class="col-lg-4 col-12">
 								<label for="">เลือกเซลล์</label>
-								<select class="form-select" title="เลือกเซลล์">
-									<option value="">ไม่ระบุ</option> 
+								<select class="form-select form-select2" data-placeholder="เลือกเซลล์">
+									<option>ไม่ระบุ</option> 
 								</select> 
 							</div>
 						</div>
 						<div class="form-group row mt-2"> 
 							<div class="col-lg-4 col-12">
 								<label for="">Process</label>
-								<select class="form-select" title="Process">
-									<option value="">ไม่ระบุ</option> 
+								<select class="form-select form-select2" data-placeholder="Process">
+									<option>ไม่ระบุ</option> 
 								</select> 
 							</div>
 							<div class="col-lg-4 col-12">
 								<label for="">Workload</label>
-								<select class="form-select" title="Workload">
-									<option value="">ไม่ระบุ</option> 
+								<select class="form-select form-select2" data-placeholder="Workload">
+									<option>ไม่ระบุ</option> 
 								</select> 
 							</div>
 							<div class="col-lg-4 col-12">
 								<label for="">แหล่งที่มา</label>
-								<select class="form-select" title="แหล่งที่มา">
-									<option value="">ไม่ระบุ</option> 
+								<select class="form-select form-select2" data-placeholder="แหล่งที่มา">
+									<option>ไม่ระบุ</option> 
 								</select> 
 							</div>
 						</div>
 						<div class="form-group row mt-2"> 
 							<div class="col-lg-4 col-12">
 								<label for="">ติดต่อจาก</label>
-								<select class="form-select" title="ติดต่อจาก">
-									<option value="">ไม่ระบุ</option> 
+								<select class="form-select form-select2" data-placeholder="ติดต่อจาก">
+									<option>ไม่ระบุ</option> 
 								</select> 
 							</div> 
 						</div>
@@ -1123,21 +1127,27 @@
 
 				
 				
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
- 
+
+	 
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
+ 
 
 	<script>
 		$(document).ready(function() {
 			$( '.form-select' ).select2( {
 				theme: "bootstrap-5"
 			} ); 
+			$( '.form-select2' ).select2( {
+				theme: "bootstrap-5",  
+				dropdownParent: $("#searchModal")
+			} );  
 		});
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   

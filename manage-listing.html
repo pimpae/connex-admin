@@ -1859,7 +1859,7 @@
 									อาจซ้ำ
 								</td>
 								<td class="text-black">
-									<span class="material-symbols-outlined">
+									<span class="material-symbols-outlined cur-pointer"  data-bs-toggle="modal" data-bs-target="#doublyModal">
 									sticky_note_2
 									</span>
 								</td>
@@ -1977,7 +1977,7 @@
 									ซ้ำ
 								</td>
 								<td class="text-black">
-									<span class="material-symbols-outlined">
+									<span class="material-symbols-outlined cur-pointer"  data-bs-toggle="modal" data-bs-target="#doublyModal">
 									sticky_note_2
 									</span>
 								</td>
@@ -2095,7 +2095,7 @@
 									ซ้ำ
 								</td>
 								<td class="text-black">
-									<span class="material-symbols-outlined">
+									<span class="material-symbols-outlined cur-pointer"  data-bs-toggle="modal" data-bs-target="#doublyModal">
 									sticky_note_2
 									</span>
 								</td>
@@ -2213,7 +2213,7 @@
 									ซ้ำ
 								</td>
 								<td class="text-black">
-									<span class="material-symbols-outlined">
+									<span class="material-symbols-outlined cur-pointer"  data-bs-toggle="modal" data-bs-target="#doublyModal">
 									sticky_note_2
 									</span>
 								</td>
@@ -2331,7 +2331,7 @@
 									ซ้ำ
 								</td>
 								<td class="text-black">
-									<span class="material-symbols-outlined">
+									<span class="material-symbols-outlined cur-pointer"  data-bs-toggle="modal" data-bs-target="#doublyModal">
 									sticky_note_2
 									</span>
 								</td>
@@ -2510,7 +2510,7 @@
 			<div class="modal-content"> 
 				<div class="modal-body">
 					<div data-bs-dismiss="modal" class="dis-m pc-x"></div>
-					<div class="">
+					<div class="table-responsive">
 						<table class="table table-des1 table-ext">
 							<tbody>
 								<tr>
@@ -2625,76 +2625,82 @@
 	</div>
 
 
-	<div class="modal fade modal1" id="doublyModal">
+	<div class="modal fade modal1" id="doublyModal"  tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-xl">
 			<div class="modal-content "> 
-				<div class="modal-body p-3">
-					 
-				<div class=" tb-data tb-data8"> 
-					<table class="table table1 table8">
-						<thead>
-							<tr>
-								<th>No</th>
-								<th>Img</th>
-								<th>ผู้เพิ่มข้อมูล</th> 
-								<th>วันที่เพิ่มข้อมูล</th> 
-								<th>Status</th> 
-								<th>Type</th> 
-								<th>Deal</th> 
-								<th>Project</th> 
-								<th>House No.</th> 
-								<th>Floor</th> 
-								<th>Room</th> 
-								<th>พื้นที่ <br> (ตรม.)</th> 
-								<th>Price</th> 
-								<th>Owner</th>  
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>CX-74371 </td>
-								<td>
-									<span class="material-symbols-outlined mso-2">
-										imagesmode
-									</span>
-								</td> 
-								<td>Suchada</td>
-								<td>10/05/2022</td>
-								<td>ไม่รับสาย</td>
-								<td>คอนโด</td>
-								<td>เช่า</td>
-								<td>Metro Sky <br> Wutthakat</td>
-								<td>101/136</td>
-								<td>24</td>
-								<td>1 นอน | 1 น้ำ</td>
-								<td>25</td>
-								<td>4,635,000</td>
-								<td>สะดวกติดต่อ <br> ทางไลน์</td>
-							</tr>   
-							<tr>
-								<td>CX-74371 </td>
-								<td>
-									<span class="material-symbols-outlined mso-2">
-										imagesmode
-									</span>
-								</td> 
-								<td>Suchada</td>
-								<td>10/05/2022</td>
-								<td class="text-danger">Rented <br> 01/05/2023</td>
-								<td>คอนโด</td>
-								<td>เช่า</td>
-								<td>Metro Sky <br> Wutthakat</td>
-								<td>101/136</td>
-								<td>24</td>
-								<td>1 นอน | 1 น้ำ</td>
-								<td>25</td>
-								<td>4,635,000</td>
-								<td>สะดวกติดต่อ <br> ทางไลน์</td>
-							</tr>   
-						</tbody>
-					</table>
-				</div> 
-					 
+				<div class="modal-body p-3"> 
+
+					<div data-bs-dismiss="modal" class="dis-m pc-x"></div> 
+					<div data-bs-dismiss="modal" class="dis-m2 mb-x">
+						<span class="material-symbols-outlined">
+						close
+						</span>
+					</div>
+					<br>
+					<div class=" tb-data tb-data8"> 
+						<table class="table table1 table8">
+							<thead>
+								<tr>
+									<th>No</th>
+									<th>Img</th>
+									<th>ผู้เพิ่มข้อมูล</th> 
+									<th>วันที่เพิ่มข้อมูล</th> 
+									<th>Status</th> 
+									<th>Type</th> 
+									<th>Deal</th> 
+									<th>Project</th> 
+									<th>House No.</th> 
+									<th>Floor</th> 
+									<th>Room</th> 
+									<th>พื้นที่ <br> (ตรม.)</th> 
+									<th>Price</th> 
+									<th>Owner</th>  
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>CX-74371 </td>
+									<td>
+										<span class="material-symbols-outlined mso-2">
+											imagesmode
+										</span>
+									</td> 
+									<td>Suchada</td>
+									<td>10/05/2022</td>
+									<td>ไม่รับสาย</td>
+									<td>คอนโด</td>
+									<td>เช่า</td>
+									<td>Metro Sky <br> Wutthakat</td>
+									<td>101/136</td>
+									<td>24</td>
+									<td>1 นอน | 1 น้ำ</td>
+									<td>25</td>
+									<td>4,635,000</td>
+									<td>สะดวกติดต่อ <br> ทางไลน์</td>
+								</tr>   
+								<tr>
+									<td>CX-74371 </td>
+									<td>
+										<span class="material-symbols-outlined mso-2">
+											imagesmode
+										</span>
+									</td> 
+									<td>Suchada</td>
+									<td>10/05/2022</td>
+									<td class="text-danger">Rented <br> 01/05/2023</td>
+									<td>คอนโด</td>
+									<td>เช่า</td>
+									<td>Metro Sky <br> Wutthakat</td>
+									<td>101/136</td>
+									<td>24</td>
+									<td>1 นอน | 1 น้ำ</td>
+									<td>25</td>
+									<td>4,635,000</td>
+									<td>สะดวกติดต่อ <br> ทางไลน์</td>
+								</tr>   
+							</tbody>
+						</table>
+					</div>  
 				</div>
 			</div>
 		</div>
@@ -2711,18 +2717,17 @@
 						</span>
 					</div>
 
-					<form class="was-validated">
-
-						 
+					<form class="was-validated"> 
 						
 						<div class="form-group row">
 							<div class="col-lg-6 col-12">
 								<label for="">ค้นหา</label>
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" required> 
 							</div>
 							<div class="col-lg-6 col-12">
-								<label for="">โครงการ / โซน / รถไฟฟ้า</label>
-								<select class="form-select"   >
+								<label for="">โครงการ / โซน / รถไฟฟ้าx</label>
+								<select class="form-select form-select2"   data-placeholder="ไม่ระบุ" required>
+									<option></option>
 									<option>Deserunt ullamco est sit aliqua dolor do </option>
 									<option>Deserunt ullamco est sit aliqua dolor do </option> 
 									<option>Deserunt ullamco est sit aliqua dolor do </option> 
@@ -2734,7 +2739,8 @@
 						<div class="form-group row">
 							<div class="col-lg-3 col-12">
 								<label for="">ประเภทอสังหา</label>
-								<select class="form-select"  data-placeholder="ไม่ระบุ">
+								<select class="form-select form-select2"  title="ไม่ระบุ" required>
+									<option></option>
 									<option>ไม่ระบุ</option>
 									<option>โครงการ</option>
 									<option>โครงการ</option> 
@@ -2745,8 +2751,8 @@
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">ประเภทดีล</label>
-								<select class="form-select"  data-placeholder="ไม่ระบุ">
-									<option>ไม่ระบุ</option>
+								<select class="form-select form-select2"  data-placeholder="ไม่ระบุ" required>
+									<option></option>
 									<option>โครงการ</option>
 									<option>โครงการ</option> 
 									<option>โครงการ</option> 
@@ -2756,8 +2762,8 @@
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">Status</label>
-								<select class="form-select"  data-placeholder="ไม่ระบุ">
-									<option>ไม่ระบุ</option>
+								<select class="form-select form-select2"  data-placeholder="ไม่ระบุ" required>
+									<option></option>
 									<option>โครงการ</option>
 									<option>โครงการ</option> 
 									<option>โครงการ</option> 
@@ -2773,7 +2779,8 @@
 						<div class="form-group row">
 							<div class="col-lg-3 col-12">
 								<label for="">พื้นที่ ตรม.</label>
-								<select class="form-select"  data-placeholder="ไม่ระบุ">
+								<select class="form-select form-select2"  data-placeholder="ไม่ระบุ" required>
+									<option></option>
 									<option>ต่ำสุด</option>
 									<option>ต่ำสุด</option>
 									<option>ต่ำสุด</option> 
@@ -2784,7 +2791,8 @@
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">&nbsp;</label>
-								<select class="form-select"  data-placeholder="ไม่ระบุ">
+								<select class="form-select form-select2"  data-placeholder="ไม่ระบุ" required>
+									<option></option>
 									<option>สูงสุด</option>
 									<option>สูงสุด</option>
 									<option>สูงสุด</option> 
@@ -2795,7 +2803,8 @@
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">ช่วงราคา</label>
-								<select class="form-select"  data-placeholder="ไม่ระบุ">
+								<select class="form-select form-select2"  data-placeholder="ไม่ระบุ" required>
+									<option></option>
 									<option>ต่ำสุด</option>
 									<option>ต่ำสุด</option>
 									<option>ต่ำสุด</option> 
@@ -2806,7 +2815,8 @@
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">&nbsp;</label>
-								<select class="form-select"  data-placeholder="ไม่ระบุ">
+								<select class="form-select form-select2"  data-placeholder="ไม่ระบุ" required>
+									<option></option>
 									<option>สูงสุด</option>
 									<option>สูงสุด</option>
 									<option>สูงสุด</option> 
@@ -2819,11 +2829,12 @@
 						<div class="form-group row">
 							<div class="col-lg-3 col-12">
 								<label for="">เลขที่บ้าน/ห้อง</label>
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" required>
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">คะแนนรูปภาพ</label>
-								<select class="form-select"  data-placeholder="ไม่ระบุ">
+								<select class="form-select form-select2"  data-placeholder="ไม่ระบุ" required>
+									<option></option>
 									<option>ยังไม่ระบุ</option>
 									<option>ยังไม่ระบุ</option>
 									<option>ยังไม่ระบุ</option> 
@@ -2834,7 +2845,7 @@
 							</div>
 							<div class="col-lg-3 col-12">
 								<label for="">ชั้น</label>
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" required>
 							</div>
 						</div>
 
@@ -2848,7 +2859,7 @@
 								ล้างข้อมูล
 							</button> 
 				 
-							<button class="btn btn-web xs w-200"> 
+							<button class="btn btn-web xs w-200"  > 
 								<span class="material-symbols-outlined">
 								search
 								</span>
@@ -3143,23 +3154,28 @@
 
 				
 	 
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
- 
+
+	 
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
  
 
-	<script>
+	<script> 
+
+		
+
 		$(document).ready(function() {
 			$( '.form-select' ).select2( {
-				theme: "bootstrap-5"
-			} ); 
+				theme: "bootstrap-5",  
+			} );  
 		});
+		
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   
 			$("body").removeClass("expand");  
@@ -3195,6 +3211,15 @@
 			$('#delModal').modal('show');
 		}); 
 		
+
+		$(document).ready(function() { 
+			$( '.form-select2' ).select2( {
+				theme: "bootstrap-5",  
+				dropdownParent: $("#searchModal")
+			} );  
+		});
+
+
 		var button = document.getElementById('slide');
 		button.onclick = function () {
 			var container = document.getElementById('next-tab');
