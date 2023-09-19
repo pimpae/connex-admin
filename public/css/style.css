@@ -2910,18 +2910,6 @@ ol, ul {
 .optr{
   opacity: 0.2;
 } 
-.modal-arr .modal-dialog::after{
-  content: "";
-  position: relative;
-  top: -130px;
-  right: 0px;
-  background-color: #fff;
-  width: 38px;
-  height: 38px;
-  border-bottom-right-radius: 4px;
-  margin-left: -19px;
-  transform: rotate(-45deg);
-}
 .mso-2{
   font-size: 50px !important;
 }
@@ -4729,6 +4717,9 @@ body.expand
     line-height: normal;
     padding-left: 15px;
   }
+  .t7x{
+    top: 39px !important;
+  }
 }
 @media only screen and (min-width: 1025px) { /* PC */
   .swip1{
@@ -4742,6 +4733,19 @@ body.expand
   }
   .nav-tabs-de .nav-item.active::after {
     content: none; 
+  }
+  
+  .modal-arr .modal-dialog::after{
+    content: "";
+    position: relative;
+    top: -130px;
+    right: 0px;
+    background-color: #fff;
+    width: 38px;
+    height: 38px;
+    border-bottom-right-radius: 4px;
+    margin-left: -19px;
+    transform: rotate(-45deg);
   }
 }  
 @media only screen and (min-width: 1700px) {  
@@ -4819,3 +4823,7 @@ output .span--hidden {
   visibility: hidden;
 }
 
+.select2-container--bootstrap-5.select2-container--focus .select2-selection, .select2-container--bootstrap-5.select2-container--open .select2-selection {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13,110,253,.0) !important;
+}

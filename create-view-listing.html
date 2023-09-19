@@ -509,9 +509,9 @@
 									<button class="btn btn-view">EN</button>
 								</div>
 								<span class="mb-x"><br></span> 
-								<input type="text" class="form-control" value="https://www.youtube.com/watch?v=XDuvNSlQfKU">
+								<input type="text" class="form-control" value="https://www.youtube.com/watch?v=XDuvNSlQfKU" id="copyInput1">
 								<br>
-								<button class="btn btn-view2">
+								<button class="btn btn-view2" onclick="copyFunc1()">
 									<span class="material-symbols-outlined">link</span> คัดลอกลิ้งค์
 								</button>
 								<button class="btn btn-view2">
@@ -1076,7 +1076,12 @@
 		});  
 		
 
-
+		function copyFunc1() { 
+			var copyText = document.getElementById("copyInput1"); 
+			copyText.select();
+			copyText.setSelectionRange(0, 99999);  
+			navigator.clipboard.writeText(copyText.value);  
+		}
 
 	</script>
 
