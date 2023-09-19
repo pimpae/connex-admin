@@ -29,12 +29,21 @@
 		</div>
 		<div class="user">
 			<div class="avatarx">
-				<img src="public/images/avatar.png" alt="" class="menux-close">
+				<img src="public/images/avatar.png" alt="" class="">
 				<h6>User Name</h6>
 			</div>
-			<span class="material-symbols-outlined more-vert">
-			more_vert
-			</span>
+			<div class="dropdown user-dropdown">
+				<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+					<span class="material-symbols-outlined more-vert">
+					more_vert
+					</span>
+				</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">My profile</a>
+					<a href="#" class="dropdown-item">Settings</a>
+					<a href="#" class="dropdown-item">Logout</a> 
+				</div>
+			</div>
 		</div>
 		<div class="menu"> 
 			<ul>
@@ -407,10 +416,19 @@
 			</div>
 			<div class="avatar-user">
 				<img src="public/images/avatar.png" class="u-img">
-				<div class="more-vert">
-					<span class="material-symbols-outlined">
-					more_vert
-					</span>
+				<div class="more-vert"> 
+					<div class="dropdown user-dropdown">
+						<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+							<span class="material-symbols-outlined">
+							more_vert
+							</span>
+						</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">My profile</a>
+							<a href="#" class="dropdown-item">Settings</a>
+							<a href="#" class="dropdown-item">Logout</a> 
+						</div>
+					</div> 
 				</div>
 			</div>
 		</div>
@@ -498,7 +516,7 @@
 					<p class="text-left-center">Showing 1-30 of 200 items</p>
 				</div>
 			 
-				<div class="table-responsive tb-data tb-data1 active"> 
+				<div class=" tb-data tb-data1 active"> 
 					<table class="table table1 table-receipt">
 						<thead>
 							<tr>
