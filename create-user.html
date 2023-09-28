@@ -469,7 +469,7 @@
 							</div>  
 							<div class="col-lg-4 col-12">
 								<label for="">Tel</label> 
-								<input type="tel" class="form-control" placeholder="โปรดกรอก"  data-mdb-input-mask="+48 999-999-999" required>
+								<input type="tel" class="form-control" placeholder="โปรดกรอก"  onkeypress="return isNumber(event)"  required>
 							</div>  
 						</div>  
 						<div class="form-group row">
@@ -594,8 +594,15 @@
 		$('.optionx').click(function(){    
 			$(this).toggleClass("active" , 300);   
 		});
-
- 
+		
+		function isNumber(evt) {
+			evt = (evt) ? evt : window.event;
+			var charCode = (evt.which) ? evt.which : evt.keyCode;
+			if ( (charCode > 31 && charCode < 48) || charCode > 57) {
+				return false;
+			}
+        return true;
+    }
 
 	</script>
 
