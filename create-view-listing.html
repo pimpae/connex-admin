@@ -1013,14 +1013,14 @@
 						<div class="col-lg-5 col-12">
 							<h6>เลือกดีลที่ต้องการนำเสนอ</h6>
 						</div> 
-						<div class="col-lg-7 col-12 position-relative">
+						<!-- <div class="col-lg-7 col-12 position-relative">
 							<input type="text" class="form-control" placeholder="ไม่ระบุ"> 
 							<span class="material-symbols-outlined iconx">
 							search
 							</span>
-						</div> 
+						</div>  -->
 					</div>
-					<table class="table table-pre">
+					<table class="table table-pre" id="tb-example">
 						<thead>
 							<tr>
 								<th>No</th>
@@ -1152,8 +1152,9 @@
 
 	 
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"></script>  
+	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>  
  
 
 	<script>
@@ -1161,7 +1162,24 @@
 			$( '.form-select' ).select2( {
 				theme: "bootstrap-5"
 			} );  
+
+			var table = $('#tb-example').DataTable( {
+				lengthChange: false,
+				paging: false, 
+				info: false,
+				ordering: false, 
+				language: { 
+					"search": "", 
+					searchPlaceholder: "ไม่ระบุ"
+
+				}  
+
+			} ); 
 		}); 
+
+ 
+
+		//tb-example
 
 		$('.menu ul li.sub').click(function(){      
 			$(this).toggleClass("active");   

@@ -3910,6 +3910,42 @@ ol, ul {
 .white-space-nowrap{
   white-space: nowrap;
 }
+#tb-example_wrapper #tb-example_filter{
+  position: relative; 
+}
+#tb-example_wrapper #tb-example_filter label{
+  position: absolute;
+  right: 0;
+  top: -75px;
+}
+#tb-example_wrapper #tb-example_filter label input{  
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#tb-example_wrapper #tb-example_filter label input{  
+  -webkit-appearance: textfield;
+  outline-offset: unset;
+  border: 1px solid #D9D9D9;
+  padding-left: 10px;
+}
+
+#tb-example_wrapper #tb-example_filter label input:focus{  
+  -webkit-appearance: textfield; 
+  border: 1px solid #D9D9D9 !important;
+  outline-offset: unset !important; 
+  outline: none !important;
+}
+#tb-example_wrapper #tb-example_filter label input:active{   
+  border: 1px solid #D9D9D9 !important;
+  outline-offset: unset;
+  outline: none !important;
+}
 
 
 /*
