@@ -572,7 +572,7 @@
 						</button> 
 					</div> 
 				</div>
-				<div class="h5-text pc-x" data-bs-toggle="modal" data-bs-target="#searchModal">ค้นหาแบบละเอียด</div>
+				<div class="h5-text pc-x show-modal3">ค้นหาแบบละเอียด</div>
 			</div>
 		 
 	 
@@ -652,7 +652,7 @@
 								<td>&nbsp;</td>
 								<td>
 									<span class="mb-x">2023/03/03 <br> 09:00:05</span>
-									<span class="material-symbols-outlined pc-x" data-bs-toggle="modal" data-bs-target="#desModal">
+									<span class="material-symbols-outlined pc-x show-modal1">
 										more_horiz
 									</span> 
 								</td>  
@@ -688,7 +688,7 @@
 								<td>&nbsp;</td>
 								<td>
 									<span class="mb-x">2023/03/03 <br> 09:00:05</span>
-									<span class="material-symbols-outlined pc-x" data-bs-toggle="modal" data-bs-target="#desModal">
+									<span class="material-symbols-outlined pc-x show-modal1">
 										more_horiz
 									</span> 
 								</td>  
@@ -724,7 +724,7 @@
 								<td>&nbsp;</td>
 								<td>
 									<span class="mb-x">2023/03/03 <br> 09:00:05</span>
-									<span class="material-symbols-outlined pc-x" data-bs-toggle="modal" data-bs-target="#desModal">
+									<span class="material-symbols-outlined pc-x show-modal1">
 										more_horiz
 									</span> 
 								</td>  
@@ -760,7 +760,7 @@
 								<td>&nbsp;</td>
 								<td>
 									<span class="mb-x">2023/03/03 <br> 09:00:05</span>
-									<span class="material-symbols-outlined pc-x" data-bs-toggle="modal" data-bs-target="#desModal">
+									<span class="material-symbols-outlined pc-x show-modal1">
 										more_horiz
 									</span> 
 								</td>  
@@ -796,7 +796,7 @@
 								<td>&nbsp;</td>
 								<td>
 									<span class="mb-x">2023/03/03 <br> 09:00:05</span>
-									<span class="material-symbols-outlined pc-x" data-bs-toggle="modal" data-bs-target="#desModal">
+									<span class="material-symbols-outlined pc-x show-modal1">
 										more_horiz
 									</span> 
 								</td>  
@@ -832,7 +832,7 @@
 								<td>&nbsp;</td>
 								<td>
 									<span class="mb-x">2023/03/03 <br> 09:00:05</span>
-									<span class="material-symbols-outlined pc-x" data-bs-toggle="modal" data-bs-target="#desModal">
+									<span class="material-symbols-outlined pc-x show-modal1">
 										more_horiz
 									</span> 
 								</td>  
@@ -901,86 +901,88 @@
 	</main>
  
 
-	
-	<div class="modal modal-none-b fade modal1 search-m " id="desModal">
-		<div class="modal-dialog modal-dialog-centered modal-xl modal-bottom modal-xlx">
-			<div class="modal-content"> 
-				<div class="modal-body">
-					<div data-bs-dismiss="modal" class="dis-m pc-x"></div>
-					<table class="table table-des1">
-						<tbody> 
-							<tr>
-								<td>Code</td>
-								<td>
-									<span data-bs-toggle="modal" data-bs-target="#dealModal">ABCD</span> 
-								</td>  
-							</tr>  
-							<tr>
-								<td>ชื่อลูกค้า</td>
-								<td>คอนโด</td>
-							</tr>  
-							<tr>
-								<td>ความต้องการ</td>
-								<td>ซื้อ</td>
-							</tr>  
-							<tr>
-								<td>Budget</td>
-								<td>0 - 5,900,000</td>
-							</tr>  
-							<tr>
-								<td>เซลล์ผู้ดูแล</td>
-								<td>Metro Sky Wutthakat</td>
-							</tr>  
-							<tr>
-								<td>เสนอห้อง</td>
-								<td>1</td>
-							</tr>  
-							<tr>
-								<td>สต็อกเสนอ</td>
-								<td>0</td>
-							</tr>  
-							<tr>
-								<td>มีห้องใหม่</td>
-								<td></td>
-							</tr>  
-							<tr>
-								<td>Work load</td>
-								<td><span data-bs-toggle="modal" data-bs-target="#dealModal">ไม่ระบุ</span></td>
-							</tr>  
-							<tr>
-								<td>วันที่สร้าง</td>
-								<td>2023/03/03 <br> 09:00:05</td>
-							</tr>  
-							<tr>
-								<td>วันที่อัพเดต</td>
-								<td>2023/03/03 <br> 09:00:05</td>
-							</tr>  
-							<tr>
-								<td>จัดการ</td>
-								<td>
-									<div class="d-flex w-100">
-										<a href="javascript:void(0)" class="text-link">
-											แก้ไข
-											<span class="material-symbols-outlined">
-											edit
-											</span>
-											
-										</a>
-										<a href="javascript:void(0)" class="text-link">
-											ลบ
-											<span class="material-symbols-outlined">
-											delete
-											</span>
-										</a>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div> 
+	<div class="bottom-sheet bottom-sheet1">
+		<div class="sheet-overlay sheet-overlay1"></div>
+		<div class="content content1">
+			<div class="header header1">
+				<div class="drag-icon drag-icon1"><span></span></div>
+			</div>
+			<div class="body"> 
+				<table class="table table-des1">
+					<tbody> 
+						<tr>
+							<td>Code</td>
+							<td>
+								<span data-bs-toggle="modal" data-bs-target="#dealModal">ABCD</span> 
+							</td>  
+						</tr>  
+						<tr>
+							<td>ชื่อลูกค้า</td>
+							<td>คอนโด</td>
+						</tr>  
+						<tr>
+							<td>ความต้องการ</td>
+							<td>ซื้อ</td>
+						</tr>  
+						<tr>
+							<td>Budget</td>
+							<td>0 - 5,900,000</td>
+						</tr>  
+						<tr>
+							<td>เซลล์ผู้ดูแล</td>
+							<td>Metro Sky Wutthakat</td>
+						</tr>  
+						<tr>
+							<td>เสนอห้อง</td>
+							<td>1</td>
+						</tr>  
+						<tr>
+							<td>สต็อกเสนอ</td>
+							<td>0</td>
+						</tr>  
+						<tr>
+							<td>มีห้องใหม่</td>
+							<td></td>
+						</tr>  
+						<tr>
+							<td>Work load</td>
+							<td><span data-bs-toggle="modal" data-bs-target="#dealModal">ไม่ระบุ</span></td>
+						</tr>  
+						<tr>
+							<td>วันที่สร้าง</td>
+							<td>2023/03/03 <br> 09:00:05</td>
+						</tr>  
+						<tr>
+							<td>วันที่อัพเดต</td>
+							<td>2023/03/03 <br> 09:00:05</td>
+						</tr>  
+						<tr>
+							<td>จัดการ</td>
+							<td>
+								<div class="d-flex w-100">
+									<a href="javascript:void(0)" class="text-link">
+										แก้ไข
+										<span class="material-symbols-outlined">
+										edit
+										</span>
+										
+									</a>
+									<a href="javascript:void(0)" class="text-link">
+										ลบ
+										<span class="material-symbols-outlined">
+										delete
+										</span>
+									</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				 
 			</div>
 		</div>
 	</div>
+ 
 
 	<div class="modal fade " id="dealModal">
 		<div class="modal-dialog modal-dialog-centered ">  
@@ -1036,6 +1038,90 @@
 			</div>
 		</div>
 	</div>
+
+
+	<div class="bottom-sheet bottom-sheet3">
+		<div class="sheet-overlay sheet-overlay3"></div>
+		<div class="content content3">
+			<div class="header header3">
+				<div class="drag-icon drag-icon3"><span></span></div>
+			</div>
+			<div class="body">
+				<form>
+					<h4 class="head-deal">ค้นหาดีล</h4>
+					<div class="form-group row">
+						<div class="col-lg-4 col-12">
+							<label for="">ค้นหา</label>
+							<input type="text" class="form-control" placeholder="ค้นหา">
+						</div>
+						<div class="col-lg-4 col-12">
+							<label for="">ความสนใจ</label>
+							<select class="form-select form-select2" data-placeholder="ความสนใจ">
+								<option></option>
+								<option>ไม่ระบุ</option> 
+								<option>ไม่ระบุ</option> 
+								<option>ไม่ระบุ</option> 
+								<option>ไม่ระบุ</option> 
+							</select> 
+						</div>
+						<div class="col-lg-4 col-12">
+							<label for="">เลือกเซลล์</label>
+							<select class="form-select form-select2" data-placeholder="เลือกเซลล์">
+								<option>ไม่ระบุ</option> 
+							</select> 
+						</div>
+					</div>
+					<div class="form-group row mt-2"> 
+						<div class="col-lg-4 col-12">
+							<label for="">Process</label>
+							<select class="form-select form-select2" data-placeholder="Process">
+								<option>ไม่ระบุ</option> 
+							</select> 
+						</div>
+						<div class="col-lg-4 col-12">
+							<label for="">Workload</label>
+							<select class="form-select form-select2" data-placeholder="Workload">
+								<option>ไม่ระบุ</option> 
+							</select> 
+						</div>
+						<div class="col-lg-4 col-12">
+							<label for="">แหล่งที่มา</label>
+							<select class="form-select form-select2" data-placeholder="แหล่งที่มา">
+								<option>ไม่ระบุ</option> 
+							</select> 
+						</div>
+					</div>
+					<div class="form-group row mt-2"> 
+						<div class="col-lg-4 col-12">
+							<label for="">ติดต่อจาก</label>
+							<select class="form-select form-select2" data-placeholder="ติดต่อจาก">
+								<option>ไม่ระบุ</option> 
+							</select> 
+						</div> 
+					</div>
+
+					<br>
+					 
+					<div class="col-12">
+						<button type="reset" class="btn btn-web4 xs w-49"> 
+							<span class="material-symbols-outlined">
+							backspace
+							</span>
+							ล้างข้อมูล
+						</button> 
+			 
+						<button class="btn btn-web xs w-49"> 
+							<span class="material-symbols-outlined">
+							search
+							</span>
+							ค้นหา
+						</button>
+					</div> 
+				</form>
+				 
+			</div>
+		</div>
+	</div>
  
 	<div class="modal fade modal1 search-m modal-arr" id="searchModal">
 		<div class="modal-dialog modal-dialog-centered modal-xl ">
@@ -1056,7 +1142,7 @@
 								<input type="text" class="form-control" placeholder="ค้นหา">
 							</div>
 							<div class="col-lg-4 col-12">
-								<label for="">ความสนใจx</label>
+								<label for="">ความสนใจ</label>
 								<select class="form-select form-select2" data-placeholder="ความสนใจ">
 									<option></option>
 									<option>ไม่ระบุ</option> 
@@ -1137,6 +1223,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>  
+	<script src="public/js/script.js"></script>
  
 
 	<script>
