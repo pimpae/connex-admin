@@ -3951,6 +3951,36 @@ ol, ul {
 .btn.btn.xs.w-49{
   width: 49% !important;
 }
+.lastx-img{
+  position: relative; 
+  overflow: hidden;
+}
+.lastx-img::after{ 
+  content: "";
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  width: calc(100% - 23px); 
+  top: 0;
+  z-index: 1;
+  height: 78px;
+  border-radius: 8px;
+}
+.img-show .img-pre{
+  cursor: pointer;
+}
+.lastx-img > div{
+  position: absolute;  
+  z-index: 3;
+  color: #fff;
+  top: 15px;
+  left: 25px;
+  font-size: 16px;
+}
+.lastx-img > div span{
+  position: relative;
+  top: 10px;
+  font-size: 32px;
+}
 
 
 /*
@@ -4882,6 +4912,10 @@ body.expand
   }
   .icon-span2.t7 {
     top: 49px; 
+  }
+  .modal-bottomxx .modal-content{
+    bottom: 0;
+    position: absolute;
   }
 }
 @media only screen and (min-width: 1025px) { /* PC */

@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
  
+ 
 	 
 
 </head>
@@ -455,17 +456,22 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="row img-show">
-								<div class="col-lg-6 col-12 pe-0">
-									<img src="public/images/11.jpg" alt="img">
+								<div class="col-lg-6 col-12 pe-0" data-num="1">
+									<img src="public/images/11.jpg" alt="img" class="img-pre">
 								</div>
-								<div class="col-lg-6 col-4 ">
-									<img src="public/images/22.jpg" alt="img">
+								<div class="col-lg-6 col-4 " data-num="2">
+									<img src="public/images/22.jpg" alt="img" class="img-pre">
 								</div>
-								<div class="col-lg-6 col-4 pe-0">
-									<img src="public/images/33.jpg" alt="img">
+								<div class="col-lg-6 col-4 pe-0" data-num="3">
+									<img src="public/images/33.jpg" alt="img" class="img-pre">
 								</div>
-								<div class="col-lg-6 col-4">
-									<img src="public/images/44.jpg" alt="img">
+								<div class="col-lg-6 col-4 lastx-img" data-num="4">
+									<img src="public/images/44.jpg" alt="img" class="img-pre">
+									<div>
+										<span class="material-symbols-outlined">
+										add
+										</span> 20
+									</div>
 								</div>
 							</div>
 						</div>
@@ -487,18 +493,23 @@
 						
 					<div class="row">
 						<div class="col-lg-6 mb-x">
+
+							
+						<div class="img-view" style="background: url(public/images/44.jpg);" > ff</div>
+			
+
 							<div class="row img-show">
-								<div class="col-lg-6 col-12 pe-0">
-									<img src="public/images/11.jpg" alt="img">
+								<div class="col-lg-6 col-12 pe-0" data-num="1">
+									<img src="public/images/11.jpg" alt="img" class="img-pre">
 								</div>
-								<div class="col-lg-6 col-4 ">
-									<img src="public/images/22.jpg" alt="img">
+								<div class="col-lg-6 col-4" data-num="2">
+									<img src="public/images/22.jpg" alt="img" class="img-pre">
 								</div>
-								<div class="col-lg-6 col-4 pe-0">
-									<img src="public/images/33.jpg" alt="img">
+								<div class="col-lg-6 col-4 pe-0" data-num="3">
+									<img src="public/images/33.jpg" alt="img" class="img-pre">
 								</div>
-								<div class="col-lg-6 col-4">
-									<img src="public/images/44.jpg" alt="img">
+								<div class="col-lg-6 col-4" data-num="4">
+									<img src="public/images/44.jpg" alt="img" class="img-pre">
 								</div>
 							</div>
 						</div>
@@ -1143,6 +1154,108 @@
 	</div>
 
 	 
+	<div class="modal fade" id="viewImg" style="padding-right: 0px !important">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content"> 
+				<div class="modal-body p-0">   
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade" id="photo">  
+							<div class="w-100 text-center">
+								<button class="btn" id="btn-photo"><i class="fas fa-th"></i> View all photos</button> 
+							</div>  
+							<div class="col p-0 ">
+								<div class="d-flx-combo w-100 carouselx active"> 
+									<p class="des-photo">45 Tudor City Place, Unit 901 | $599,000 | 1 Bed | 2 Baths </p>
+									<div class="btn-span"> 
+										<span class="item-span">1 </span>&nbsp;of&nbsp;<span class="count-item"> 17</span>
+									</div>
+
+									<div class="range-img">
+										<div>
+											<button id="minus">-</button>
+											<input id="range" type="range" min="1" max="2" step="0.1"  value="1">
+											<button id="plus">+</button>
+										</div>
+										<button id="compress-alt"><i class="far fa-compress-alt"></i></button>
+									</div>
+									
+									<div id="slideshow" class="fullscreen">
+										<!-- Below are the images in the gallery -->
+										<div id="img-1" data-img-id="1" class="img-wrapper active" style="background-image: url('images/cd1.jpg')"></div>
+										<div id="img-2" data-img-id="2" class="img-wrapper" style="background-image: url('images/cd2.jpg')"></div>
+										<div id="img-3" data-img-id="3" class="img-wrapper" style="background-image: url('images/cd3.jpg')"></div>
+										<div id="img-4" data-img-id="4" class="img-wrapper" style="background-image: url('images/cd1.jpg')"></div>
+										<div id="img-1" data-img-id="5" class="img-wrapper" style="background-image: url('images/cd2.jpg')"></div>
+										<div id="img-2" data-img-id="6" class="img-wrapper" style="background-image: url('images/cd3.jpg')"></div>
+										<div id="img-3" data-img-id="7" class="img-wrapper" style="background-image: url('images/cd1.jpg')"></div>
+										<div id="img-4" data-img-id="8" class="img-wrapper" style="background-image: url('images/home-2.jpg')"></div> 
+						
+										<!-- Below are the thumbnails of above images -->
+										<div class="thumbs-container bottom"> 
+											<div id="prev-btn" class="prev">
+												<i class="fa fa-chevron-left"></i>
+											</div> 
+											<div id="prev-btn2" class="prev prev2x">
+												<i class="fa fa-chevron-left"></i>
+											</div> 
+						
+											<ul class="thumbs">
+												<li data-thumb-id="1" class="thumb active" style="background-image: url('images/cd1.jpg')"></li>
+												<li data-thumb-id="2" class="thumb" style="background-image: url('images/cd2.jpg')"></li>
+												<li data-thumb-id="3" class="thumb" style="background-image: url('images/cd3.jpg')"></li>
+												<li data-thumb-id="4" class="thumb" style="background-image: url('images/cd1.jpg')"></li>
+												<li data-thumb-id="5" class="thumb" style="background-image: url('images/cd2.jpg')"></li>
+												<li data-thumb-id="6" class="thumb" style="background-image: url('images/cd3.jpg')"></li>
+												<li data-thumb-id="7" class="thumb" style="background-image: url('images/cd1.jpg')"></li>
+												<li data-thumb-id="8" class="thumb" style="background-image: url('images/home-2.jpg')"></li> 
+											</ul> 
+											<div id="next-btn" class="next">
+												<i class="fa fa-chevron-right"></i>
+											</div>
+											<div id="next-btn2" class="next next2x">
+												<i class="fa fa-chevron-right"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="all-viewx">
+									<div class="col">
+										<div class="row">
+											<div class="col-4 p-1">  
+												<img id="1" src="images/cd1.jpg" alt="" class="img-fluid d-block m-auto">
+											</div>  
+											<div class="col-4 p-1">  
+												<img id="2" src="images/cd2.jpg" alt="" class="img-fluid d-block m-auto">
+											</div>  
+											<div class="col-4 p-1">  
+												<img id="3" src="images/cd3.jpg" alt="" class="img-fluid d-block m-auto">
+											</div>  
+											<div class="col-4 p-1">  
+												<img id="4" src="images/cd1.jpg" alt="" class="img-fluid d-block m-auto">
+											</div>  
+											<div class="col-4 p-1">  
+												<img id="5" src="images/cd2.jpg" alt="" class="img-fluid d-block m-auto">
+											</div>  
+											<div class="col-4 p-1">  
+												<img id="6" src="images/cd3.jpg" alt="" class="img-fluid d-block m-auto">
+											</div>  
+											<div class="col-4 p-1">  
+												<img id="7" src="images/cd1.jpg" alt="" class="img-fluid d-block m-auto">
+											</div>  
+											<div class="col-4 p-1">  
+												<img id="8" src="images/home-2.jpg" alt="" class="img-fluid d-block m-auto">
+											</div>   
+										</div>
+									</div>
+								</div>
+							</div> 
+						</div> 
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script> 
@@ -1154,7 +1267,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"></script>  
-	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>  
+	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>   
  
 
 	<script>
@@ -1176,9 +1289,7 @@
 
 			} ); 
 		}); 
-
- 
-
+		
 		//tb-example
 
 		$('.menu ul li.sub').click(function(){      
@@ -1245,7 +1356,132 @@
  
 	</script>
 
+	<script>
+			
 	 
+		$(".thumbs-container .thumbs li").click(function (event) {  
+			var itemxspan = $(this).attr("data-thumb-id");    
+			$('.item-span').text(itemxspan);   
+		});
+
+		$("#next-btn").click(function (event) {
+			var itemxspan = $(".thumbs-container .thumbs li.active").attr("data-thumb-id");     
+			$('.item-span').text(itemxspan);   
+		});
+		$("#prev-btn").click(function (event) {
+			var itemxspan = $(".thumbs-container .thumbs li.active").attr("data-thumb-id");     
+			$('.item-span').text(itemxspan);   
+		});
+	
+		$("#next-btn2").click(function() { 
+			$( "#next-btn" ).click(); 
+		});
+		$("#prev-btn2").click(function() { 
+			$( "#prev-btn" ).click(); 
+		});
+	 
+	 
+
+		$("#compress-alt").click(function (event) {
+			$('#range').val(1);
+			$("#slideshow .img-wrapper").css("transform", "scale(1)"); 
+			$(".range-img #compress-alt").removeClass("active");  
+			$(".thumbs-container").css("opacity", "1"); 
+		});
+
+
+		$('.carousel').carousel({
+			interval: 5000000
+		})
+ 
+
+		$('.img-view').click(function() {     
+
+			alert("xx");
+		 
+
+			
+		});
+
+		$('.img-show div').click(function() {    
+			$('#viewImg').modal('show'); 
+			$('#viewImg .nav .nav-item a').removeClass('active');
+			$('#viewImg .nav .nav-item a.photo').addClass('active'); 
+			$('#viewImg .tab-content .tab-pane').removeClass('in active');
+			$('#viewImg .tab-content .tab-pane#photo').addClass('in active show');   
+
+			$("#slideshow .img-wrapper").removeClass("active");
+			$("#slideshow .img-wrapper:nth-child("+$(this).attr('data-num')+")").addClass("active");
+
+			$(".thumbs-container .thumbs li").removeClass("active");
+			$(".thumbs-container .thumbs li:nth-child("+$(this).attr('data-num')+")").addClass("active");	
+
+			$('.item-span').text($(this).attr("data-num"));   
+		});
+
+
+		var ctx = document.getElementById("doughnut");
+			var doughnut = new Chart(ctx, {
+			type: 'doughnut',
+			data: { 
+				datasets: [{
+				label: '# of Tomatoes',
+				data: [75, 25],
+				backgroundColor: [
+					'#1F4D8E',
+					'#FFB800', 
+				], 
+				borderWidth: 0
+				}]
+			},
+			options: {
+				//cutoutPercentage: 40,
+				responsive: false,
+
+			}
+		});
+
+		$('.btn-sel').click(function() { 
+			$(".btn-sel").removeClass("active");
+			$(this).addClass("active");
+		});
+
+		$(document).scroll(function() {
+			if ( $(document).scrollTop() < 900 ) { 
+				$(".information").removeClass("active");
+			} 
+			else if ( $(document).scrollTop() >= 900 && $(document).scrollTop() <= 2000 ) {
+				$(".information").addClass("active"); 
+			}
+			else if ( $(document).scrollTop() >= 2000 ) { 
+				$(".information").removeClass("active");
+			}
+		});
+
+		$('#btn-photo').click(function() { 
+			$(".carouselx").removeClass("active");
+			$(".all-viewx").addClass("active"); 
+			$("#btn-photo").hide();  
+		});
+
+		$('.all-viewx .col-4 img').click(function() { 
+			$(".all-viewx").removeClass("active"); 
+			$(".carouselx").addClass("active");
+			$("#btn-photo").show();  
+
+			$("#slideshow .img-wrapper").removeClass("active");
+			$("#slideshow .img-wrapper:nth-child("+$(this).attr('id')+")").addClass("active"); 
+			
+			$(".thumbs-container .thumbs li").removeClass("active");
+			$(".thumbs-container .thumbs li:nth-child("+$(this).attr('id')+")").addClass("active");
+			
+			$('.item-span').text($(this).attr('id'));   
+			
+		});
+
+	
+	</script>
+
 
  
 
