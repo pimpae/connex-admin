@@ -1009,6 +1009,8 @@
 					</table>
 				</div>  
 			</div>
+			
+			<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#listModal">Popup รายการใบรับเงิน</button>
 
 			<div class="col page-of">
 				<div class="row">
@@ -1064,10 +1066,49 @@
 					</li>
 				</ul>
 			</div>
-		 
+			
+
 		</div>
 	</main>
- 
+	
+
+	<div class="modal fade modal-pop" id="listModal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content"> 
+				<div class="modal-body">
+
+	
+					<h6>รายการใบรับเงิน</h6>
+					<span class="material-symbols-outlined closex" data-bs-dismiss="modal">
+					close
+					</span>
+					<hr> 
+	   
+					<table class="table table-ex">
+						<thead>
+							<tr>
+								<th>เลขที่ใบเสร็จ</th>
+								<th>วันที่</th>
+								<th>ยอดเงิน</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>ABC12345</td>
+								<td>
+									2023-03-02 <br>
+									15:09:43
+								</td>
+								<td>5,000,00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
 	
 	<div class="modal fade modal1" id="delModal">
 		<div class="modal-dialog modal-dialog-centered">
