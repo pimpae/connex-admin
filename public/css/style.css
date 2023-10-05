@@ -469,7 +469,7 @@ body.expand .nav-top{
 .menu-mb{ 
   z-index: 222 !important;
   position: fixed;
-  left: -100%;
+  left: -120%;
   right: 0;
   top: 0;
   bottom: 0;
@@ -4046,6 +4046,12 @@ body.expand
 */ 
 
 @media only screen and (max-width: 1024px) { /* MOBILE */  
+  .next-tabx.pe-0{
+    padding-right: 0px !important;
+  }
+  .icon-span3 { 
+    top: 43px; 
+  }
   .fc-toolbar-chunk .btn-group {
     right: 0px;
   }
