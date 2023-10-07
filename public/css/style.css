@@ -1804,6 +1804,16 @@ h5.dp{
   border-radius: 10px !important; 
   padding: 10px 20px !important;
 }
+.search-box .btn-primary.xs{ 
+  padding: 6px 20px !important;
+  font-size: 14px !important; 
+  border: 1px solid var(--bg-main);
+}
+.search-box .btn-white.xs{ 
+  padding: 6px 20px !important;
+  font-size: 14px !important;  
+}
+
 .search-box .btn-white{ 
   padding: 9px 20px !important;
 }
@@ -4031,6 +4041,19 @@ ol, ul {
   line-height: 14px; 
   border-bottom: 0px;
 }
+.drp-x{
+  position: absolute !important;
+}
+.table-responsive{
+  position: relative !important;
+}
+.accordion .body-text textarea::-webkit-scrollbar{ 
+  width: 2px; 
+}
+.accordion .body-text textarea::-webkit-scrollbar-thumb {
+  background: #888; 
+} 
+
 
 /*
 #418EFD 
