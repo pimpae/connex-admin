@@ -812,6 +812,7 @@
 						<br>
 
 						<hr>
+
 						<div class="input-field"> 
 							<div class="input-images-1" style="padding-top: .5rem;"></div>
 						</div>
@@ -969,6 +970,56 @@
 		$('.optionx').click(function(){    
 			$(this).toggleClass("active" , 300);   
 		});
+	</script>
+
+	<script> 
+		$(function () { 
+			$('.input-images-1').imageUploader();      
+
+			$('form').on('submit', function (event) { 
+				event.preventDefault();
+				event.stopPropagation(); 
+				let $form = $(this),
+					$modal = $('.modal'); 
+				$modal.find('#display-name span').text($form.find('input[id^="name"]').val());
+				$modal.find('#display-description span').text($form.find('input[id^="description"]').val());
+
+				let $inputImages = $form.find('input[name^="images"]');
+				if (!$inputImages.length) {
+					$inputImages = $form.find('input[name^="photos"]')
+				}
+
+				let $fileNames = $('<ul>');
+				for (let file of $inputImages.prop('files')) {
+					$('<li>', {text: file.name}).appendTo($fileNames);
+				}
+
+				$modal.find('#display-new-images').html($fileNames.html());
+
+				let $inputPreloaded = $form.find('input[name^="old"]');
+				if ($inputPreloaded.length) {
+
+					let $preloadedIds = $('<ul>');
+					for (let iP of $inputPreloaded) {
+						$('<li>', {text: '#' + iP.value}).appendTo($preloadedIds);
+					}
+
+					$modal.find('#display-preloaded-images').show().html($preloadedIds.html());
+
+				} else { 
+					$modal.find('#display-preloaded-images').hide(); 
+				} 
+				$modal.css('visibility', 'visible');
+			});
+
+			$('input').on('focus', function () {
+				$(this).parent().find('label').addClass('active')
+			}).on('blur', function () {
+				if ($(this).val() == '') {
+					$(this).parent().find('label').removeClass('active');
+				}
+			}); 
+		}); 
 	</script>
 	
 	
