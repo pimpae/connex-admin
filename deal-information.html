@@ -1849,7 +1849,7 @@
 					<div class="box1">  
 						<div class="div-h5">     
 							
-							<div class="col">
+							<div class="col" id="kanban2">
 
 								<ul class="box-deal mh-blocks">
 									<li class="">
@@ -5972,6 +5972,9 @@
     <script src="public/js/popper.min.js"></script>
     <script src="public/js/bootstrap.bundle.min.js"></script>
 
+	<script src="public/js/jquery-3.6.0.js"></script>
+	<script src="public/js/jquery-ui.js"></script>
+
 	 
 	<script src="public/js/select2.min.js"></script>
 	<script src="public/js/bootstrap-datepicker.min.js"  ></script>
@@ -5993,6 +5996,7 @@
 	<script src="public/js/script.js"></script>
 	<script src="public/js/drag.js"></script>
 
+ 
  
  
 	<script> 
@@ -6195,8 +6199,7 @@
 			$('.fc-dayGridMonth-button').text("Month"); 
 			$('.fc-timeGridWeek-button').text("Week"); 
 			$('.fc-agendaDay-button').text("Day"); 
-		}); 
-
+		});  
 		
 		$('.date').datepicker({
 			format: 'dd MM yyyy',
@@ -6261,7 +6264,7 @@
     <script>
         $('#kanban').kanban({
             titles: ['AA'],
-        });
+        }); 
     </script>
     
 
