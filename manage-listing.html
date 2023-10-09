@@ -19,6 +19,9 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
 
 </head>
 <body> 
@@ -495,8 +498,40 @@
 				</div>
 			</div> 
 			<div class="col-12 mb-x">&nbsp;</div>
+	 
+
+			<div class="owl-carousel owl-theme list-tabs d-xxl-none">
+				<div class="item">
+					<div data-tabs="1" class="item-ta active">Listing All</div>
+				</div>
+				<div class="item">
+					<div data-tabs="2" class="item-ta">Listing (Public)</div>
+				</div>
+				<div class="item">
+					<div data-tabs="3" class="item-ta">Listing (Draft)</div>
+				</div>
+				<div class="item">
+					<div data-tabs="4" class="item-ta">Listing (Premium)</div>
+				</div> 
+				<div class="item">
+					<div data-tabs="5" class="item-ta">Proppit (Boost)</div>
+				</div> 
+				<div class="item">
+					<div data-tabs="6" class="item-ta">Living Insider Listing (ใกล้ครบกำหนดเช่า)</div>
+				</div>
+				<div class="item">
+					<div data-tabs="7" class="item-ta">No Status Listing (Delete)</div>
+				</div>
+				<div class="item">
+					<div data-tabs="8" class="item-ta">ตรวจสอบ Listing ช้ำ</div>
+				</div>
+				<div class="item">
+					<div data-tabs="9" class="item-ta">PM Listing</div>
+				</div>
+			</div>
+
  
-			<div class="col-12 list-tabs pl-0 pr-0 position-relative" >
+			<div class="col-12 list-tabs pl-0 pr-0 position-relative d-none d-xxl-block" >
 				<button id="slide" type="button" class="btn btn-prevx pc-x">
 					<span class="material-symbols-outlined">
 						arrow_back_ios
@@ -531,12 +566,7 @@
 					<li data-tabs="9">
 						<a href="#">PM Listing</a>
 					</li>
-				</ul>
-				<button id="slideLeft" type="button" class="btn btn-nextx pc-x">
-					<span class="material-symbols-outlined">
-					arrow_forward_ios
-					</span>
-				</button>
+				</ul> 
 			</div>  
 
 			<div class="col search-box">
@@ -3328,13 +3358,26 @@
 	 
 	<script src="public/js/select2.min.js"></script>
 	<script src="public/js/bootstrap-datepicker.min.js"></script>
-	<script src="public/js/bootstrap-datepicker.th.min.js"></script>    
-
-	
-
+	<script src="public/js/bootstrap-datepicker.th.min.js"></script>     
 	<script src="public/js/script.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
 	<script>  
+ 
+		$('.owl-carousel').owlCarousel({
+			margin:10,
+			loop:false,
+			autoWidth:true,
+			nav: true, 
+			dots: false,
+			items:4
+		});
+
+		$(".owl-prev").text("");
+		$(".owl-next").text("");
+		 
+
  		$('.resetx').click(function(){      
  			$('.form-select').val(null).trigger('change');
 		});  
@@ -3372,12 +3415,19 @@
 			$("body").removeClass("active");    
 			$('.menu-mb').animate({'left': '-100%'}, 300); 
 		});
+		$('.list-tabs .item .item-ta').click(function(){    
+			$(".list-tabs .item .item-ta").removeClass("active" , 300);  
+			$(this).addClass("active" , 300);    
+			$(".tb-data").removeClass("active" , 300);   
+			$(".tb-data" + $(this).attr("data-tabs")).addClass("active" , 300);     
+		});
 		$('.list-tabs ul li').click(function(){    
 			$(".list-tabs ul li").removeClass("active" , 300);  
 			$(this).addClass("active" , 300);    
 			$(".tb-data").removeClass("active" , 300);   
 			$(".tb-data" + $(this).attr("data-tabs")).addClass("active" , 300);     
 		});
+
 
 		$('.del-mo').click(function(){      
 			$('#desModal').modal('hide');
@@ -3392,35 +3442,7 @@
 			} );  
 		});
 
-
-		var button = document.getElementById('slide');
-		button.onclick = function () {
-			var container = document.getElementById('next-tab');
-			sideScroll(container,'right',25,100,10);
-		};
-		 
-
-		var button = document.getElementById('slideLeft');
-		button.onclick = function () {
-			var container = document.getElementById('next-tab');
-			sideScroll(container,'left',25,100,10);
-		};
-		
-
-		function sideScroll(element,direction,speed,distance,step){
-			scrollAmount = 0;
-			var slideTimer = setInterval(function(){
-				if(direction == 'right'){
-					element.scrollLeft -= step; 
-				} else {
-					element.scrollLeft += step; 
-				}
-				scrollAmount += step;
-				if(scrollAmount >= distance){
-					window.clearInterval(slideTimer);  
-				} 
-			}, speed);
-		} 
+ 
 	</script>
 	 
 </body>
