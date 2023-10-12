@@ -5957,9 +5957,28 @@
 							<li class="m m3">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
 							<li class="m m4">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
 							<li class="m m5">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
-						</ul>
+						</ul> 
+					</form>
+				</div> 
+			</div>
+		</div>
+	</div>
 
 
+	<div class="modal fade modal-pop" id="schedule-view2">
+		<div class="modal-dialog modal-dialog-centered  ">
+			<div class="modal-content"> 
+				<div class="modal-body"> 
+					<form> 
+						<span class="material-symbols-outlined closex" data-bs-dismiss="modal">
+						close
+						</span>
+						<ul class="list-cal">
+							<li class="m m1">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m2">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m3">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li>
+							<li class="m m4">13:00 - 14:40  <a href="#">จองคอนโดฯ</a></li> 
+						</ul> 
 					</form>
 				</div> 
 			</div>
@@ -6163,31 +6182,31 @@
 				},
 				weekNumbers: true,
 				dayMaxEvents: true, 
-				eventClick: function(calEvent, jsEvent, view, resourceObj) { 
-					$('#schedule-view').modal('show'); 
-				},
+				// eventClick: function(calEvent, jsEvent, view, resourceObj) { 
+				// 	$('#schedule-view').modal('show'); 
+				// },
 				events: [ 
 					{
 						title: '13:00 - 14:40',
-						start: '2023-09-12T14:00:00',
+						start: '2023-10-12T14:00:00',
 						className: 'pin1', 
 					} ,
 					
 					{
 						title: '15:00 - 16:00',
-						start: '2023-09-12T16:00:00',
+						start: '2023-10-12T16:00:00',
 						className: 'pin2',
 					} , 
 					{
 						title: '17:00 - 18:00',
-						start: '2023-09-12T17:00:00',
+						start: '2023-10-12T17:00:00',
 						className: 'pin3',
 					} , 
 					{
 						title: 'ดูทั้งหมด',
-						start: '2023-09-12',
-						className: 'btn', 
-					}  
+						start: '2023-10-12',
+						className: 'btn btn-ap schedule1', 
+					}   
 				] 
 			});
 
