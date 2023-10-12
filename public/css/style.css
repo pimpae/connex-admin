@@ -476,7 +476,7 @@ body.expand .nav-top{
   width: 360px; 
   background-color: #fff;
   padding: 25px;
-  max-width: 100%;
+  max-width: 100%; 
 }
 .menu-mb.active{
   display: block;  
