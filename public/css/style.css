@@ -1805,12 +1805,12 @@ h5.dp{
   padding: 10px 20px !important;
 }
 .search-box .btn-primary.xs{ 
-  padding: 6px 20px !important;
+  padding: 6px 20px 8px !important;
   font-size: 14px !important; 
   border: 1px solid var(--bg-main);
 }
 .search-box .btn-white.xs{ 
-  padding: 6px 20px !important;
+  padding: 6px 20px 8px !important;
   font-size: 14px !important;  
 }
 
@@ -4019,7 +4019,7 @@ ol, ul {
 .icon-span3 {
   position: absolute;
   right: 20px;
-  top: 12px;
+  top: 7px;
   color: #979797;
   z-index: 1;
 }
@@ -4158,7 +4158,7 @@ body.expand
     padding-right: 0px !important;
   }
   .icon-span3 { 
-    top: 43px; 
+    top: 39px; 
   }
   .fc-toolbar-chunk .btn-group {
     right: 0px;

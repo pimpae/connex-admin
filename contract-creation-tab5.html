@@ -651,18 +651,22 @@
 
 
 
-		$('.menu ul li.sub').click(function(){      
-			$(this).toggleClass("active");   
-			$("body").removeClass("expand");  
+		$('.menux').click(function(){     
+			$(".menu-mb").addClass("active");
+			$("body").addClass("active");      
+			$('.menu-mb').animate({'left': '0'}, 600);
 		}); 
-		$('.menu-expand').click(function(){     
-			$("body").toggleClass("expand");  
+		$('.backdp').click(function(){     
+			$(".menu-mb").removeClass("active");  
+			$("body").removeClass("active");    
+			$('.menu-mb').animate({'left': '-120%'}, 300); 
 		}); 
-
-		$('.menux').click(function(){    
-			$(".menu-mb").addClass("active" , 300);  
-			$("body").addClass("active" , 300);    
-		}); 
+		$('.menux-close').click(function(){    
+			$(".menu-mb").removeClass("active");  
+			$("body").removeClass("active");    
+			$('.menu-mb').animate({'left': '-120%'}, 300); 
+		});
+		
 		$('.backdp').click(function(){     
 			$(".menu-mb").removeClass("active" , 300);  
 			$("body").removeClass("active" , 300);    
