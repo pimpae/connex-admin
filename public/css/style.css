@@ -4044,9 +4044,12 @@ ol, ul {
 }
 .drp-x{
   position: absolute !important;
+  z-index: 1111;
 }
-.table-responsive{
-  position: relative !important;
+.table-responsive{ 
+  position: relative;
+  overflow-x: auto !important;
+  overflow-y: none !important;
 }
 .accordion .body-text textarea::-webkit-scrollbar{ 
   width: 2px; 
