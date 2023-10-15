@@ -4047,9 +4047,13 @@ ol, ul {
   z-index: 1111;
 }
 .table-responsive{ 
-  position: relative;
+  /* position: relative;
   overflow-x: auto !important;
-  overflow-y: none !important;
+  overflow-y: none !important; */
+}
+.dropdown-men.show{
+  position:  relative !important;
+  z-index: 10 !important;
 }
 .accordion .body-text textarea::-webkit-scrollbar{ 
   width: 2px; 
