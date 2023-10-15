@@ -4047,9 +4047,9 @@ ol, ul {
   z-index: 1111;
 }
 .table-responsive{ 
-  /* position: relative;
-  overflow-x: auto !important;
-  overflow-y: none !important; */
+  position: relative;
+  /* overflow-x: inherit !important;
+  overflow-y: auto !important; */
 }
 .dropdown-men.show{
   position:  relative !important;
@@ -4145,6 +4145,13 @@ ol, ul {
 .btn-ap{
   position: absolute !important;
   top: 65px;
+} 
+.fc-timegrid-axis.fc-scrollgrid-shrink{ 
+  
+}
+.fc-timegrid-slots tbody tr td:nth-child(1){
+  
+  
 }
  
 /*
