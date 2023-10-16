@@ -6024,6 +6024,9 @@
 			$( '.form-select' ).select2( {
 				theme: "bootstrap-5"
 			} );    
+			$('.fc-dayGridMonth-button').text("Month"); 
+			$('.fc-timeGridWeek-button').text("Week"); 
+			$('.fc-agendaDay-button').text("Day"); 
 		});
  
 		function initMap() {
@@ -6182,9 +6185,9 @@
 				},
 				weekNumbers: true,
 				dayMaxEvents: true, 
-				// eventClick: function(calEvent, jsEvent, view, resourceObj) { 
-				// 	$('#schedule-view').modal('show'); 
-				// },
+				eventClick: function(calEvent, jsEvent, view, resourceObj) { 
+					$('#schedule-view').modal('show'); 
+				},
 				events: [ 
 					{
 						title: '13:00 - 14:40',
@@ -6217,14 +6220,7 @@
 
 			calendar.render();
 		});
-
-		
-		$( document ).ready(function() {
-			$('.fc-dayGridMonth-button').text("Month"); 
-			$('.fc-timeGridWeek-button').text("Week"); 
-			$('.fc-agendaDay-button').text("Day"); 
-		});  
-		
+ 
 		$('.date').datepicker({
 			format: 'dd MM yyyy',
 			clearBtn: true, 
@@ -6283,9 +6279,7 @@
 				}
 			}); 
 		}); 
-	</script>
-
-    <script>
+ 
         $('#kanban').kanban({
             titles: ['AA'],
         }); 
