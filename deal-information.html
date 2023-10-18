@@ -6094,6 +6094,7 @@
 			$('.fc-dayGridMonth-button').text("Month"); 
 			$('.fc-timeGridWeek-button').text("Week"); 
 			$('.fc-agendaDay-button').text("Day"); 
+			$('.fc-daygrid-more-link').text("ดูทั้งหมด"); 
 		});
  
 		function initMap() {
@@ -6236,7 +6237,8 @@
 				$(".header-box").removeClass("active" , 300); 
 				$(this).addClass('active'); 
 			}
-		});
+		}); 
+ 
 
 		
 		document.addEventListener('DOMContentLoaded', function () {
@@ -6253,7 +6255,7 @@
 				weekNumbers: true,
 				dayMaxEvents: true, 
 				eventClick: function(calEvent, jsEvent, view, className) { 
-					alert(className);
+					//alert(className);
 				 
 				}, 
 				events: [ 
@@ -6261,8 +6263,7 @@
 						title: '13:00 - 14:40',
 						start: '2023-10-18T14:00:00',
 						className: 'pin1', 
-					} ,
-					
+					} , 
 					{
 						title: '15:00 - 16:00',
 						start: '2023-10-18T16:00:00',
@@ -6274,31 +6275,104 @@
 						className: 'pin3',
 					} , 
 					{
-						title: 'ดูทั้งหมด',
-						start: '2023-10-18',
-						className: 'btn btn-ap schedule1', 
-					}, 
+						title: '17:00 - 18:00',
+						start: '2023-10-18T17:00:00',
+						className: 'pin3',
+					} , 
 					{
-						title: '07:00 - 08:00',
-						start: '2023-10-20T14:00:00',
-						className: 'pin3', 
-					}, 
+						title: '17:00 - 18:00',
+						start: '2023-10-18T17:00:00',
+						className: 'pin3',
+					} , 
 					{
-						title: '10:00 - 11:00',
-						start: '2023-10-20T14:00:00',
-						description: 'Lecture',
-						className: 'pin1', 
-					}, 
-					{	 
-						title: 'ดูทั้งหมด',
-						start: '2023-10-20',
-						className: ['btn btn-ap schedule2'], 
-					}   
+						title: '17:00 - 18:00',
+						start: '2023-10-18T17:00:00',
+						className: 'pin3',
+					} , 
+					{
+						title: '17:00 - 18:00',
+						start: '2023-10-18T17:00:00',
+						className: 'pin3',
+					} , 
+					{
+						title: '17:00 - 18:00',
+						start: '2023-10-18T17:00:00',
+						className: 'pin3',
+					} , 
+					{
+						title: '17:00 - 18:00',
+						start: '2023-10-18T17:00:00',
+						className: 'pin3',
+					} , 
+					{
+						title: '17:00 - 18:00',
+						start: '2023-10-18T17:00:00',
+						className: 'pin3',
+					} , 
+					{
+						title: '17:00 - 18:00',
+						start: '2023-10-18T17:00:00',
+						className: 'pin3',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+					{
+						title: '11:00 - 12:00',
+						start: '2023-10-22T17:00:00',
+						className: 'pin1',
+					} , 
+
+ 
 				] 
 			});
 
 			calendar.render();
 		});
+
+
 		 
 		
  
