@@ -4168,6 +4168,38 @@ body.expand
 */ 
 
 @media only screen and (max-width: 1024px) { /* MOBILE */  
+  .inner-body{
+    padding: 10px;
+    border: 1px solid #D9D9D9; 
+  }
+  .inner-body img { 
+    height: 142px; 
+  }
+  .inner-body h3{
+    display: none;
+  }
+  .inner-body .btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .inner-body p { 
+    font-size: 12px; 
+  }
+  .inner-body .col-5{
+    padding-right: 0px;
+  }
+  .inner-body p + .btn{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    display: block !important;
+    width: 100%;
+    font-size: 12px; 
+  }
+  .inner-body h6{
+    font-size: 13px;
+    line-height: 16px;
+  }
   .box-deal li {
     flex: unset;
     width: 100%;
