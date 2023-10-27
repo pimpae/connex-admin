@@ -8942,7 +8942,7 @@ $.extend( Datepicker.prototype, {
 			return startDate;
 	},
 
-	/* Attach the onxxx handlers.  These are declared statically so
+	/* Attach the on handlers.  These are declared statically so
 	 * they work with static code transformers like Caja.
 	 */
 	_attachHandlers: function( inst ) {

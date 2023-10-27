@@ -4042,15 +4042,13 @@ ol, ul {
   line-height: 14px; 
   border-bottom: 0px;
 }
-.drp-x{
+/* .drp-x{
   position: absolute !important;
   z-index: 1111;
-}
-.table-responsive{ 
-  position: relative;
-  /* overflow-x: inherit !important;
-  overflow-y: auto !important; */
-}
+} */
+/* .{ 
+  position: relative; 
+} */
 .dropdown-men.show{
   position:  relative !important;
   z-index: 10 !important;
@@ -4158,6 +4156,14 @@ ol, ul {
   line-height: normal;
   text-align: center;
   display: block;
+}
+.fc-popover.popover{
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important; 
+  display: block !important;
+  margin: auto !important;
 }
  
 /*
@@ -5219,6 +5225,24 @@ body.expand
 
 
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
+  .table1 thead tr th:nth-last-child(2) {
+    display: none !important;
+  }
+  .table1 thead tr th:nth-last-child(3) {
+    display: none !important;
+  }
+  .table1 thead tr th:nth-last-child(4) {
+    display: none !important;
+  }
+  .table1 tbody tr td:nth-last-child(2) {
+    display: none !important;
+  }
+  .table1 tbody tr td:nth-last-child(3) {
+    display: none !important;
+  }
+  .table1 tbody tr td:nth-last-child(4) {
+    display: none !important;
+  }
   .active-box .icon span {
     font-size: 13px;
   } 
