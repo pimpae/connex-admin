@@ -4157,15 +4157,14 @@ ol, ul {
   text-align: center;
   display: block;
 }
-.fc-popover.popover{
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important; 
-  display: block !important;
-  margin: auto !important;
-}
- 
+
+
+
+.fc-popover-title{
+  font-family: 'Prompt', sans-serif;  
+}    
+
+
 /*
 #418EFD 
 transition: .33s all ease-out; 
