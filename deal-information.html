@@ -1844,7 +1844,7 @@
 								</div> 
 							</div>  
 
-							<div class="calendar-events-week">
+							<div class="calendar-events-week pc-x">
 								<div class="ev active">
 									<h1>Thu<br><span>25</span></h1>
 									<h6>คณะกรรมการพิจารณาตำแหน่งทางวิชาการ ครั้งที่ 6/2566</h6>
@@ -6126,24 +6126,29 @@
 				dropdownParent: $("#modalPop1")
 			} );  
 			
-			// $('.fc-toolbar-chunk .fc-timeGridWeek-button').click(function(){     
-			// 	$(".calendar-events").hide();      
-			// 	$(".calendar-events-week").show(); 
-			// 	$(".fc-view-harness").hide();      
-			// });   
+			$('.fc-toolbar-chunk .fc-timeGridWeek-button').click(function(){     
+				$(".calendar-events").hide();      
+				$(".calendar-events-week").show();  
+				$(".fc-view-harness").addClass("xx");      
+			});   
 			
-			// $('.fc-toolbar-chunk .fc-dayGridMonth-button').click(function(){     
-			// 	$(".calendar-events").show();      
-			// 	$(".calendar-events-week").hide();     
-			// });  
-	 
-	 
-
+			$('.fc-toolbar-chunk .fc-dayGridMonth-button').click(function(){     
+				$(".calendar-events").show();      
+				$(".calendar-events-week").hide();     
+				$(".fc-view-harness").removeClass("xx");    
+			});   
 			
 			$('.fc-dayGridMonth-button').text("Month"); 
 			$('.fc-timeGridWeek-button').text("Week"); 
 			$('.fc-agendaDay-button').text("Day"); 
 			$('.fc-daygrid-more-link').text("ดูทั้งหมด"); 
+
+ 
+
+			$('.fc-daygrid-day-number:contains("22")').append( "<span>8</span>" );
+			$('.fc-daygrid-day-number:contains("25")').append( "<span>5</span>" );
+
+			
 		});
  
 		function initMap() {

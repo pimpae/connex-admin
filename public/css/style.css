@@ -4180,6 +4180,7 @@ ol, ul {
   padding-left: 65px;
   position: relative; 
   display: none;
+  margin-top: -240px;
 }
 .calendar-events-week .ev{ 
   border: 1px solid var(--bg-main);
@@ -4233,8 +4234,9 @@ ol, ul {
 .calendar-events-week .ev.active  h6{  
   color: #fff !important;
 }
-
-
+.fc-daygrid-day-number span{
+  display: none;
+}
 /*
 #418EFD 
 transition: .33s all ease-out; 
@@ -4248,7 +4250,18 @@ body.expand
 ######################################################################################################
 */ 
 
-@media only screen and (max-width: 1024px) { /* MOBILE */   
+@media only screen and (max-width: 1024px) { /* MOBILE */    
+  .fc-daygrid-day-number span{ 
+    position: absolute;
+    right: -2px;
+    top: -7px;
+    color: red;
+    font-size: 12px;
+    display: block;
+  }
+  .fc-view-harness.xx{
+    opacity: 0;
+  } 
   .inner-body{
     padding: 10px;
     border: 1px solid #D9D9D9; 
