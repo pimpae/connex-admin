@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" /> 
 	
 	<link rel="stylesheet" href="public/css/image-uploader.min.css" />
-	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body> 
 	<header>
@@ -1819,7 +1819,8 @@
 					<div class="box1">  
 						<div class="div-h5">    
 							<button class="btn btn-primary btn-activity mb-x" data-bs-toggle="modal" data-bs-target="#modalActivity">เพิ่มกิจกรรม</button>
-							<div id='calendar'  ></div>
+							<div id='calendar'></div>
+ 
 
 							<div class="calendar-events pc-x">
 								<h4>Today’s events</h4>
@@ -1842,6 +1843,40 @@
 									</div>
 								</div> 
 							</div>  
+
+							<div class="calendar-events-week">
+								<div class="ev active">
+									<h1>Thu<br><span>25</span></h1>
+									<h6>คณะกรรมการพิจารณาตำแหน่งทางวิชาการ ครั้งที่ 6/2566</h6>
+									13:00 - 16:00
+								</div>
+								<div class="ev"> 
+									<h6>คณะกรรมการพิจารณาตำแหน่งทางวิชาการ ครั้งที่ 6/2566</h6>
+									13:00 - 16:00
+								</div>
+								<div class="ev"> 
+									<h6>คณะกรรมการพิจารณาตำแหน่งทางวิชาการ ครั้งที่ 6/2566</h6>
+									13:00 - 16:00
+								</div>
+								<div class="ev"> 
+									<h6>คณะกรรมการพิจารณาตำแหน่งทางวิชาการ ครั้งที่ 6/2566</h6>
+									13:00 - 16:00
+								</div>
+								<div class="ev"> 
+									<h6>คณะกรรมการพิจารณาตำแหน่งทางวิชาการ ครั้งที่ 6/2566</h6>
+									13:00 - 16:00
+								</div>
+								<div class="ev">
+									<h1>Thu<br><span>26</span></h1>
+									<h6>ห้องประชุมบุณฑริก ชั้น 2 อาคารสำนักงานอธิการบดี และผ่านระบบอิเล็กทรอนิกส์</h6>
+									13:00 - 16:00
+								</div>
+								<div class="ev"> 
+									<h6>ห้องประชุมบุณฑริก ชั้น 2 อาคารสำนักงานอธิการบดี และผ่านระบบอิเล็กทรอนิกส์</h6>
+									13:00 - 16:00
+								</div> 
+							</div>  
+
 						</div>
 					</div>
 				</div>
@@ -6091,6 +6126,20 @@
 				dropdownParent: $("#modalPop1")
 			} );  
 			
+			// $('.fc-toolbar-chunk .fc-timeGridWeek-button').click(function(){     
+			// 	$(".calendar-events").hide();      
+			// 	$(".calendar-events-week").show(); 
+			// 	$(".fc-view-harness").hide();      
+			// });   
+			
+			// $('.fc-toolbar-chunk .fc-dayGridMonth-button').click(function(){     
+			// 	$(".calendar-events").show();      
+			// 	$(".calendar-events-week").hide();     
+			// });  
+	 
+	 
+
+			
 			$('.fc-dayGridMonth-button').text("Month"); 
 			$('.fc-timeGridWeek-button').text("Week"); 
 			$('.fc-agendaDay-button').text("Day"); 
@@ -6195,8 +6244,6 @@
 			$("#popModal").modal("show");   
 		});  
 		
-		
-
 		$('.menux').click(function(){     
 			$(".menu-mb").addClass("active");
 			$("body").addClass("active");      
@@ -6276,7 +6323,7 @@
 					{
 						title: '13:00 - 14:40',
 						start: '2023-11-22T17:00:00',
-						id:"#schedule-view2", 
+						id:"#schedule-view", 
 						className: 'fc-daygrid-more-link', 
 					} , 
 					 
