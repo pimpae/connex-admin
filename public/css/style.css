@@ -4177,7 +4177,7 @@ ol, ul {
   max-width: 100%;
 }
 .calendar-events-week{
-  padding-left: 65px;
+  padding-left: 45px;
   position: relative; 
   display: none;
   margin-top: -240px;
@@ -4201,14 +4201,15 @@ ol, ul {
 .calendar-events-week .ev h1{
   font-family: 'Poppins', sans-serif;
   color: var(--bg-main);
-  font-size: 14px;
+  font-size: 10px;
   text-align: center;
   border: 1px solid var(--bg-main);
   border-radius: 100%;
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   padding: 6px;
   top: 5px;
+  left: -50px;
 }
 .calendar-events-week .ev.active h1{ 
   color: #fff; 
@@ -4216,7 +4217,7 @@ ol, ul {
   background-color: var(--bg-main); 
 }
 .calendar-events-week .ev h1 span{ 
-  font-size: 20px;  
+  font-size: 16px;  
 }
 .calendar-events-week .ev h6{ 
   white-space: nowrap;
