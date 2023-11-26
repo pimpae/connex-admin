@@ -3939,14 +3939,14 @@ ol, ul {
   line-height: 24px;
 }
 #tb-example_wrapper #tb-example_filter label input{  
-  -webkit-appearance: textfield;
+  /* -webkit-appearance: textfield; */
   outline-offset: unset;
   border: 1px solid #D9D9D9;
   padding-left: 10px;
 }
 
 #tb-example_wrapper #tb-example_filter label input:focus{  
-  -webkit-appearance: textfield; 
+  /* -webkit-appearance: textfield;  */
   border: 1px solid #D9D9D9 !important;
   outline-offset: unset !important; 
   outline: none !important;
