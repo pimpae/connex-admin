@@ -4190,7 +4190,7 @@ ol, ul {
   margin-top: 10px;
   margin-bottom: 10px;
   color: var(--bg-main); 
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   position: relative;
 }
@@ -4223,7 +4223,7 @@ ol, ul {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 0px;
   margin-bottom: 0px;
   color: var(--bg-main); 
@@ -4237,7 +4237,8 @@ ol, ul {
 }
 .fc-daygrid-day-number span{
   display: none;
-}
+} 
+
 /*
 #418EFD 
 transition: .33s all ease-out; 
@@ -4353,9 +4354,10 @@ body.expand
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.45px;
+    text-transform: capitalize;
   }
   .fc-toolbar-chunk .btn.btn-primary.active{
-    color: #1C1B1F;  
+    color: var(--bg-main);  
     font-weight: 600; 
   }
 
