@@ -6314,12 +6314,18 @@
 				left: 'title',
 				center: 'prev,next',
 				right: 'dayGridMonth,timeGridWeek,timeGridDay'
-				},
-				weekNumbers: true,
-				dayMaxEvents: true, 
+				}, 
+    			// allDayText: 'All Day', 
 				eventClick: function(info) { 
 					$(info.event.id).modal("show");  
 				}, 
+
+				eventDrop: function (event, delta) {
+					alert(event.title + ' was moved ' + delta + ' days\n' +
+							'(should probably update your database)');
+				},
+				timeFormat: 'H:mm',
+
 				events: [  
 					{
 						title: '11:00 - 12:00',

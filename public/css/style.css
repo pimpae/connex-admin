@@ -2557,10 +2557,17 @@ ol, ul {
   width: 150px;
   padding-left: 0px;
   padding-right: 0px;
+  text-transform: capitalize;
 }
 .fc-toolbar-chunk .btn-group .btn.active{
   color: #0029FF;
   font-weight: 700;
+}
+.fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+  font-weight: 100;
+  font-family: 'Prompt', sans-serif; 
 }
 .fc-header-toolbar .fc-toolbar-chunk:nth-child(1){
   width: 400px;
@@ -4238,6 +4245,9 @@ ol, ul {
 .fc-daygrid-day-number span{
   display: none;
 } 
+.fc-timegrid-slots tr:nth-child(even){
+  border-bottom:  1px solid #D0D5D9 ;
+}
 
 /*
 #418EFD 
@@ -5263,9 +5273,16 @@ body.expand
   .fc-header-toolbar.fc-toolbar.fc-toolbar-ltr .fc-toolbar-chunk:nth-child(2){
     position: absolute;
     left: 200px;
+    width: unset !important;
   }
   .fc-header-toolbar.fc-toolbar.fc-toolbar-ltr .fc-toolbar-chunk:nth-child(2) .fc-prev-button{ 
-    left: 100px;
+    left: 150px; 
+  }
+  .fc-header-toolbar.fc-toolbar.fc-toolbar-ltr .fc-toolbar-chunk:nth-child(2) .fc-next-button{ 
+    left: 170px; 
+  }
+  .fc-header-toolbar.fc-toolbar.fc-toolbar-ltr .fc-toolbar-chunk:nth-child(2) .btn{  
+    width: 20px;
   }
   .swip1{
     display: block !important;
